@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商家后台登陆界面</title>
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/login-xin.js"></script>
+		<script type="text/javascript" src="js/drag.js" ></script>  
+		<link href="css/login.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/drag.css" />
+	</head>
+	<body onLoad="createCode();">
+		<!--header开始-->
+		<div class="bj1">
+	        <div class="bj1box">
+	        <ul class="bj1nav">
+                <li style="padding-right: 0;"><a href="#">卖家中心 |</a>
+                    <ul>
+      	                <li><a href="#">卖家中心</a></li>
+                        <li><a href="#">卖家中心</a></li>
+                        <li><a href="#">卖家中心</a></li>
+                        <li><a href="#">卖家中心</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">开发平台 |</a>
+                    <ul>
+      	                <li><a href="#">卖家中心</a></li>
+                        <li><a href="#">卖家中心</a></li>
+                        <li><a href="#">卖家中心</a></li>
+                        <li><a href="#">卖家中心</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">软信下载 |</a>
+                    <ul>
+      	                <li><a href="#">卖家中心</a></li>
+                        <li><a href="#">卖家中心</a></li>
+                        <li><a href="#">卖家中心</a></li>
+                        <li><a href="#">卖家中心</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">软信商城 |</a>
+                    <ul>
+      	                <li><a href="#">卖家中心</a></li>
+                        <li><a href="#">卖家中心</a></li>
+                        <li><a href="#">卖家中心</a></li>
+                        <li><a href="#">卖家中心</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">软信官网 |</a>
+      	            <ul>
+      	                <li><a href="#">卖家中心</a></li>
+                        <li><a href="#">卖家中心</a></li>
+                        <li><a href="#">卖家中心</a></li>
+                        <li><a href="#">卖家中心</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <span class="Llogo">
+	            <span class="Llogoimg">
+	            	<img src="img/loginImg/logo.png" alt="logo图标" align="center" width="40px" height="40px">
+	            	<span>软&nbsp信</span>
+	           </span>
+	        </span>
+            <span class="LlogoW">商家后台</span>
+            </div>
+        </div>
+        <!--header结束-->
+        <div class="login">
+			<div class="login-con">
+			    <div class="login-a">
+				    <form id="loginForm" method=""action="#"onsubmit="return validate()">
+                       <!--密码登陆开始-->
+                      <div class="login-b">
+                      	<div class="login-b-warn">
+                      		<div class="b-warntip">
+                      			&nbsp;
+                      			<img src="img/loginImg/a1.png" align="center" width="18px" height="14px">
+                      			扫码登陆更安全
+                      			&nbsp;&nbsp;
+                      		</div>
+                      		<div class="b-warnCode">
+                      			<a href="#" id="codePageB">
+                      				<img src="img/loginImg/a5.png" align="center">
+                      			</a>
+                      		</div>
+                      	</div>
+                      	<div class="login-b-a">密码登陆</div>
+                      	<div class="login-b-b">
+                      		<ul>
+                      			<li>
+                      				<label for="userName" ><img src="img/loginImg/iconfont-mima-04.png"align="center"> </label><input type="text" id="mobile" name="userName"/>
+                      				<h1 id="m-tip"></h1>
+                      			</li>
+                      			<li>
+                      				<label for="password"><img src="img/loginImg/iconfont-mima-03.png"align="center"> </label><input type="password" id="password" name="password"/>
+                      				<h1 id="p-tip"></h1>
+                      			</li>
+                      			<!--滑块验证开始-->
+                      			<li>
+                      				<center>
+	                                    <div id="drag"></div>
+                                    </center>
+                                    <script type="text/javascript">
+                                        $('#drag').drag();
+                                    </script>
+                      			</li>
+                      			<!--滑块验证结束-->
+                      			
+                      			<!--<li>
+                      				<label ><img src="img/iconfont-mima-02.png"align="center"> </label><input type="text" id="input1" />      
+                                    <input type="text" id="checkCode" class="code" style="width: 55px" /> <a href="#" onClick="createCode()">看不清楚</a>      
+                                    <h1 id="c-tip"></h1>-->
+                      					
+                      				<!--输入错误时的输入框样式<input type="text" name="textfield" id="textfield" class="receSum-error" />-->
+                                   <!--当输入的手机号码发生错误时，出现如下提示信息
+                                   <p class="error-tips-1 spanRed">在此处显示错误的信息提示——如：对不起，您输入的手机号码格式有误，请重新输入！</p>-->
+                      				
+                      			<!--</li>-->
+                      			
+                      			<li class="login-x">
+		                          <div class="login-x-a"><input type="submit" name="登&nbsp&nbsp录"value="登&nbsp&nbsp录"id="Button1" onClick="validate();" /><div class="x"></div></div>
+	                            </li>
+                      			
+                      		</ul>
+                      	</div>
+                      	<div class="login-b-c">
+                      		<a href="#">免费注册</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">忘记登录密码？</a>
+                      	</div>
+                      </div>
+                      <!--二维码登陆开始-->
+                      <div class="login-c" style="display: none;">
+                      	<div class="login-b-warn">
+                      		<div class="b-warntip">
+                      			&nbsp;
+                      			<img src="img/loginImg/a1.png" align="center" width="18px" height="14px">
+                      			密码登陆在这里
+                      			&nbsp;&nbsp;
+                      		</div>
+                      		<div class="b-warnCode">
+                      			<a href="#" id="codePageC">
+                      				<img src="img/loginImg/1.png" align="center" width="50" height="50">
+                      			</a>
+                      		</div>
+                      	</div>
+                      	<div class="login-b-a">扫码登陆，防止盗号</div>
+                      	<!--二维码过期开始-->
+                      	<div class="login-expire">
+                      		
+                      	</div>
+                      	<!--二维码过期结束-->
+                      	<!--获取二维码开始-->
+                      	<div class="login-c1">
+                      		<img src="img/loginImg/a6.png" align="center">
+                      	</div>
+                      	<!--获取二维码结束-->
+                      	<div class="login-c2" align="center">
+                      		<p>
+                      			<img src="img/loginImg/a1.png" width="20px" height="18px" align="center">
+                      			<span class="login-c2S">
+                      				打开<a href="#" class="login-c2Sa">软信APP</a>&nbsp;&nbsp;扫一扫登陆
+                      			</span>
+                      		</p>
+                      	</div>
+                      	<div class="login-c3" align="right">
+                      		<p>
+                      			<a href="#">
+                      				密码登陆
+                      			</a>
+                      			&nbsp;&nbsp;
+                      			<a href="#">
+                      				免费注册
+                      			</a>
+                      			&nbsp;&nbsp;
+                      		</p>
+                      	</div>
+                      </div>
+                      <!--二维码登陆结束-->
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="bj4 clearfix">
+            <p style="color:#999;">
+  	            <span>
+  		            <a href="#">申请入驻</a>
+  		            &nbsp;&nbsp;
+  		            <a href="#">申请合作</a>
+  		            &nbsp;&nbsp;
+  		            <a href="#">开发平台</a>
+  		            &nbsp;&nbsp;
+  		            <a href="#">关于软信</a>
+  	            </span>
+  	                                  粤ICP路1507617号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@2016&nbsp;&nbsp;软信&nbsp;&nbsp;版权所有&nbsp; 
+             </p>
+        </div>
+    </body>    
+</html>

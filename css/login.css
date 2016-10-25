@@ -1,0 +1,327 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family:"microsoft yahei" ,sans-serif;
+	margin: 0 auto;
+}
+a:link{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:active{text-decoration:none;}
+
+img{
+	border: none;
+}
+/*header开始*/
+.bj1{
+	height: 70px;
+	margin: 0 auto;
+    position: relative;
+}
+.bj1 a,
+.bj4 a{
+	color:#A0A0A0;
+	font-family: "微软雅黑","宋体",Arial;
+	font-size: 16px;
+	text-decoration: none;
+	}
+.bj1 a:hover,
+.bj4 a:hover{
+	color: #f3ab3a;
+	text-decoration: none;
+	}
+.bj1box{
+	width: 1080px;
+	margin: 0 auto;
+	height: 70px;
+}
+.bj1 ul {
+	width: 660px;
+	float: right;
+	height: 30px;
+	padding: 20px 0;
+}
+.bj1nav li {
+	float: right;
+	list-style-type: none;
+	line-height: 30px;
+	width: 80px;
+	padding-right: 25px;
+	position: relative;
+}
+.bj1nav li ul{
+	display: none;
+	position: absolute;
+	width: 105px;
+	left: 0;
+}
+.bj1nav li:hover ul{
+	display:block;
+	z-index: 1000;
+}
+.bj1nav li a {
+	display: block;
+}
+.bj1navli a{
+	padding-right: 0;
+}
+
+.bj1 p {
+	width: 250px;
+	/*line-height: 30px;*/
+	line-height: 70px;
+	float: left;
+	color: #999;
+	/*height: 30px;*/
+	height: 70px;
+}
+/*header结束*/
+/*footer开始*/
+.bj4{
+	height: 80px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.bj4 p {
+	width: 1080px; 
+	margin: 0 auto;
+	line-height:80px;
+}
+.bj4 p span {
+	float: right;
+}
+/*footer结束*/
+/*content开始*/
+.login{
+	background-color: #EEE;
+}
+.login .login-head{
+	margin:0 auto;
+	height: 70px;
+	}
+.login-head-a{
+	text-align: center;
+	float: left;
+	width: 60px;
+	}
+.login-head-a img{}
+.login-head-a p{
+	font-size:16px;
+	margin: 0;
+	}
+.login-head-b{
+	float: left;
+	height: 75px;
+	line-height: 75px;
+	margin-left: 20px;
+	padding-left: 30px;
+	width: 150px;
+	font-size: 25px;
+	}
+.login .login-con{
+	text-align: center;
+	min-height: 550px;
+	}
+.login .login-con .login-a{
+	background: url(../img/loginImg/pay-bg-3.jpg)no-repeat;
+	background-size: 1080px 550px;
+	width:1080px !important;
+	margin: 0 auto;
+	text-align: left;
+	padding-top: 0px;
+	min-height: 550px;
+	}
+
+.login .login-con .login-a .login-b,
+.login .login-con .login-a .login-c{
+	float: right;
+	width: 344px;
+	height: 387px;
+	margin-right: 98px;
+	margin-top: 85px;
+	background: #fff;
+	position: relative;
+	filter:alpha(opacity=85); /*IE滤镜，透明度50%*/
+    -moz-opacity:0.85; /*Firefox私有，透明度50%*/
+    opacity:0.85;/*其他，透明度50%*/
+	}
+.login-b-a{
+	height: 46px;
+	line-height: 46px;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 15px;
+	}
+.login .login-con .login-a .login-b .login-b-b{
+	padding-top: 10px;
+	height: 255px;
+	}
+.login .login-con .login-a .login-b .login-b-b ul li{
+	height: 65px;
+	_height: 60px;
+	list-style-type: none;
+	font-family: "微软雅黑","宋体",Arial;
+	font-size: 14px;
+	text-align: center;
+	}
+	
+.login .login-con .login-a .login-b .login-b-b ul li label{
+	display: inline-block;
+	font-size: 16px;
+	color: #666666;
+	}
+.login .login-con .login-a .login-b .login-b-b ul li input{
+	width: 180px;
+	color: rgb(153, 153, 153);
+	height: 32px;
+	line-height: 32px;
+	border: solid 1px #d3d3d3;
+	font-size: 14px;
+	}
+.login .login-con .login-a .login-b .login-b-b ul li h1{
+	font-weight: normal;
+	color: #ff0000;
+	background: url(../img/loginImg/icon.png)no-repeat 95px -28px;
+	font-size: 12px;
+	padding-left: 120px;
+	padding-top: 6px;
+	margin: 3px 0px 0px -30px;
+	}
+.login .login-con .login-a .login-b .login-b-b ul li #checkCode{
+	height: 32px;
+	line-height: 32px;
+	width: 60px;
+	}
+.login .login-con .login-a .login-b .login-b-b ul li img{
+	vertical-align: middle;
+	width:auto;
+	height: 35px;
+	}
+.login .login-con .login-a .login-b .login-b-b ul li a{
+	color: #447bd6;
+	font-family: "微软雅黑","宋体",Arial;
+	font-size: 12px;
+	}
+.login .login-con .login-a .login-b .login-b-b ul .login-x{
+	padding-top: 0px;
+	height: 65px;
+	}
+.login .login-con .login-a .login-b .login-b-b ul .login-x .login-x-a{
+	width:220px;
+	height: 50px;
+	margin: 0 auto;
+	}
+.login .login-con .login-a .login-b .login-b-b ul .login-x .login-x-a .x{
+	background-position: right -208px;
+	background-image: url(../img/loginImg/btn-type2.png);
+	background-repeat: no-repeat;
+	height: 37px;
+	float: left;
+	width: 3px;
+	}
+.login .login-con .login-a .login-b .login-b-b ul .login-x .login-x-a input{
+	width:215px;
+	float: left;
+	border: none;
+	background-position: 0 -120px;
+	background-image: url(../img/loginImg/btn-type2.png);
+	background-repeat: no-repeat;
+	height: 37px;
+	line-height: 37px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+}
+.login .login-con .login-a .login-b .login-b-b ul .login-x .login-x-b{}
+.login .login-con .login-a .login-b .login-b-c{
+	text-align: center;
+	padding-top: 10px;
+	border-top: solid 1px #f0f0f0;
+	}
+.login .login-con .login-a .login-b .login-b-c a,
+.login-c3 a,
+.login-c2Sa{
+	color: #447bd6;
+	font-family: "微软雅黑","宋体",Arial;
+	font-size: 14px;
+	text-decoration: none;
+	}
+.login .login-con .login-a .login-b .login-b-c a:hover,
+.login-c3 a:hover,
+.login-c2Sa:hover{
+	color: #f3ab3a;
+	text-decoration: none;
+	}
+
+.code{      
+background-image:url(w1.jpg);      
+font-family:Arial;      
+font-style:italic;      
+color:Red;      
+border:0;      
+padding:2px 3px;      
+letter-spacing:3px;      
+font-weight:bolder;      
+}  
+#input1{
+	width:60px;
+}  
+ 
+.login-b-warn{
+	height: 16px;
+}
+.login-b-warn .b-warntip{
+	position: absolute;
+	top: 5px;
+	right:45px;
+	font-size: 12px;
+	color: rgb(255,165,0);
+	padding: 5px 6px;
+	background:url(../img/loginImg/a4.png) center center no-repeat;
+}
+.login-b-warn .b-warnCode{
+	position: absolute;
+	top: 5px;
+	right:5px;
+}
+.login-c1{
+	padding-top:30px;
+	padding-left:100px
+}
+.login-c2{
+	font-size: 14px;
+	padding: 20px 0;
+}
+
+.login-c3{
+	padding-top: 10px;
+	font-size: 14px;
+}
+.login-c3 a{
+	text-decoration: none;
+}
+.Llogo{
+	width:50px;
+	height:70px ;
+	text-align:center;
+}
+.Llogo .Llogoimg{
+	width:40px;
+	height: 40px;
+	padding-top:10px;
+	display:inline-block;
+	text-align:center;
+}
+.Llogo .Llogoimg a{
+	font-size: 14px;
+}
+.LlogoW{
+	display:inline-block;
+	position: relative;
+	top: -22px;
+	left:30px;
+	text-align: center;
+	font-size:26px;
+}

@@ -1,0 +1,269 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*清除表单样式*/
+table{
+	border-collapse:collapse;border-spacing:0;
+}
+
+fieldset,img{
+	border:0;
+}
+a{
+	text-decoration:none;color:#A0A0A0;outline:none;
+}
+li{
+	list-style:none;
+}
+caption,th{
+	text-align:left;
+}
+input,button,textarea,select,optgroup,option{
+	font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;
+}
+
+input,button,textarea,select{
+	*font-size:100%;
+}
+a{
+	-webkit-transition:all 0.5s linear;-moz-transition:all 0.5s linear;-ms-transition:all 0.5s linear;-o-transition:all 0.5s linear;
+}
+hr {
+	border-top-width:2px;
+	border-top-style: solid;
+	border-top-color: #EEEEEE;
+	border-radius: 1px;
+}
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after{
+	content: "";
+	height: 0;
+	line-height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+
+.clearfix:after{clear:both;} 
+.clearfix{ 
+    *zoom:1;/*IE/7/6*/
+}
+body{
+	margin:0 auto;
+	color: #999;
+	font-family:"microsoft yahei" ,sans-serif;
+	font-size:16px;
+}
+hr {
+	width: 118px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #999;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#libg {
+	background-color:#FFF;
+	border-bottom-width:0px;
+}
+.table{
+	font-size:12px; width:125px; text-align:left;
+}
+/*header开始*/
+.bj1{
+	height: 30px;
+	margin: 0 auto;
+	background-color: #eeeeee;
+}
+.bj1box{
+	width: 1080px;
+	margin: 0 auto;
+}
+.bj1 ul {
+	width: 660px;
+	float: right;
+	height: 30px;
+}
+.bj1nav li {
+	float: right;
+	list-style-type: none;
+	line-height: 30px;
+	width: 80px;
+	padding-right: 25px;
+	position: relative;
+}
+
+.bj1nav li ul{
+	display: none;
+	position: absolute;
+	width: 105px;
+	left: 0;
+}
+.bj1nav li:hover ul{
+	display:block;
+	z-index: 1000;
+}
+.bj1nav li a {
+	display: block;
+}
+.bj1navli a{
+	padding-right: 0;
+}
+.bj1 a:hover{
+	color: #FFFFFF;
+}
+.bj1 p {
+	width: 250px;
+	line-height: 30px;
+	float: left;
+	color: #999;
+	height: 30px;
+}
+.bj2{
+	height: 30px;
+	margin: 0 auto;
+	background-color: #fff79a;
+	color: #999;
+}
+.bj2 p {
+	width: 1050px;
+	margin: 0 auto;
+	line-height: 30px;
+	padding-left: 30px;
+	background: url(../img/99.png) no-repeat center left;
+}
+.bj2 p span{
+	padding: 0 25px;
+}
+
+.bj3{
+	width: 1082px;
+	height: 50px;
+	margin: 0 auto;
+	background-color: #ff6600;
+}
+.bj3 ul {
+}
+.bj3 ul li {
+	float: left;
+	list-style-type: none;
+	line-height: 50px;
+	height: 50px;
+	width: 96px;
+	text-align: center;
+}
+.bj3 ul li a {
+	color: #FFF;
+	font-size: 22px;
+	text-decoration: none;
+	display: block;
+}
+.bj3 ul li a:hover {
+	background-image: url(../img/100.png);
+	background-repeat: no-repeat;
+}
+.bj3 ul li:first-child a{
+	background-image: url(../img/100.png);
+	background-repeat: no-repeat;
+}
+.bj3 ul li {
+	float: left;
+	list-style-type: none;
+	line-height: 50px;
+	height: 50px;
+	width: 96px;
+	text-align: center;
+}
+.bj3 ul li a {
+	color: #FFF;
+	font-size: 22px;
+	text-decoration: none;
+	display: block;
+}
+.bj3 ul li a:hover {
+	background-image: url(../img/100.png);
+	background-repeat: no-repeat;
+}
+.bj3 ul li:first-child a{
+	background-image: url(../img/100.png);
+	background-repeat: no-repeat;
+}
+.bj4{
+	height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #eeeeee;
+}
+.bj4 p {
+	width: 1080px; 
+	margin: 0 auto;
+	line-height:30px;
+}
+.bj4 p span {
+	float: right;
+}
+/*content部分开始*/
+.content{
+	width: 1080px;
+	border: 1px solid #7D7D7D;
+	border-top: 0;
+	margin-right: auto;
+	margin-left: auto;
+}
+.con1_nav{
+	height: 55px;
+	line-height: 55px;
+	padding-left: 18px;
+	border-bottom: 2px solid #EEEEEE;
+}
+.con1_nav p{
+	padding-left: 30px;
+	background:url(../img/open.png) no-repeat left center;
+}
+.con1_nav p span{
+	margin-left: 160px;
+	color: #999;
+	font-size: 20px;
+	font-weight: bold;
+}
+.Toplist tr td{
+	padding-bottom:10px ;
+}
+.Toplist tr td:first-child{
+	font-weight: bold;
+}
+#Maintable tr td{
+	border: 1px solid #ccc;
+	padding: 5px 0;
+}
+#Maintable tr:first-child{
+	font-weight: bold;
+}
+#Maintable tr:first-child td{
+	border-top:0;
+	border-bottom:0;
+}
+#Maintable tr:nth-of-type(2) td{
+	border-top:0;
+}
+#Maintable .specTable th{
+	font-size: 16px;
+}
+#Maintable .specTable tr td{
+	border: 0 !important;
+	padding: 5px;
+}
+#Maintable .specTable .taste{
+	font-size: 15px;
+	font-weight: bold;
+	background: #A0A0A0;
+	color: #FFFFFF;
+	margin: 2px;
+	padding: 2px 3px;
+}
