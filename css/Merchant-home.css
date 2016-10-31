@@ -166,11 +166,11 @@ body{
 	display: block;
 }
 .bj3 ul li a:hover {
-	background-image: url(../img/100.png);
+	background-image:url(../img/MerchantImg/100.png);
 	background-repeat: no-repeat;
 }
 .bj3 ul li:first-child a{
-	background-image: url(../img/100.png);
+	background-image: url(../img/MerchantImg/100.png);
 	background-repeat: no-repeat;
 }
 .bj3 ul li {
@@ -188,11 +188,11 @@ body{
 	display: block;
 }
 .bj3 ul li a:hover {
-	background-image: url(../img/100.png);
+	background-image: url(../img/MerchantImg/100.png);
 	background-repeat: no-repeat;
 }
 .bj3 ul li:first-child a{
-	background-image: url(../img/100.png);
+	background-image:  url(../img/MerchantImg/100.png);
 	background-repeat: no-repeat;
 }
 .bj4{
