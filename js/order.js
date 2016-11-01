@@ -54,4 +54,19 @@ $(function(){
 					$(this).parent().css("z-index","1000");  //点击下拉按钮的时候显示z-index为1000
 				});
 			});
-        
+//左边高度与右边高度相同
+$(function(){
+	var height=$(".you").outerHeight(true);
+	$(".zuo").height(height);
+});
+
+$(function(){
+	$(".order-list a").mousemove(function(){
+		$(this).css("color","red");
+		$(this).parent().css("border-bottom","2px solid red");
+	});
+	$(".order-list a").mouseleave(function(){
+		$(this).css("color","#000");
+		$(this).parent().css("border-bottom","2px solid #eee");
+	});
+});

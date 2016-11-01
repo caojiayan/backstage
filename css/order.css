@@ -165,7 +165,7 @@ input[type="image"]{
 	/*兼容IE67中display：inline-block属性*/
 	*zoom:1;
 	*display:inline; 
-	width:155px;
+	width:150px;
 	height:25px;
 	border:1px solid #a0a0a0;
 	position:relative; 
@@ -176,6 +176,7 @@ input[type="image"]{
     z-index: 999;
 }
 .dropdown .editor {
+	width: 150px !important;
 	display:block;
 	/*border:0;*/
 	padding:0;
@@ -397,7 +398,6 @@ body{
 }
 /*contet开始*/
 .content {
-	height: 1500px;
 	width: 1080px;
 	border: 1px solid #7D7D7D;
 	border-top: none;
@@ -479,12 +479,11 @@ body{
 	float: left;  
 	list-style: none; 
 	padding:10px 5px;
-	border-bottom: 1px solid #999;
+	border-bottom:2px solid #eee;
 }
 .order-list ul li a{
 	padding: 0 5px;
 	font-weight: bold;
-	color: #000 !important;
 }
 .order-title{
 	height:50px;
@@ -502,6 +501,7 @@ body{
 }
 #orderAllbox{
 	width: 100%;
+	margin-bottom: 20px;
 }
 #orderAllbox .orderboxt{
 	height: 35px;
@@ -527,19 +527,19 @@ body{
 	width: 50px;
 }
 #orderAllbox .boxW4{
-	width: 70px;
+	width:90px;
 }
 #orderAllbox .boxW5{
-	width:100px;
+	width:120px;
 }
 #orderAllbox .boxW6{
-	width:100px;
+	width:80px;
 }
 #orderAllbox .boxW7{
 	width:100px;
 }
 #orderAllbox .boxW8{
-	width:80px;
+	width:60px;
 }
 
 #orderAllbox .orderbox{
@@ -553,9 +553,88 @@ body{
 .orderbox .oboxt{
 	height:45px;
 	padding-left: 10px;
+	border-bottom:1px solid #EEE;
 	line-height:45px;
 	background: rgb(234,249,255);
 }
-.orderbox .oboxt span{
-	padding-right:55px;
+.orderbox .obox-list{
+	width: 100%;
+}
+.left-border{
+	border-left: 1px solid #EEE;
+}
+.right-border{
+	border-right: 1px solid #EEE;
+}
+.bottom-border{
+	border-bottom: 1px solid #EEE;
+}
+
+.obox-list .list-left{
+	width: 450px;
+	float: left;
+}
+.list-left .list-left-box{
+	width: 100%;
+	height:150px;
+}
+.list-right .list-right-box{
+	position: relative;
+	width:100px;
+	height:422px;
+	float: left;
+}
+.list-left-box ul li{
+	display: inline-block;
+}
+
+.list-left-box .boxWimg{
+	width:80px;
+}
+.list-left-box .boxW-depict{
+	width:165px ;
+	padding:5px 0 0 5px;
+}
+.list-left-box .boxW-depict li{
+	padding:5px 0;
+	text-align: center;
+}
+.list-left-box .boxL-position{
+	position: relative;
+	top:-105px;
+	left: 0;
+}
+.color0{
+	color: #696969!important;
+}
+.list-left-box .boxW2{
+	width: 50px;
+}
+.list-left-box .boxW3{
+	width: 50px;
+}
+.list-left-box .boxW4{
+	width: 70px;
+}
+
+.list-right-box{
+	padding:15px 0;
+}
+.list-right-box ul li{
+	text-align: center;
+}
+.list-right-box .cheques li{
+	padding-bottom: 5px;
+}
+.list-right-box .message{
+	border-top-left-radius:20px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+	background: #EEE;
+}
+.list-right-box .order-P{
+	padding: 0 3px;
+	color: #FFF;
+	background:#66b0fe;
 }
