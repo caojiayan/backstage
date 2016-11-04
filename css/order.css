@@ -14,7 +14,7 @@ fieldset,img{
 	border:0;
 }
 a{
-	text-decoration:none;color:#A0A0A0;outline:none;
+    text-decoration:none;color:#A0A0A0;outline:none;
 }
 li{
 	list-style:none;
@@ -37,6 +37,7 @@ hr {
 	border-top-style: solid;
 	border-top-color: #EEEEEE;
 	border-radius: 1px;
+	border-bottom:0;
 }
 /*清除浮动*/
 .clearfix::before,
@@ -69,40 +70,7 @@ table{
 	border-spacing:0;
 	overflow: hidden;
 }
-/*去除IE67下图片边框*/
-fieldset,img{
-	border:0;
-}
-a{
-	text-decoration:none;color:#000;outline:none;
-}
-li{
-	list-style:none;
-}
-caption,th{
-	text-align:left;
-}
-input,button,textarea,select,optgroup,option{
-	font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;
-}
 
-input,button,textarea,select{
-	*font-size:100%;
-}
-a{
-	-webkit-transition:all 0.5s linear;-moz-transition:all 0.5s linear;-ms-transition:all 0.5s linear;-o-transition:all 0.5s linear;
-}
-
-/*input输入框、select下拉框变成下划线  */
-/*input,select{
-	color: #999;
-	border-color: #a0a0a0; 
-    border-style: solid; 
-    border-top-width: 0px;
-    border-right-width: 0px; 
-    border-bottom-width: 1px;
-    border-left-width: 0px;
-}*/
 /*提交按钮样式*/
 input[type="button"]{
 	padding: 3px 10px;
@@ -237,9 +205,6 @@ input[type="image"]{
 	background:none;
 }
 
-
-
-
 body{
 	height: auto;
 	margin: 0 auto;
@@ -247,10 +212,6 @@ body{
 	font-size: 16px;
 }
 
-#libg {
-	background-color:#FFF;
-	border-bottom-width:0px;
-}
 .table{
 	font-size:16px; 
 	width:195px; 
@@ -422,10 +383,11 @@ body{
 	height: 45px;
 	line-height: 45px;
 	*line-height:45px;
-	background-color: #eeeeee;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #7D7D7D;
+}
+.zuotitleBack{
+	background-color:#EEE;
+	border-top:1px solid #7D7D7D;
+	border-bottom:1px solid #7D7D7D;
 }
 .content .you {
 	float: left;
@@ -454,9 +416,7 @@ body{
 .y-search fieldset{
 	padding: 10px 0;
 }
-.y-search fieldset span{
-	/*padding-left:10px;*/
-}
+
 .y-search input[type="text"]{
 	width:150px;
 	height: 25px;

@@ -54,19 +54,73 @@ $(function(){
 					$(this).parent().css("z-index","1000");  //点击下拉按钮的时候显示z-index为1000
 				});
 			});
+			
+//侧边栏		
+$(function(){
+	$(".libgBtn").click(function(){
+		$(this).find("img").toggle();
+			//同级兄弟节点
+		$(this).parent().next(".table").toggle();
+		$(this).parent().toggleClass("zuotitleBack");
+			//下一个同级所有兄弟中第一个hr
+		$(this).parent().prevAll(".hr").eq(0).toggle();
+		$(this).parent().nextAll(".hr").eq(0).toggle();
+			//当上一个table显示隐藏的时候
+		if($(this).parent().prev("table").hide()) {
+				//使P的上边框设置为none
+			$(this).parent().css("border-top","none");
+		}else{
+			return false;
+		}
+	});
+});
 //左边高度与右边高度相同
 $(function(){
 	var height=$(".you").outerHeight(true);
 	$(".zuo").height(height);
 });
-
+//订单搜索栏
 $(function(){
 	$(".order-list a").mousemove(function(){
 		$(this).css("color","red");
 		$(this).parent().css("border-bottom","2px solid red");
 	});
 	$(".order-list a").mouseleave(function(){
-		$(this).css("color","#000");
+		$(this).css("color","#A0A0A0");
 		$(this).parent().css("border-bottom","2px solid #eee");
 	});
 });
+//订单管理全选
+    (function($){
+        $.fn.checkall = function(options){
+            var defaults = {chname:"checkname[]", callback:function(){}},
+            options = $.extend(defaults, options),
+            $obj = $(this),
+            $items = $("input[name='"+options.chname+"']"),
+            checkedItem = 0;
+            $items.click(function(){
+                if($items.filter(":checked").length === $items.length){
+                    $obj.attr("checked",true);
+                }else{
+                    $obj.removeAttr("checked");
+                }
+                checkedItem = $items.filter(":checked").length;
+                if(typeof options.callback === 'function') options.callback(checkedItem);
+            });
+            return $obj.each(function(){
+                $(this).click(function(){
+                    if($(this).attr('checked')){
+                        $items.attr("checked",true);
+                    }else{
+                        $items.removeAttr("checked");
+                    }
+                    checkedItem = $items.filter(":checked").length;
+                    if(typeof options.callback === 'function') options.callback(checkedItem);
+                });
+            });
+        }
+    })(jQuery);
+    //回调
+    $(function(){
+        $("#Allcheck").checkall({chname:"order[]", callback: function(e){}});
+    });

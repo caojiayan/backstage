@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>后台默认界面</title>
+        <script type="text/javascript" src="js/jquery-1.7.1.min.js" ></script>
         <link href="css/Merchant-home.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
@@ -70,35 +71,33 @@
         <!--header结束-->
 <div class="content">
   <div class="zuo">
-      <p class="zuotitle"><a style="margin-left: 10px;"></a>今日数据<a style="margin-left: 20px;"></a>></p>
-      <p class="zuotitle"><a style="margin-left: 10px;"></a>网店管理</p>
-      <p class="zuotitle" id="libg"><a style="margin-left: 10px;"></a>交易管理<a style="margin-left: 20px;">
-      	</a><img src="img/MerchantImg/down.png" align="center">
-      </p>
-      <table class="table" cellpadding="0" cellspacing="0">
+      <p class="zuotitle" style="background-color:#EEE;border-bottom:1px solid #7D7D7D;"><a style="margin-left: 10px;"></a>今日数据<a style="margin-left: 20px;"><img src="img/down.png" width="20px" height="20px" align="center" style="display: none;"><img src="img/up.png"  width="20px" height="20px" align="center"></a></p>
+      <p class="zuotitle" style="background-color:#EEE;border-bottom:1px solid #7D7D7D;"><a style="margin-left: 10px;"></a>网店管理<a style="margin-left: 20px;"><img src="img/down.png" width="20px" height="20px" align="center" style="display: none;"><img src="img/up.png"  width="20px" height="20px" align="center"></a></p>
+      <p class="zuotitle"><a style="margin-left: 10px;"></a>交易管理<a class="libgBtn" href="javascript:void();" style="margin-left: 20px;"><img src="img/down.png" width="20px" height="20px" align="center"><img src="img/up.png" width="20px" height="20px" align="center" style="display: none;"></a></p>
+      <table class="table" cellpadding="0" cellspacing="0" style="display: table;">
         <tr>
           <td width="50%"><a href="#">已卖出</a></td>
-          <td width="50%"><a href="#">客户评论</a></td>
+          <td width="50%"><a href="#" class="fleetColor">客户评论</a></td>
         </tr>
         <tr>
-          <td><a href="#">未下单</a></td>
-          <td><a href="#">未支付</a></td>
+          <td><a href="#" class="fleetColor">未下单</a></td>
+          <td><a href="#" class="fleetColor">未支付</a></td>
         </tr>
       </table>
-      <hr />
-      <p class="zuotitle" id="libg"><a style="margin-left: 10px;"></a>销后服务<a style="margin-left: 20px;"></a><img src="img/MerchantImg/down.png" align="center"></p>
+      <hr class="hr"/>
+      <p class="zuotitle libg"><a style="margin-left: 10px;"></a>销后服务<a class="libgBtn" href="javascript:void();"  style="margin-left: 20px;"><img src="img/down.png" width="20px" height="20px" align="center"><img src="img/up.png"  width="20px" height="20px" align="center" style="display: none;"></a></p>
       <table class="table" cellpadding="0" cellspacing="0">
         <tr>
-          <td width="50%"><a href="#">投诉</a></td>
-          <td width="50%"><a href="#">退款</a></td>
+          <td width="50%"><a href="#" class="fleetColor">投诉</a></td>
+          <td width="50%"><a href="#" class="fleetColor">退款</a></td>
         </tr>
         <tr>
-          <td><a href="#">退货</a></td>
-          <td><a href="#">纠错</a></td>
+          <td><a href="#" class="fleetColor">退货</a></td>
+          <td><a href="#" class="fleetColor">纠错</a></td>
         </tr>
       </table>
-      <hr />
-      <p class="zuotitle" id="libg"><a style="margin-left: 10px;"></a>商品管理<a style="margin-left: 20px;"></a><img src="img/MerchantImg/down.png" align="center"></p>
+      <hr class="hr"/>
+      <p class="zuotitle libg"><a style="margin-left: 10px;"></a>商品管理<a class="libgBtn" href="javascript:void();"  style="margin-left: 20px;"><img src="img/down.png" width="20px" height="20px" align="center"><img src="img/up.png"  width="20px" height="20px" align="center" style="display: none;"></a></p>
       <table class="table" cellpadding="0" cellspacing="0">
         <tr>
           <td width="50%"><a href="#">新增商品</a></td>
@@ -109,48 +108,48 @@
           <td><a href="#">商品配送</a></td>
         </tr>
       </table>
-      <hr />
-      <p class="zuotitle" id="libg"><a style="margin-left: 10px;"></a>促销管理<a style="margin-left: 20px;"></a><img src="img/MerchantImg/down.png" align="center"></p>
+      <hr class="hr" />
+      <p class="zuotitle libg"><a style="margin-left: 10px;"></a>促销管理<a class="libgBtn" href="javascript:void();" style="margin-left: 20px;"><img src="img/down.png" width="20px" height="20px" align="center"><img src="img/up.png"  width="20px" height="20px" align="center" style="display: none;"></a></p>
       <table class="table" cellpadding="0" cellspacing="0">
         <tr>
           <td width="50%"><a href="#">优惠券</a></td>
           <td width="50%"><a href="#">满X优惠</a></td>
         </tr>
         <tr>
-          <td><a href="#">试用试吃</a></td>
+          <td><a href="#" class="fleetColor">试用试吃</a></td>
           <td><a href="#">折扣促销</a></td>
         </tr>
         <tr>
-          <td><a href="#">搭配促销</a></td>
+          <td><a href="#" class="fleetColor">搭配促销</a></td>
           <td><a href="#">专属优惠</a></td>
         </tr>
         <tr>
           <td><a href="#">新人红包</a></td>
-          <td><a href="#">以旧换新</a></td>
+          <td><a href="#" class="fleetColor">以旧换新</a></td>
         </tr>
         <tr>
-          <td><a href="#">折价回收</a></td>
-          <td><a href="#">抵扣比例</a></td>
+          <td><a href="#" class="fleetColor">折价回收</a></td>
+          <td><a href="#" class="fleetColor">抵扣比例</a></td>
         </tr>
         <tr>
-          <td><a href="#">店铺清仓</a></td>
-          <td><a href="#">赠送促销</a></td>
+          <td><a href="#" class="fleetColor">店铺清仓</a></td>
+          <td><a href="#" class="fleetColor">赠送促销</a></td>
         </tr>
       </table>
-      <hr />
-      <p class="zuotitle" id="libg"><a style="margin-left: 10px;"></a>活动管理<a style="margin-left: 20px;"></a><img src="img/MerchantImg/down.png" align="center"></p>
+      <hr class="hr" />
+      <p class="zuotitle libg"><a style="margin-left: 10px;"></a>活动管理<a class="libgBtn" href="javascript:void();" style="margin-left: 20px;"><img src="img/down.png" width="20px" height="20px" align="center"><img src="img/up.png"  width="20px" height="20px" align="center" style="display: none;"></a></p>
       <table class="table" cellpadding="0" cellspacing="0">
         <tr>
-          <td width="50%"><a href="#">报名活动</a></td>
-          <td width="50%"><a href="#">活动管理</a></td>
+          <td width="50%"><a href="#" class="fleetColor">报名活动</a></td>
+          <td width="50%"><a href="#" class="fleetColor">活动管理</a></td>
         </tr>
         <tr>
-          <td><a href="#">受邀请的</a></td>
-          <td><a href="#">数据报表</a></td>
+          <td><a href="#" class="fleetColor">受邀请的</a></td>
+          <td><a href="#" class="fleetColor">数据报表</a></td>
         </tr>
       </table>
-      <hr />
-      <p class="zuotitle" id="libg"><a style="margin-left: 10px;"></a>品牌管理<a style="margin-left: 20px;"></a><img src="img/MerchantImg/down.png" align="center"></p>
+      <hr class="hr" />
+      <p class="zuotitle libg"><a style="margin-left: 10px;"></a>品牌管理<a class="libgBtn" href="javascript:void();"  style="margin-left: 20px;"><img src="img/down.png" width="20px" height="20px" align="center"><img src="img/up.png"  width="20px" height="20px" align="center" style="display: none;"></a></p>
       <table class="table" cellpadding="0" cellspacing="0">
         <tr>
           <td width="50%"><a href="#">新增品牌</a></td>
@@ -161,8 +160,8 @@
           <td><a href="#">品牌购买</a></td>
         </tr>
       </table>
-      <hr />
-      <p class="zuotitle" id="libg"><a style="margin-left: 10px;"></a>服务管理<a style="margin-left: 20px;"></a><img src="img/MerchantImg/down.png" align="center"></p>
+      <hr class="hr" />
+      <p class="zuotitle libg"><a style="margin-left: 10px;"></a>服务管理<a class="libgBtn" href="javascript:void();"  style="margin-left: 20px;"><img src="img/down.png" width="20px" height="20px" align="center"><img src="img/up.png"  width="20px" height="20px" align="center" style="display: none;" ></a></p>
       <table class="table" cellpadding="0" cellspacing="0">
         <tr>
           <td width="50%"><a href="#">新增服务</a></td>
@@ -173,40 +172,40 @@
           <td><a href="#">资源管理</a></td>
         </tr>
       </table>
-      <hr />
-      <p class="zuotitle" id="libg"><a style="margin-left: 10px;"></a>投稿管理<a style="margin-left: 20px;"></a><img src="img/MerchantImg/down.png" align="center"></p>
+      <hr class="hr"/>
+      <p class="zuotitle libg"><a style="margin-left: 10px;"></a>投稿管理<a class="libgBtn" href="javascript:void();"  style="margin-left: 20px;"><img src="img/down.png" width="20px" height="20px" align="center"><img src="img/up.png"  width="20px" height="20px" align="center" style="display: none;"></a></p>
       <table class="table" cellpadding="0" cellspacing="0">
         <tr>
-          <td width="50%"><a href="#">新增投稿</a></td>
-          <td width="50%"><a href="#">已投稿</a></td>
+          <td width="50%"><a href="#" class="fleetColor">新增投稿</a></td>
+          <td width="50%"><a href="#" class="fleetColor">已投稿</a></td>
         </tr>
         <tr>
-          <td><a href="#">投稿收益</a></td>
-          <td><a href="#">数据报表</a></td>
+          <td><a href="#" class="fleetColor">投稿收益</a></td>
+          <td><a href="#" class="fleetColor">数据报表</a></td>
         </tr>
       </table>
-      <hr />
-      <p class="zuotitle" id="libg"><a style="margin-left: 10px;"></a>物流配送<a style="margin-left: 20px;"></a><img src="img/MerchantImg/down.png" align="center"></p>
+      <hr class="hr" />
+      <p class="zuotitle libg"><a style="margin-left: 10px;"></a>物流配送<a class="libgBtn" href="javascript:void();" style="margin-left: 20px;"><img src="img/down.png" width="20px" height="20px" align="center"><img src="img/up.png"  width="20px" height="20px" align="center" style="display: none;"></a></p>
       <table class="table" cellpadding="0" cellspacing="0">
         <tr>
           <td width="50%"><a href="#">配送管理</a></td>
           <td width="50%"><a href="#">配送模板</a></td>
         </tr>
         <tr>
-          <td><a href="#">订单追踪</a></td>
-          <td><a href="#">数据报表</a></td>
+          <td><a href="#" class="fleetColor">订单追踪</a></td>
+          <td><a href="#" class="fleetColor">数据报表</a></td>
         </tr>
       </table>
-      <hr />
-      <p class="zuotitle" id="libg"><a style="margin-left: 10px;"></a>招聘管理<a style="margin-left: 20px;"></a><img src="img/MerchantImg/down.png" align="center"></p>
+      <hr class="hr"/>
+      <p class="zuotitle libg"><a style="margin-left: 10px;"></a>招聘管理<a class="libgBtn" href="javascript:void();" style="margin-left: 20px;"><img src="img/down.png" width="20px" height="20px" align="center" ><img src="img/up.png"  width="20px" height="20px" align="center" style="display: none;"></a></p>
       <table class="table" cellpadding="0" cellspacing="0">
         <tr>
-          <td width="50%"><a href="#">发布招聘</a></td>
-          <td width="50%"><a href="#">应聘简历</a></td>
+          <td width="50%"><a href="#" class="fleetColor">发布招聘</a></td>
+          <td width="50%"><a href="#" class="fleetColor">应聘简历</a></td>
         </tr>
         <tr>
-          <td><a href="#">推荐简历</a></td>
-          <td><a href="#">招聘管理</a></td>
+          <td><a href="#" class="fleetColor">推荐简历</a></td>
+          <td><a href="#" class="fleetColor">招聘管理</a></td>
         </tr>
       </table>
    <!-- </ul>-->
@@ -641,6 +640,24 @@
 		five.style.display='none';
 		six.style.display='block';
 	}
+	$(function(){
+		$(".libgBtn").click(function(){
+			$(this).find("img").toggle();
+			//同级兄弟节点
+			$(this).parent().next(".table").toggle();
+			$(this).parent().toggleClass("zuotitleBack");
+			//下一个同级所有兄弟中第一个hr
+			$(this).parent().prevAll(".hr").eq(0).toggle();
+			$(this).parent().nextAll(".hr").eq(0).toggle();
+			//当上一个table显示隐藏的时候
+			if($(this).parent().prev("table").hide()) {
+				//使P的上边框设置为none
+				$(this).parent().css("border-top","none");
+			}else{
+				return false;
+			}
+		});
+	});
 </script>
 </body>
 </html>

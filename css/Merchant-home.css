@@ -14,7 +14,7 @@ fieldset,img{
 	border:0;
 }
 a{
-	text-decoration:none;color:#A0A0A0;outline:none;
+   text-decoration:none;color:#A0A0A0;outline:none;
 }
 li{
 	list-style:none;
@@ -38,6 +38,15 @@ hr {
 	border-top-color: #EEEEEE;
 	border-radius: 1px;
 }
+hr{
+	border-top-width:2px;
+	border-top-style: solid;
+	border-top-color: #EEEEEE;
+	border-radius: 1px;
+	border-bottom:0;
+}
+
+
 /*清除浮动*/
 .clearfix::before,
 .clearfix::after{
@@ -60,10 +69,6 @@ body{
 	font-size: 16px;
 }
 
-#libg {
-	background-color:#FFF;
-	border-bottom-width:0px;
-}
 .table{
 	font-size:16px; 
 	width:195px; 
@@ -209,6 +214,11 @@ body{
 .bj4 p span {
 	float: right;
 }
+/*未完成的模块标注字体*/
+.fleetColor{
+	color: #CCC;
+}
+
 /*contet开始*/
 .content {
 	height: 1500px;
@@ -236,11 +246,13 @@ body{
 	height: 45px;
 	line-height: 45px;
 	*line-height:45px;
-	background-color: #eeeeee;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #7D7D7D;
 }
+.zuotitleBack{
+	background-color:#EEE;
+	border-top:1px solid #7D7D7D;
+	border-bottom:1px solid #7D7D7D;
+}
+
 .content .you {
 	float: left;
 	width: 824px;
