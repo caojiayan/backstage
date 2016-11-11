@@ -66,10 +66,6 @@ hr{
 .letterBlue{
 	color: #66b0fe;
 }
-/*每个列表行间距离设置为10px*/
-li{
-	line-height: 26px;
-}
 /*每个label之间的间距*/
 input,
 label{
@@ -118,7 +114,7 @@ button{
 /*去掉点击框时自带的颜色*/
 input:focus,
 button:focus{
-	outline:none ;
+	outline:none;
 	*border:none;
 }
 	
@@ -256,6 +252,10 @@ body{
 #libg {
 	background-color:#FFF;
 	border-bottom-width:0px;
+}
+/*上传图片*/
+#fileToUpload {
+    display: none;
 }
 /*header开始*/
 .bj1{

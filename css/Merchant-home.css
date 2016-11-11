@@ -1,74 +1,4 @@
 
-
-*{
-	margin: 0;
-	padding: 0;
-}
-
-/*清除表单样式*/
-table{
-	border-collapse:collapse;border-spacing:0;
-}
-
-fieldset,img{
-	border:0;
-}
-a{
-   text-decoration:none;color:#A0A0A0;outline:none;
-}
-li{
-	list-style:none;
-}
-caption,th{
-	text-align:left;
-}
-input,button,textarea,select,optgroup,option{
-	font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;
-}
-
-input,button,textarea,select{
-	*font-size:100%;
-}
-a{
-	-webkit-transition:all 0.5s linear;-moz-transition:all 0.5s linear;-ms-transition:all 0.5s linear;-o-transition:all 0.5s linear;
-}
-hr {
-	border-top-width:2px;
-	border-top-style: solid;
-	border-top-color: #EEEEEE;
-	border-radius: 1px;
-}
-hr{
-	border-top-width:2px;
-	border-top-style: solid;
-	border-top-color: #EEEEEE;
-	border-radius: 1px;
-	border-bottom:0;
-}
-
-
-/*清除浮动*/
-.clearfix::before,
-.clearfix::after{
-	content: "";
-	height: 0;
-	line-height: 0;
-	display: block;
-	visibility: hidden;
-	clear: both;
-}
-
-.clearfix:after{clear:both;} 
-.clearfix{ 
-    *zoom:1;/*IE/7/6*/
-}
-body{
-	height: auto;
-	margin: 0 auto;
-	font-family:"microsoft yahei" ,sans-serif;
-	font-size: 16px;
-}
-
 .table{
 	font-size:16px; 
 	width:195px; 
@@ -229,7 +159,7 @@ body{
 	color:#A0A0A0;
 }
 .content .zuo {
-	width: 195px;
+	width: 195px !important;
 	height: 100%;
 	float: left;
 	border-right-width: 1px;

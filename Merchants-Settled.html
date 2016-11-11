@@ -115,7 +115,7 @@
         	    	    				</p>
         	    	    			</div>
         	    	    			<div class="cAloneBtn">
-        	    	    				<a href="" class="AloneBtn">
+        	    	    				<a href="" class="AloneBtn weight">
         	    	    					个人商家入驻
         	    	    				</a>
         	    	    			</div>
@@ -139,7 +139,7 @@
         	    	    				</p>
         	    	    			</div>
         	    	    			<div class="cOrBtn">
-        	    	    				<a class="OrBtn">
+        	    	    				<a class="OrBtn weight">
         	    	    					组织商家入驻
         	    	    				</a>
         	    	    			</div>
@@ -155,20 +155,23 @@
         	    		<div class="per-p">
         	    			<p>个人商家认证</p>
         	    		</div>
-        	    		<div class="per-box">
-        	    			<div class="per-Title">
-        	    			    <ul>
-        	    				    <li class="active">
+        	    		<div class="per-Title">
+        	    		    <ul>
+        	    				<li class="Tactive" id="Title1">
         	    					1、申请项目
-        	    				    </li>
-        	    				    <li>
-        	    					2、证件资质
-        	    				    </li>
-        	    				    <li>
-        	    					3、认证费用
-        	    				    </li>
-        	    			    </ul>
-        	    		    </div>
+        	    				</li>
+        	    				<li id="Title2">
+        	    					2、证件信息
+        	    				</li>
+        	    				<li id="Title3">
+        	    					3、资质信息
+        	    				</li>
+        	    				<li id="Title4">
+        	    					4、认证费用
+        	    				</li>
+        	    			</ul>
+        	    		</div>
+        	    		<div class="per-box">
         	    		    <div class="per-Form">
         	    			    <p class="Form-sketch">查看<span class="weight letterBlue">项目简述</span>,请<a href="javascript:void();" class="Form-a" id="Form-a">&nbsp点击这里</a></span></p>
         	    			    <div class="sketchMain" style="display: none;">
@@ -193,6 +196,155 @@
         	    				    </div>
         	    			    </div>
         	    		    </div>
+        	    		    <!--填写资料开始-->
+        	    		    <div class="per-Datum">
+        	    		    	<form>
+        	    		    		<!--申请项目-->
+        	    		    		<div class="Datum clearfix" id="Datum">
+        	    		    	        <p>
+        	    		    	    	   <span class="coRed">*</span>申请项目：
+        	    		    	    	    <label>
+        	    		    	    		    <input type="checkbox">玩乐
+        	    		    	    	    </label>
+        	    		    	    	    <label>
+        	    		    	    		    <input type="checkbox">商品
+        	    		    	    	    </label>
+        	    		    	    	    <label>
+        	    		    	    		    <input type="checkbox">服务
+        	    		    	    	    </label>
+        	    		    	    	    <label>
+        	    		    	    		    <input type="checkbox">投稿
+        	    		    	    	    </label>
+        	    		    	        </p>
+        	    		    	        <p>
+        	    		    	    	    <span class="coRed">*</span>经营类目：<img src="img/select.png" align="center"><input type="text" >使用搜索更方便选择
+        	    		    	        </p>
+        	    		    	        <p class="Dleft">1级<input type="text" /></p>
+		                                <p class="Dleft">2级<input type="text" /></p>
+		                                <p class="Dleft">3级<input type="text" /></p>
+        	    		    	        <div class="boxbtn">
+        	    		    	    		<input type="button" class="nextBtn"  id="nexttwo" value="下一步" />
+        	    		    	    	</div>
+        	    		    	    </div>
+        	    		    	    <!--证件信息-->
+        	    		    	    <div class="credentials hide clearfix" id="credentials">
+        	    		    	    	<p>
+        	    		    	    		<span class="coRed">*</span>证件类型：<input type="text" />
+        	    		    	    	</p>
+        	    		    	    	<p>
+        	    		    	    		<span class="coRed">*</span>证件编号：<input type="text" />
+        	    		    	    	</p>
+        	    		    	    	<p>
+        	    		    	    		<span class="coRed">*</span><span class="credright">持证人</span>：<input type="text" />
+        	    		    	    	</p>
+        	    		    	    	<p>
+        	    		    	    		<span class="coRed">*</span>有效期限：<input type="text" />
+        	    		    	    	</p>
+        	    		    	    	<p>
+        	    		    	    		<span class="coRed">*</span>详细地址：<input type="text" />
+        	    		    	    	</p>
+        	    		    	    	<p>
+        	    		    	    		<span class="coRed">*</span>上传本人真实证件+实拍（正面+反面+本人手持证件照）
+        	    		    	    	</p>
+        	    		    	    	<div class="IDcade">
+        	    		    	    		<ul class="IDcadeUl">
+        	    		    	    			<li>
+        	    		    	    				<a href="javascript:void();"><img class="normalFace" src="img/addpic1.png" alt="点击上传图片"  onclick="fileSelect();"></a>
+	    						                    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+        	    		    	    			</li>
+        	    		    	    			<li>
+        	    		    	    				<a href="javascript:void();"><img class="normalFace" src="img/addpic1.png" alt="点击上传图片"  onclick="fileSelect();"></a>
+	    						                    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+        	    		    	    			</li>
+        	    		    	    			<li>
+        	    		    	    				<a href="javascript:void();"><img class="normalFace" src="img/addpic1.png" alt="点击上传图片"  onclick="fileSelect();"></a>
+	    						                    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+        	    		    	    			</li>
+        	    		    	    		</ul>
+        	    		    	    		<ul class="IDcadeUl">
+        	    		    	    			<li>证件正面</li>
+        	    		    	    			<li>证件反面</li>
+        	    		    	    			<li>手持证照</li>
+        	    		    	    		</ul>
+        	    		    	    	</div>
+        	    		    	    	<div class="boxbtn">
+        	    		    	    		<input type="button" class="nextBtn"  id="nextthree" value="下一步" />
+        	    		    	    		<input type="button" class="nextBtn"  id="lastone" value="上一步" />
+        	    		    	    	</div>
+        	    		    	    </div>
+        	    		    	    <!--资质信息-->
+        	    		    	    <div class="aptitude hide clearfix" id="aptitude">
+        	    		    	    	<p>
+        	    		    	    		<span class="coRed">*</span>证件类型：<input type="text" />
+        	    		    	    	</p>
+        	    		    	    	<p>
+        	    		    	    		<span class="coRed">*</span>证件编号：<input type="text" />
+        	    		    	    	</p>
+        	    		    	    	<p>
+        	    		    	    		<span class="coRed">*</span><span class="credright">持证人</span>：<input type="text" />
+        	    		    	    	</p>
+        	    		    	    	<p>
+        	    		    	    		<span class="coRed">*</span>有效期限：<input type="text" />
+        	    		    	    	</p>
+        	    		    	    	<p>
+        	    		    	    		<span class="coRed">*</span>上传本人真实证件+实拍（正面+反面+本人手持证件照）
+        	    		    	    	</p>
+        	    		    	    	<div class="IDcade">
+        	    		    	    		<ul class="IDcadeUl">
+        	    		    	    			<li>
+        	    		    	    				<a href="javascript:void();"><img class="normalFace" src="img/addpic1.png" alt="点击上传图片"  onclick="fileSelect();"></a>
+	    						                    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+        	    		    	    			</li>
+        	    		    	    			<li>
+        	    		    	    				<a href="javascript:void();"><img class="normalFace" src="img/addpic1.png" alt="点击上传图片"  onclick="fileSelect();"></a>
+	    						                    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+        	    		    	    			</li>
+        	    		    	    			<li>
+        	    		    	    				<a href="javascript:void();"><img class="normalFace" src="img/addpic1.png" alt="点击上传图片"  onclick="fileSelect();"></a>
+	    						                    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+        	    		    	    			</li>
+        	    		    	    		</ul>
+        	    		    	    		<ul class="IDcadeUl">
+        	    		    	    			<li>证件正面</li>
+        	    		    	    			<li>证件反面</li>
+        	    		    	    			<li>手持证照</li>
+        	    		    	    		</ul>
+        	    		    	    	</div>
+        	    		    	    	<div class="boxbtn">
+        	    		    	    		<input type="button" class="nextBtn"  id="nextfour" value="下一步" />
+        	    		    	    		<input type="button" class="nextBtn"  id="lasttwo" value="上一步" />
+        	    		    	    	</div>
+        	    		    	    </div>
+        	    		    	    <!--认证费用-->
+        	    		    	    <div class="cost hide clearfix" id="cost">
+        	    		    	    	<p><span class="coRed">*</span>申请人：<label><input type="checkbox">本人</label></p>
+        	    		    	    	<p><span class="coRed">*</span>软信号：<input type="text"/></p>
+        	    		    	    	<p><span class="coRed">*</span>手机号：<input type="text"/></p>
+        	    		    	    	<p><span class="coRed">*</span><span class="credright">职位</span>：<input type="text"/></p>
+        	    		    	    	<p><span class="coRed">*</span>认证费用：<span class="coRed">200元</span><span style="padding-left:20px;margin-left: 35px;font-size: 14px; background: url(img/stress.png)left center no-repeat;background-size: 20px 20px;">由第三方认证公司完成并收取费用</span></p>
+        	    		    	    	<p><span class="coRed">*</span>支付方式：<label><input type="checkbox">钱包余额</label><label><input type="checkbox">支付宝</label><label><input type="checkbox">微信支付</label><label><input type="checkbox">银联</label></p>
+        	    		    	    	<p><span class="coRed">*</span>支付密码：<input type="password" >
+        	    		    	    	   <img src="img/yes.png" align="center" width="25" height="25">
+        	    		    	    	   <img src="img/no.png" align="center" width="20" height="20">
+        	    		    	    	   <span style="font-size: 14px;"><img src="img/Why.png" align="center" style="width: 20px; height: 20px; padding-left: 20px;">忘记密码</span>
+        	    		    	    	</p>
+        	    		    	    	<p><span class="coRed">*</span>支付状态：<span class="coRed">支付成功</span></p>
+        	    		    	    	<p><span class="coRed">*</span>商家信息：<label><input type="checkbox">实体店</label></p>
+        	    		    	    	<div class="">
+        	    		    	    		<p><span class="coRed">*</span>实体店址：<input type="text"/></p>
+        	    		    	    		<p><span class="coRed">*</span>联系电话：<input type="text"/></p>
+        	    		    	    		<p><span class="coRed">*</span>营业时间段：<input type="text"/></p>
+        	    		    	    		<p><span class="coRed">*</span>上门自取：<label><input type="checkbox">支持</label><label><input type="checkbox">不支持</label></p>
+        	    		    	    		<p><span class="coRed">*</span>周边服务：<label><input type="checkbox">支持</label><label><input type="checkbox">不支持</label></p>
+        	    		    	    		<p><span class="coRed">*</span>周边配送：<label><input type="checkbox">配送公司</label><label><input type="checkbox">店铺自送</label><label><input type="checkbox">聘请兼职</label></p>
+        	    		    	    	</div>
+        	    		    	    	<div class="boxbtn">
+        	    		    	    		<input type="button" class="nextBtn"  id="Formsure" value="确定" />
+        	    		    	    		<input type="button" class="nextBtn"  id="lastthree" value="上一步" />
+        	    		    	    	</div>
+        	    		    	    </div>
+        	    		    	</form>
+        	    		    </div>
         	    	    </div>
         	    	</div>
         	    </div>
@@ -200,6 +352,38 @@
         	    <div id="organize">
         	    	<div class="org-Main">
         	    		
+        	    	</div>
+        	    </div>
+        	    <!--资料提交完成-->
+        	    <div id="submitting">
+        	    	<div class="per-Title">
+        	    		<ul>
+        	    			<li class="Tactive" id="Title1">
+        	    					1、提交资料
+        	    			</li>
+        	    			<li id="Title2">
+        	    					2、审核中
+        	    			</li>
+        	    			<li id="Title3">
+        	    					3、复核中
+        	    			</li>
+        	    			<li id="Title4">
+        	    					4、成功
+        	    			</li>
+        	    		</ul>
+        	    	</div>
+        	    	<div class="per-box">
+        	    		<div class="submitW">
+        	    		    <p align="center">资料提交完成</p>
+        	    	    </div>
+        	    	    <div class="submitP">
+        	    		    <p class="" align="center">感谢您与我们合作，我们会尽快审核您的资料</p>
+        	    		    <p align="center">审核时间约：<span class="coRed">7~10工作日</span></p>
+        	    		    <p align="center">您将在软信APP的”工作台“中看到审核进度和下一步如何做</p>
+        	    	    </div>
+        	    	</div>
+        	    	<div align="center">
+        	    		<img src="img/yes.png" align="center" width="100" height="100">
         	    	</div>
         	    </div>
             </div>
