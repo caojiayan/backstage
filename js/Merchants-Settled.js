@@ -52,7 +52,7 @@ $(function(){
 					$(this).parent().css("z-index","1000");  //点击下拉按钮的时候显示z-index为1000
 				});
 			});
-
+//个人商家认证
 //点击上传图片
 function fileSelect() {
         document.getElementById("fileToUpload").click();
@@ -63,10 +63,10 @@ function fileSelect() {
 //项目简述   
 $(function(){
 	$("#Form-a").click(function(){
-		$(".sketchMain").toggle();
+		$("#sketchMain").toggle();
 	});
 	$("#Form-close").click(function(){
-		$(".sketchMain").hide();
+		$("#sketchMain").hide();
 	});
 });
 //填写资料选项卡
@@ -109,4 +109,69 @@ $(function(){
 		$("#aptitude").addClass("active").removeClass("hide");
 		$("#cost").addClass("hide").removeClass("active");
 	});
+});
+
+//认证费用
+$(function(){
+	//申请人
+    var _input = $("#proposerBtn");
+    _input.click(function(){
+        var _check = $(this).attr("checked") ;
+        if(_check=="checked"){
+            $("#proposer").show();
+        }
+    else{
+            $("#proposer").hide();
+        }
+    });
+	//实体店
+    var ainput = $("#in-storeBtn");
+    ainput.click(function(){
+        var acheck = $(this).attr("checked") ;
+        if(acheck=="checked"){
+            $("#in-store").show();
+        }
+    else{
+            $("#in-store").hide();
+        }
+    });
+});
+
+//组织商家认证
+//项目简述   
+$(function(){
+	$("#Form-b").click(function(){
+		$("#sketchMain-b").toggle();
+	});
+	$("#Form-close-b").click(function(){
+		$("#sketchMain-b").hide();
+	});
+});
+//营业执照说明
+$(function(){
+	$("#paperBtn").click(function(){
+		$("#ID-paper").toggle();
+	});
+	$("#paperClose").click(function(){
+		$("#ID-paper").hide();
+	});
+});
+//旧版营业执照则显示组织代码跟税务登记
+//$(function(){
+//	var binput = $("#licenceBtn");
+//  binput.click(function(){
+//      var bcheck = $(this).attr("checked") ;
+//      if(bcheck=="checked"){
+//          $("#group-code").show();
+//          $("#Tax").show();
+//      }
+//  else{
+//          $("#group-code").hide();
+//          $("#Tax").hide();
+//      }
+//  });
+//});
+$(function(){
+	$("#group-code").show();
+	$("#Tax").show();
 });

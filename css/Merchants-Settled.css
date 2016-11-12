@@ -203,10 +203,11 @@
 	-webkit-box-shadow:0 2px 5px #093, 0 0 1px #093, 0 0 1px #093; 
 }
 /*个人商家*/
-#personal .per-Main{
+#personal .per-Main,
+#organize .org-Main{
 	width: 100%;
 }
-.per-Main .per-p{
+.per-p{
 	width: 100%;
 	height: 50px;
 	padding: 15px 0;
@@ -263,17 +264,17 @@
 	width: 100%;
 	position: relative;
 }
-.per-Form .Form-sketch{
-	padding: 10px 0 10px 30px;
+.Form-sketch{
+	padding: 10px 0 10px 25px !important;
 	font-size: 14px;
 	background: url(../img/Why.png) center left no-repeat;
 	background-size: 20px 20px;
 }
-.per-Form .Form-sketch .Form-a{
+.Form-sketch .Form-a{
 	border-bottom: 1px solid #A0A0A0;
 }
-.per-Form .Form-sketch .Form-a:hover,
-.per-Form .Form-sketch .Form-a:active{
+.Form-sketch .Form-a:hover,
+.Form-sketch .Form-a:active{
 	color: red;
 	border-bottom: 1px solid red;
 }
@@ -284,7 +285,7 @@
 	z-index: 99;
 	width: 450px;
 	padding: 10px;
-	background: #FFF;
+	background: #FEFEFE;
 	box-shadow: 0 2px 5px #EEE, 0 0 5px #EEE, 0 0 5px #EEE; 
 	-moz-box-shadow:0 2px 5px #EEE, 0 0 5px #EEE, 0 0 5px #EEE;  
 	-webkit-box-shadow:0 2px 5px #EEE, 0 0 5px #EEE, 0 0 5px #EEE; 
@@ -292,7 +293,7 @@
 .sketchMain p{
 	padding: 5px 0;
 }
-.sketchMain .perHr{
+.perHr{
 	width: 100%;
 	height: 3px;
 	background: #EEE;
@@ -308,15 +309,16 @@
 /*下一步按钮*/
 .per-box .nextBtn{
 	float: right;
-	background: #093 !important;
+	background:#008B00 !important;
 	border-radius: 0 !important;	
 }
 .per-box .nextBtn:hover,
 .per-box .nextBtn:active{
-	font-weight: bold;
-	box-shadow: 0 1px 2px #093, 0 0 1px #093, 0 0 1px #093; 
-	-moz-box-shadow:0 1px 2px #093, 0 0 1px #093, 0 0 1px #093;  
-	-webkit-box-shadow:0 1px 2px #093, 0 0 1px #093, 0 0 1px #093;
+	background: #093 !important;
+	font-weight:800;
+	box-shadow: 0 2px 5px #EEE, 0 0 5px #EEE, 0 0 5px #EEE; 
+	-moz-box-shadow:0 2px 5px #EEE, 0 0 5px #EEE, 0 0 5px #EEE;  
+	-webkit-box-shadow:0 2px 5px #EEE, 0 0 5px #EEE, 0 0 5px #EEE; 
 }
 .Datum .Dleft{
 	padding-left: 95px;
@@ -329,7 +331,8 @@
 }
 .IDcade .IDcadeUl li{
 	display: inline-block;
-	width:150px;
+	width:200px;
+	padding: 10px 0;
 	text-align: center;
 }
 .boxbtn{
@@ -356,6 +359,59 @@
 	padding: 20px 0;
 	font-size: 26px;
 }
-/*#submitting .submitP{
-	padding-left: 100px;
-}*/
+/*组织商家*/
+.big-Crede{
+	font-weight: bold;
+	font-size: 20px !important;
+}
+#cachet{
+	padding-left: 25px;
+	background:url(../img/stress.png) left center no-repeat;
+	background-size: 25px 25px;
+}
+#IDexplain{
+	margin-left: 100px;
+}
+.form-padd{
+	padding-left:60px;
+}
+/*营业执照说明*/
+.credentials{
+	position: relative;
+}
+#ID-paper{
+	position: absolute;
+	top: 180px;
+	left: 380px;
+	width: 390px;
+	padding: 10px;
+	border-radius:5px;
+	z-index: 99;
+	background:#FEFEFE;	
+	box-shadow: 0 2px 5px #EEE, 0 0 5px #EEE, 0 0 5px #EEE; 
+	-moz-box-shadow:0 2px 5px #EEE, 0 0 5px #EEE, 0 0 5px #EEE;  
+	-webkit-box-shadow:0 2px 5px #EEE, 0 0 5px #EEE, 0 0 5px #EEE; 
+}
+#ID-paper #paper-table{
+	width: 100%;
+	margin: 5px 0;
+}
+#ID-paper #paper-table tr td{
+	padding: 5px 10px;
+}
+#ID-paper #paper-title{
+	width: 100%;
+	height: 30px;
+	font-weight: bold;
+}
+.Close:hover,
+.Close:active{
+	color: #000;
+}
+#ID-paper .Wleft{
+	padding-left: 32px;
+}
+/*开户许可证*/
+#accoun{
+	padding-top: 20px;
+}

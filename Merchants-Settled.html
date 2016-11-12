@@ -174,10 +174,10 @@
         	    		<div class="per-box">
         	    		    <div class="per-Form">
         	    			    <p class="Form-sketch">查看<span class="weight letterBlue">项目简述</span>,请<a href="javascript:void();" class="Form-a" id="Form-a">&nbsp点击这里</a></span></p>
-        	    			    <div class="sketchMain" style="display: none;">
+        	    			    <div class="sketchMain" id="sketchMain" style="display: none;">
         	    				    <p>
-        	    					    <span style="float: right;"><a href="javascript:void();" class="weight" id="Form-close" style="color: #000">关闭 </a></span>
-        	    					    <span class="weight" style="color: #000">项目简述</span>
+        	    					    <span style="float: right;"><a href="javascript:void();" class="weight Close" id="Form-close">关闭 </a></span>
+        	    					    <span class="weight">项目简述</span>
         	    				    </p>
         	    				    <div class="perHr"></div>
         	    				    <div class="sketch-box">
@@ -244,20 +244,20 @@
         	    		    	    		<span class="coRed">*</span>详细地址：<input type="text" />
         	    		    	    	</p>
         	    		    	    	<p>
-        	    		    	    		<span class="coRed">*</span>上传本人真实证件+实拍（正面+反面+本人手持证件照）
+        	    		    	    		<span class="coRed">*</span>点击上传本人真实证件+实拍（正面+反面+本人手持证件照）
         	    		    	    	</p>
         	    		    	    	<div class="IDcade">
         	    		    	    		<ul class="IDcadeUl">
         	    		    	    			<li>
-        	    		    	    				<a href="javascript:void();"><img class="normalFace" src="img/addpic1.png" alt="点击上传图片"  onclick="fileSelect();"></a>
+        	    		    	    				<a href="javascript:void();"><img class="normalFace" src="img/code4.png" width="150px" height="100px" alt="点击上传图片"  onclick="fileSelect();"></a>
 	    						                    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
         	    		    	    			</li>
         	    		    	    			<li>
-        	    		    	    				<a href="javascript:void();"><img class="normalFace" src="img/addpic1.png" alt="点击上传图片"  onclick="fileSelect();"></a>
+        	    		    	    				<a href="javascript:void();"><img class="normalFace" src="img/code5.png" width="150px" height="100px" alt="点击上传图片"  onclick="fileSelect();"></a>
 	    						                    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
         	    		    	    			</li>
         	    		    	    			<li>
-        	    		    	    				<a href="javascript:void();"><img class="normalFace" src="img/addpic1.png" alt="点击上传图片"  onclick="fileSelect();"></a>
+        	    		    	    				<a href="javascript:void();"><img class="normalFace" src="img/code6.png" width="150px" height="100px" alt="点击上传图片"  onclick="fileSelect();"></a>
 	    						                    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
         	    		    	    			</li>
         	    		    	    		</ul>
@@ -287,20 +287,20 @@
         	    		    	    		<span class="coRed">*</span>有效期限：<input type="text" />
         	    		    	    	</p>
         	    		    	    	<p>
-        	    		    	    		<span class="coRed">*</span>上传本人真实证件+实拍（正面+反面+本人手持证件照）
+        	    		    	    		<span class="coRed">*</span>点击上传本人真实证件+实拍（正面+反面+本人手持证件照）
         	    		    	    	</p>
         	    		    	    	<div class="IDcade">
         	    		    	    		<ul class="IDcadeUl">
         	    		    	    			<li>
-        	    		    	    				<a href="javascript:void();"><img class="normalFace" src="img/addpic1.png" alt="点击上传图片"  onclick="fileSelect();"></a>
+        	    		    	    				<a href="javascript:void();"><img class="normalFace" src="img/code1.png" width="150px" height="100px" alt="点击上传图片"  onclick="fileSelect();"></a>
 	    						                    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
         	    		    	    			</li>
         	    		    	    			<li>
-        	    		    	    				<a href="javascript:void();"><img class="normalFace" src="img/addpic1.png" alt="点击上传图片"  onclick="fileSelect();"></a>
+        	    		    	    				<a href="javascript:void();"><img class="normalFace" src="img/code2.png" width="150px" height="100px" alt="点击上传图片"  onclick="fileSelect();"></a>
 	    						                    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
         	    		    	    			</li>
         	    		    	    			<li>
-        	    		    	    				<a href="javascript:void();"><img class="normalFace" src="img/addpic1.png" alt="点击上传图片"  onclick="fileSelect();"></a>
+        	    		    	    				<a href="javascript:void();"><img class="normalFace" src="img/code3.png" width="150px" height="100px" alt="点击上传图片"  onclick="fileSelect();"></a>
 	    						                    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
         	    		    	    			</li>
         	    		    	    		</ul>
@@ -317,20 +317,22 @@
         	    		    	    </div>
         	    		    	    <!--认证费用-->
         	    		    	    <div class="cost hide clearfix" id="cost">
-        	    		    	    	<p><span class="coRed">*</span>申请人：<label><input type="checkbox">本人</label></p>
-        	    		    	    	<p><span class="coRed">*</span>软信号：<input type="text"/></p>
-        	    		    	    	<p><span class="coRed">*</span>手机号：<input type="text"/></p>
-        	    		    	    	<p><span class="coRed">*</span><span class="credright">职位</span>：<input type="text"/></p>
+        	    		    	    	<p><span class="coRed">*</span>申请人：<label><input id="proposerBtn" type="checkbox">本人</label></p>
+        	    		    	    	<div id="proposer" style="display: none;">
+        	    		    	    		<p><span class="coRed">*</span>软信号：<input type="text"/></p>
+        	    		    	    	    <p><span class="coRed">*</span>手机号：<input type="text"/></p>
+        	    		    	    	    <p><span class="coRed">*</span><span class="credright">职位</span>：<input type="text"/></p>
+        	    		    	    	</div>
         	    		    	    	<p><span class="coRed">*</span>认证费用：<span class="coRed">200元</span><span style="padding-left:20px;margin-left: 35px;font-size: 14px; background: url(img/stress.png)left center no-repeat;background-size: 20px 20px;">由第三方认证公司完成并收取费用</span></p>
         	    		    	    	<p><span class="coRed">*</span>支付方式：<label><input type="checkbox">钱包余额</label><label><input type="checkbox">支付宝</label><label><input type="checkbox">微信支付</label><label><input type="checkbox">银联</label></p>
         	    		    	    	<p><span class="coRed">*</span>支付密码：<input type="password" >
-        	    		    	    	   <img src="img/yes.png" align="center" width="25" height="25">
-        	    		    	    	   <img src="img/no.png" align="center" width="20" height="20">
+        	    		    	    	   <img src="img/yes.png" align="center" width="25" height="25" style="display: none;">
+        	    		    	    	   <img src="img/no.png" align="center" width="20" height="20" style="display: none;">
         	    		    	    	   <span style="font-size: 14px;"><img src="img/Why.png" align="center" style="width: 20px; height: 20px; padding-left: 20px;">忘记密码</span>
         	    		    	    	</p>
         	    		    	    	<p><span class="coRed">*</span>支付状态：<span class="coRed">支付成功</span></p>
-        	    		    	    	<p><span class="coRed">*</span>商家信息：<label><input type="checkbox">实体店</label></p>
-        	    		    	    	<div class="">
+        	    		    	    	<p><span class="coRed">*</span>商家信息：<label><input id="in-storeBtn" type="checkbox">实体店</label></p>
+        	    		    	    	<div id="in-store" style="display: none;">
         	    		    	    		<p><span class="coRed">*</span>实体店址：<input type="text"/></p>
         	    		    	    		<p><span class="coRed">*</span>联系电话：<input type="text"/></p>
         	    		    	    		<p><span class="coRed">*</span>营业时间段：<input type="text"/></p>
@@ -351,7 +353,340 @@
         	    <!--组织商家申请开始-->
         	    <div id="organize">
         	    	<div class="org-Main">
-        	    		
+        	    		<div class="per-p">
+        	    			<p>组织商家认证</p>
+        	    		</div>
+        	    		<div class="per-Title">
+        	    		    <ul>
+        	    				<li class="Tactive" id="Title1">
+        	    					1、申请项目
+        	    				</li>
+        	    				<li id="Title2">
+        	    					2、必备资料
+        	    				</li>
+        	    				<li id="Title3">
+        	    					3、资质信息
+        	    				</li>
+        	    				<li id="Title4">
+        	    					4、认证费用
+        	    				</li>
+        	    			</ul>
+        	    		</div>
+        	    		<div class="per-box">
+        	    		    <div class="per-Form">
+        	    			    <p class="Form-sketch">查看<span class="weight letterBlue">项目简述</span>,请<a href="javascript:void();" class="Form-a" id="Form-b">&nbsp点击这里</a></span></p>
+        	    			    <div class="sketchMain" id="sketchMain-b" style="display: none;">
+        	    				    <p>
+        	    					    <span style="float: right;"><a href="javascript:void();" class="weight Close" id="Form-close-b">关闭 </a></span>
+        	    					    <span class="weight">项目简述</span>
+        	    				    </p>
+        	    				    <div class="perHr"></div>
+        	    				    <div class="sketch-box">
+        	    					    <p  class="32pxleft coRed" align="center">让能力和资源不再闲置，用你的能力赚钱!
+        	    					    <p class="weight">娱乐类项目</p>
+        	    					    <p style="padding-left: 30px;">新闻、视频、音乐、图文、网文、APP等</p>
+        	    					    <p class="weight">商品类项目</p>
+        	    					    <p style="padding-left: 30px;">实物类商品、包括定制类/工业化/原生态商品</p>
+        	    					    <p class="weight">服务类项目</p>
+        	    					    <p style="padding-left: 30px;">包括：资源类、技术类、体力类、产权类</p>
+        	    					    <p class="weight">投稿类项目</p>
+        	    					    <p style="padding-left: 30px;">包括：表情、背景图、聊天泡泡、界面皮肤、虚拟礼物、聊天道具、自创作内容等</p>
+        	    					    <div class="perHr"></div>
+        	    					    <p class="weight coRed">商家真实$诚信认证说明</p>
+        	    					    <p style="padding-left: 30px;">为保障商家真实性和消费者权益，根据国家相关部门规定和法律，所以商家必须通过认证后才可以在网络上经营自己的生意，请您确保所提交资料和信息的正确，避免影响认证！</p>
+        	    				    </div>
+        	    			    </div>
+        	    		    </div>
+        	    		    <!--填写资料开始-->
+        	    		    <div class="per-Datum">
+        	    		    	<form>
+        	    		    		<!--申请项目-->
+        	    		    		<div class="Datum clearfix" id="Datum-a">
+        	    		    	        <p>
+        	    		    	    	   <span class="coRed">*</span>申请项目：
+        	    		    	    	    <label>
+        	    		    	    		    <input type="checkbox">玩乐
+        	    		    	    	    </label>
+        	    		    	    	    <label>
+        	    		    	    		    <input type="checkbox">商品
+        	    		    	    	    </label>
+        	    		    	    	    <label>
+        	    		    	    		    <input type="checkbox">服务
+        	    		    	    	    </label>
+        	    		    	    	    <label>
+        	    		    	    		    <input type="checkbox">投稿
+        	    		    	    	    </label>
+        	    		    	        </p>
+        	    		    	        <p>
+        	    		    	    	    <span class="coRed">*</span>经营类目：<img src="img/select.png" align="center"><input type="text" >使用搜索更方便选择
+        	    		    	        </p>
+        	    		    	        <p class="Dleft">1级<input type="text" /></p>
+		                                <p class="Dleft">2级<input type="text" /></p>
+		                                <p class="Dleft">3级<input type="text" /></p>
+		                                <p>
+		                                	<span class="coRed">*</span>商家类型：
+		                                	<label>
+        	    		    	    		    <input type="checkbox">个体户
+        	    		    	    	    </label>
+        	    		    	    	    <label>
+        	    		    	    		    <input type="checkbox">批发商
+        	    		    	    	    </label>
+        	    		    	    	    <label>
+        	    		    	    		    <input type="checkbox">生产商
+        	    		    	    	    </label>
+        	    		    	    	    <label>
+        	    		    	    		    <input type="checkbox">品牌方
+        	    		    	    	    </label>
+        	    		    	    	    <label>
+        	    		    	    		    <input type="checkbox">原料商
+        	    		    	    	    </label>
+        	    		    	    	    <label>
+        	    		    	    		    <input type="checkbox">中介
+        	    		    	    	    </label>
+		                                </p>
+		                                <p>
+		                                	<span class="coRed">*</span>店铺类型：
+		                                	<label>
+        	    		    	    		    <input type="checkbox">官方店
+        	    		    	    	    </label>
+        	    		    	    	    <label>
+        	    		    	    		    <input type="checkbox">授权店
+        	    		    	    	    </label>
+        	    		    	    	</p>
+        	    		    	    	<p>
+		                                	<span class="coRed">*</span>实体店铺：
+		                                	<label>
+        	    		    	    		    <input type="checkbox">无
+        	    		    	    	    </label>
+        	    		    	    	    <label>
+        	    		    	    		    <input type="checkbox">有
+        	    		    	    	    </label>
+        	    		    	    	    <input type="text" value="官方直营店"> 
+        	    		    	    	</p>
+        	    		    	    	<p>
+		                                	<span class="coRed">*</span>私有仓库：
+		                                	<label>
+        	    		    	    		    <input type="checkbox">无
+        	    		    	    	    </label>
+        	    		    	    	    <label>
+        	    		    	    		    <input type="checkbox">有
+        	    		    	    	    </label>
+        	    		    	    	    <span class="">数量<input type="text">个</span> 
+        	    		    	    	</p>
+        	    		    	    	<p>
+		                                	<span class="coRed">*</span>自有商标：
+		                                	<label>
+        	    		    	    		    <input type="checkbox">无
+        	    		    	    	    </label>
+        	    		    	    	    <label>
+        	    		    	    		    <input type="checkbox">TM商标
+        	    		    	    	    </label>
+        	    		    	    	    <label>
+        	    		    	    		    <input type="checkbox">R商标
+        	    		    	    	    </label>
+        	    		    	    	</p>
+        	    		    	    	<p>
+        	    		    	    		<span class="coRed">*</span>商标名称：
+        	    		    	    		<input type="text">
+        	    		    	    		<span class="coRed">*</span>注册号：
+        	    		    	    		<input type="text">
+        	    		    	    	</p>
+        	    		    	        <div class="boxbtn">
+        	    		    	    		<input type="button" class="nextBtn"  id="nexttwo" value="下一步" />
+        	    		    	    	</div>
+        	    		    	    </div>
+        	    		    	    <!--必备资料-->
+        	    		    	    <div class="credentials clearfix" id="">
+        	    		    	    	<p id="cachet">软信提醒：请确保照片清晰+加盖公章</p>
+        	    		    	    	<p class="big-Crede">营业执照</p>
+        	    		    	    	<p>
+        	    		    	    		<span class="coRed">*</span>证件类型：
+        	    		    	    		<label>
+        	    		    	    		    <input type="checkbox">营业执照（3证合1）
+        	    		    	    	    </label>
+        	    		    	    	    <label>
+        	    		    	    		    <input id="licenceBtn" type="checkbox">营业执照（旧版）
+        	    		    	    	    </label>
+        	    		    	    	</p>
+        	    		    	    	<p id="IDexplain" class="Form-sketch">查看组织商家营业执照说明,请<a href="javascript:void();" class="Form-a" id="paperBtn">&nbsp点击这里</a></p>
+        	    		    	    	<!--组织商家证件说明-->
+        	    		    	    	<div id="ID-paper" style="display: none;">
+        	    		    	    		<div id="paper-title">组织商家证件说明<span style="float: right;"><a href="javascript:void();" class="Close" id="paperClose">关闭</a></span></div>
+        	    		    	    		<div class="perHr"></div>
+        	    		    	    		<table id="paper-table" border="1">
+        	    		    	    			<tbody>
+        	    		    	    				<tr>
+        	    		    	    					<td>营业执照（3证合1）</td>
+        	    		    	    					<td rowspan="2">2选1</td>
+        	    		    	    				</tr>
+        	    		    	    				<tr>
+        	    		    	    					<td>营业执照（旧版）+组织代码证+税务登记证</td>
+        	    		    	    				</tr>
+        	    		    	    			</tbody>
+        	    		    	    		</table>
+        	    		    	    	    <p class="weight">营业执照（3证合1）</p>
+        	    		    	    		<p class="Wleft">有“统一信用代码”，无“注册号”</p>
+        	    		    	    		<p class="weight">营业执照（旧版）</p>
+        	    		    	    		<p class="Wleft">无“统一信用代码”，有“注册号”</p>
+        	    		    	    	</div>
+        	    		    	    	<p id="">
+        	    		    	    		<span class="coRed">*</span>统一代码：<input type="text">
+        	    		    	    		<span class="form-padd"></span>
+        	    		    	    	    <span class="coRed">*</span><span class="credright">注册号</span>：<input type="text">
+        	    		    	    	</p>
+        	    		    	    	<p>
+        	    		    	    		<span class="coRed">*</span>组织字号：<input type="text">
+        	    		    	    		<span class="form-padd"></span>
+        	    		    	    		<span class="coRed">*</span>组织全称：<input type="text"> 
+        	    		    	    	</p>
+        	    		    	    	<p>
+        	    		    	    		<span class="coRed">*</span>证件编号：<input type="text">
+        	    		    	    		<span class="form-padd"></span>
+        	    		    	    		<span class="coRed">*</span>注册资本：<input type="text">万元
+        	    		    	    	</p>
+        	    		    	    	<p><span class="coRed">*</span>执照地址：<input type="text">-<input type="text">-<input type="text"></p>
+        	    		    	    	<p><span class="coRed">*</span>经营地址：<input type="text">-<input type="text">-<input type="text"></p>
+        	    		    	    	<p><span class="coRed">*</span>经营期限：<input type="date"> ~ <input type="date"></p>
+        	    		    	    	<p>
+        	    		    	    		<span class="coRed">*</span>经营范围：<input type="text" value="批发">
+        	    		    	    		<span class="form-padd"></span>
+        	    		    	    		<span class="coRed">*</span>法人代表：<input type="text">
+        	    		    	    	</p>
+        	    		    	    	<p>
+        	    		    	    		<span class="coRed">*</span>发证机关：<input type="text">
+        	    		    	    		<span class="form-padd"></span>
+        	    		    	    		<span class="coRed">*</span>发证日期：<input type="text">
+        	    		    	    	</p>
+        	    		    	    	<!--组织代码证-->
+        	    		    	    	<div id="group-code" style="display: none;">
+        	    		    	    		<p class="big-Crede">组织代码证</p>
+        	    		    	    		<p><span class="coRed">*</span>证件类型：组织代码证</p>
+        	    		    	    		<p>
+        	    		    	    			<span class="coRed">*</span>代码<span class="credright"></span><span class="credright"></span>：<input type="text" />
+        	    		    	    			<span class="form-padd"></span>
+                                                <span class="coRed">*</span>机构名称：<input type="text" /> 
+        	    		    	    		</p>
+        	    		    	    		<p>
+        	    		    	    			<span class="coRed">*</span>机构类型：<input type="text" value="企业法人" />
+        	    		    	    			<span class="form-padd"></span>
+        	    		    	    			<span class="coRed">*</span>法人代表：<input type="text" /> 
+        	    		    	    		</p>
+        	    		    	    		<p><span class="coRed">*</span>注册地址：<input type="text">-<input type="text">-<input type="text"></p>
+        	    		    	    	    <p><span class="coRed">*</span>经营地址：<input type="text">-<input type="text">-<input type="text"></p>
+        	    		    	    	    <p><span class="coRed">*</span>有效期限：<input type="date" /> ~ <input type="date" /> </p>
+        	    		    	    	    <p><span class="coRed">*</span>最新年检：<input type="text" />年</p>
+        	    		    	    	    <p>
+        	    		    	    	    	<span class="coRed">*</span>发证机关：<input type="text" />
+        	    		    	    	    	<span class="form-padd"></span>
+        	    		    	    	    	<span class="coRed">*</span><span class="credright">登记号</span>：<input type="text" />
+        	    		    	    	    </p>
+        	    		    	    	</div>
+        	    		    	    	<!--税务登记证-->
+        	    		    	    	<div id="Tax" style="display: none;">
+        	    		    	    		<p class="big-Crede">税务登记证</p>
+        	    		    	    		<p><span class="coRed">*</span>证件类型：税务登记证</p>
+        	    		    	    		<p>
+        	    		    	    			<span class="coRed">*</span><span class="credright">社保号</span>：<input type="text" />
+        	    		    	    			<span class="form-padd"></span>
+        	    		    	    		    <span class="coRed">*</span><span class="credright">税字号</span>：<input type="text" /> 
+        	    		    	    		</p>
+        	    		    	    		<p>
+        	    		    	    			<span class="coRed">*</span><span class="credright">纳税人</span>：<input type="text" value="企业法人" />
+        	    		    	    			<span class="form-padd"></span>
+        	    		    	    			<span class="coRed">*</span>注册类型：<input type="text" /> 
+        	    		    	    		</p>
+        	    		    	    		<p>
+        	    		    	    			<span class="coRed">*</span>机构归属：<input type="text" /> 
+        	    		    	    			<span class="form-padd"></span>
+        	    		    	    			<span class="coRed">*</span>批准机关：<input type="text" />
+        	    		    	    		</p>
+        	    		    	    		<p><span class="coRed">*</span>注册地址：<input type="text">-<input type="text">-<input type="text"></p>
+        	    		    	    	    <p><span class="coRed">*</span>经营地址：<input type="text">-<input type="text">-<input type="text"></p>
+        	    		    	    	    <p><span class="coRed">*</span>经营范围：<input type="text" value="服务业"/></p>
+        	    		    	    	    <p>
+        	    		    	    	    	<span class="coRed">*</span>发证机关：<input type="text" />
+        	    		    	    	    	<span class="form-padd"></span>
+        	    		    	    	        <span class="coRed">*</span>发证日期：<input type="date" /> 
+        	    					        </p>
+        	    					    </div>
+        	    		    	    	<!--点击上传照片-->
+        	    		    	    	<p>
+        	    		    	    		<span class="coRed">*</span>点击上传营业执照（注意：3证合1的新版营业执照不必上传组织代码证、税务登记证）
+        	    		    	    	</p>
+        	    		    	    	<div class="IDcade">
+        	    		    	    		<ul class="IDcadeUl">
+        	    		    	    			<li>
+        	    		    	    				<a href="javascript:void();"><img class="normalFace" src="img/code7.png" width="150px" height="150px" alt="点击上传图片"  onclick="fileSelect();"></a>
+	    						                    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+        	    		    	    			</li>
+        	    		    	    			<li>
+        	    		    	    				<a href="javascript:void();"><img class="normalFace" src="img/code8.png" width="150px" height="150px" alt="点击上传图片"  onclick="fileSelect();"></a>
+	    						                    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+        	    		    	    			</li>
+        	    		    	    			<li>
+        	    		    	    				<a href="javascript:void();"><img class="normalFace" src="img/code9.png" width="150px" height="150px" alt="点击上传图片"  onclick="fileSelect();"></a>
+	    						                    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+        	    		    	    			</li>
+        	    		    	    		</ul>
+        	    		    	    		<ul class="IDcadeUl">
+        	    		    	    			<li>营业执照（副本+盖章）</li>
+        	    		    	    			<li>组织代码证</li>
+        	    		    	    			<li>税务登记证</li>
+        	    		    	    		</ul>
+        	    		    	    	</div>
+        	    		    	    	<!--开户许可证-->
+        	    		    	    	<div id="accoun">
+        	    		    	    		<p class="big-Crede">开户许可证</p>
+        	    		    	    		<p><span class="coRed">*</span>证件类型：开户许可证</p>
+        	    		    	    		<p>
+        	    		    	    			<span class="coRed">*</span><span class="credright">标准号</span>：<input type="text" />
+        	    		    	    			<span class="form-padd"></span>
+        	    		    	    		    <span class="coRed">*</span>编号<span class="credright"></span><span class="credright"></span>：<input type="text" /> 
+        	    		    	    		</p>
+        	    		    	    		<p>
+        	    		    	    			<span class="coRed">*</span><span class="credright">开户人</span>：<input type="text" value="企业法人" />
+        	    		    	    			<span class="form-padd"></span>
+        	    		    	    		    <span class="coRed">*</span>开户类型：<input type="text" value="基本存款账户"/> 
+        	    		    	    		</p>
+        	    		    	    		<p>
+        	    		    	    			<span class="coRed">*</span>开户银行：<input type="text" />
+        	    		    	    			<span class="form-padd"></span>
+        	    		    	    		    <span class="coRed">*</span>账户<span class="credright"></span><span class="credright"></span>：<input type="text">
+        	    		    	    		</p>
+        	    		    	    	    <p><span class="coRed">*</span>法人代表：<input type="text"></p>
+        	    		    	    	    <p>
+        	    		    	    	    	<span class="coRed">*</span>发证机关：<input type="text" />
+        	    		    	    	    	<span class="form-padd"></span>
+        	    		    	    	        <span class="coRed">*</span>发证日期：<input type="text"/>
+        	    		    	    	    </p>
+        	    		    	    	    <p>
+        	    		    	    		    <span class="coRed">*</span>点击上传开户许可证
+        	    		    	    	    </p>
+        	    		    	    	    <div class="IDcade">
+        	    		    	    		    <ul class="IDcadeUl">
+        	    		    	    			    <li>
+        	    		    	    				    <a href="javascript:void();"><img class="normalFace" src="img/code10.png" width="150px" height="150px" alt="点击上传图片"  onclick="fileSelect();"></a>
+	    						                        <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+        	    		    	    			    </li>
+        	    		    	    		    </ul>
+        	    		    	    		    <ul class="IDcadeUl">
+        	    		    	    			    <li>开户许可证</li>
+        	    		    	    		    </ul>
+        	    		    	    	    </div>
+        	    		    	    	</div>
+        	    		    	    	<!--下一步-->
+        	    		    	    	<div class="boxbtn">
+        	    		    	    		<input type="button" class="nextBtn"  id="nextthree" value="下一步" />
+        	    		    	    		<input type="button" class="nextBtn"  id="lastone" value="上一步" />
+        	    		    	    	</div>
+        	    		    	    </div>
+        	    		    	    <!--资质信息-->
+        	    		    	    <div class="" id="">
+        	    		    	    	
+        	    		    	    </div>
+        	    		    	</form>
+        	    		    </div>
+        	    		</div>
         	    	</div>
         	    </div>
         	    <!--资料提交完成-->
