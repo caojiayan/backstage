@@ -1,3 +1,4 @@
+
 //所有可筛选的下拉框
 $(function(){
 	//当列表项被点击时，把列表项的值放在输入框里面，
@@ -48,10 +49,10 @@ $(function(){
 					}
 					p.append(fragment);  //将临时容器添加到无序列表里面，一次添加效率高
 				});
-				$(".trigger").click(function(){
-					$(this).parent().css("z-index","1000");  //点击下拉按钮的时候显示z-index为1000
-				});
+			$(".trigger").click(function(){
+				$(this).parent().css("z-index","1000");  //点击下拉按钮的时候显示z-index为1000
 			});
+		});
 //个人商家认证
 //点击上传图片
 function fileSelect() {
@@ -157,21 +158,18 @@ $(function(){
 	});
 });
 //旧版营业执照则显示组织代码跟税务登记
-//$(function(){
-//	var binput = $("#licenceBtn");
-//  binput.click(function(){
-//      var bcheck = $(this).attr("checked") ;
-//      if(bcheck=="checked"){
-//          $("#group-code").show();
-//          $("#Tax").show();
-//      }
-//  else{
-//          $("#group-code").hide();
-//          $("#Tax").hide();
-//      }
-//  });
-//});
 $(function(){
-	$("#group-code").show();
-	$("#Tax").show();
+	var binput = $("#licenceBtn");
+    binput.click(function(){
+        var bcheck = $(this).attr("checked") ;
+        if(bcheck=="checked"){
+            $("#group-code").show();
+            $("#Tax").show();
+        }
+    else{
+            $("#group-code").hide();
+            $("#Tax").hide();
+        }
+    });
 });
+

@@ -1,5 +1,31 @@
+/*所有下拉框的样式*/
+.dropdown {
+	width: 175px !important;
+	height: 30px !important;
+	padding: 0 5px;
+	margin: 0;
+	border: 1px solid #A0A0A0;
+}
+.dropdown ul{
+	left: -1px;
+}
+.sellteP{
+	padding:10px 0;
+}
+.dropdown .heightP{
+	height:19px !important;
+	}
+/*input*/
+input[type=text],
+input[type=number],
+input[type=password]{
+	height: 30px;
+    border: 1px solid #A0A0A0;
+    color: #999;
+}
+/*中文*/
 .content{
-	border: none;
+	border: none !important;
 }
 /*右边卖家入驻*/
 .content .you {
@@ -282,7 +308,7 @@
 	position: absolute;
 	top:40px;
 	left: 200px;
-	z-index: 99;
+	z-index: 1000;
 	width: 450px;
 	padding: 10px;
 	background: #FEFEFE;
@@ -299,13 +325,6 @@
 	background: #EEE;
 	border-top: none;
 }
-.credentials input[type=text],
-.aptitude input[type=text],
-.cost input[type=text],
-.cost input[type=password]{
-	height: 30px;
-	border: 1px solid #A0A0A0;
-}
 /*下一步按钮*/
 .per-box .nextBtn{
 	float: right;
@@ -320,9 +339,9 @@
 	-moz-box-shadow:0 2px 5px #EEE, 0 0 5px #EEE, 0 0 5px #EEE;  
 	-webkit-box-shadow:0 2px 5px #EEE, 0 0 5px #EEE, 0 0 5px #EEE; 
 }
-.Datum .Dleft{
-	padding-left: 95px;
-}
+.Dleft{
+	padding-left: 95px !important;
+	}
 .credright{
 	padding-right: 16px;
 }
@@ -386,7 +405,7 @@
 	width: 390px;
 	padding: 10px;
 	border-radius:5px;
-	z-index: 99;
+	z-index:1000;
 	background:#FEFEFE;	
 	box-shadow: 0 2px 5px #EEE, 0 0 5px #EEE, 0 0 5px #EEE; 
 	-moz-box-shadow:0 2px 5px #EEE, 0 0 5px #EEE, 0 0 5px #EEE;  
