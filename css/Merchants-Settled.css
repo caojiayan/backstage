@@ -434,3 +434,44 @@ input[type=password]{
 #accoun{
 	padding-top: 20px;
 }
+/*其他照片上传*/
+#pictures{
+	width: 100%;
+}
+#pictures .pic-nav{
+	width: 100%;
+	height: 45px;
+}
+#pictures .pic-navpic{
+	width: 100%;
+	height: 180px;
+}
+.pic-nav .pic-nav-li,
+.pic-navpic .pic-nav-li{
+	float: left;
+	width: 230px;
+	padding: 10px 0;
+	text-align: center;
+}
+.pic-nav .pic-nav-li .dropdown{
+	border-top-width: 0px;
+    border-right-width: 0px; 
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+}
+/*资质信息*/
+.aptitude .apt-box{
+	width: 500px;
+	height: 104px;
+	padding: 10px  20px;
+	margin: 20px auto;
+	border-radius: 5px;
+	background: #F9F9F9;
+}
+.aptitude .apt-box .apt-left{
+	float: left;
+	padding-right:50px;
+}
+.aptitude .apt-box .apt-right{
+	float: left;
+}
