@@ -1,0 +1,161 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+.register{
+	background-color: #EEE;
+}
+.register .register-con{
+	text-align: center;
+	min-height: 550px;
+}
+
+.register-con .register-Main{
+	background: url(../img/pay-bg-3.jpg)no-repeat;
+	background-size: 1080px 550px;
+	width:1080px !important;
+	margin: 0 auto;
+	text-align: left;
+	padding-top: 0px;
+	min-height: 550px;
+}
+.register-Main .register-a{
+	position: relative;
+	float: right;
+	width: 370px;
+	/*height:500px;*/
+	margin-right:55px;
+	margin-top:55px;
+	padding:10px 20px;
+	background: #fff;
+	position: relative;
+	filter:alpha(opacity=85); /*IE滤镜，透明度50%*/
+    -moz-opacity:0.85; /*Firefox私有，透明度50%*/
+    opacity:0.85;/*其他，透明度50%*/
+}
+.register-a .reg-a-a{
+	height: 50px;
+	font-size: 20px !important;
+	line-height: 50px;
+}
+.register-a .reg-a-a p{
+	padding-left:30px;
+	font-weight: bold;
+	background: url(../img/11.png) left center no-repeat;
+	background-size:25px 25px;
+}
+.register-a .reg-a-a hr{
+	color: #eee;
+	background: #eee;
+	height: 3px;
+	border:none;
+}
+.register-a .reg-b-b{
+	padding-top: 10px;
+}
+.register-a .reg-b-b p{
+	height:30px;
+    line-height:30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.register-a .reg-b-b ul li{
+	height: 55px;
+	_height: 60px;
+	list-style-type: none;
+	font-family: "微软雅黑","宋体",Arial;
+	font-size: 14px;
+	padding-left: 55px;
+	/*text-align: center;*/
+	text-decoration: none;
+	list-style:none;
+	}
+	
+.register-a .reg-b-b ul li label{
+	display: inline-block;
+	font-size: 16px;
+	color: #666666;
+	}
+.register-a .reg-b-b ul li input[type="text"],
+.register-a .reg-b-b ul li input[type="password"]{
+	width:190px;
+	padding-left: 10px;
+	color: rgb(153, 153, 153);
+	height: 32px;
+	line-height: 32px;
+	border: solid 1px #d3d3d3;
+	font-size: 14px;
+	}
+.register-a .reg-b-b ul li h1{
+	font-weight: normal;
+	color: #ff0000;
+	background: url(../img/icon.png)no-repeat 95px -28px;
+	font-size: 12px;
+	padding-left: 120px;
+	padding-top: 6px;
+	margin: 3px 0px 0px -30px;
+	}
+.register-a .reg-b-b ul li img{
+	display: none;
+}	
+.reg-x-a{
+	height:65px;
+	margin-left:52px;
+	}
+.reg-x-a .reg-x{
+	background-position: right -208px;
+	background-image: url(../img/btn-type2.png);
+	background-repeat: no-repeat;
+	height: 37px;
+	float: left;
+	width: 3px;
+	}
+.reg-x-a input{
+	width:200px;
+	float: left;
+	border: none;
+	background-position: 0 -120px;
+	background-image: url(../img/btn-type2.png);
+	background-repeat: no-repeat;
+	height: 37px;
+	line-height: 37px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.reg-b-c{
+	font-size: 14px;
+	text-align: center;
+	margin-right: 20px;
+	padding-bottom: 10px;
+}
+.register a{
+	color: #447bd6;
+	font-family: "微软雅黑","宋体",Arial;
+	font-size: 14px;
+	text-decoration: none;
+	}
+.register a:hover{
+	color: #f3ab3a;
+	text-decoration: none;
+	}
+	
+.reg-b-b .phone span{
+	padding-right: 25px;
+	background: url(../img/phone.png) right center no-repeat;
+	background-size: 22px 25px;
+}
+/*绑定手机验证码*/
+#phoneNum{
+	display: none;
+}
+#phoneCode{
+	display: none;
+}
+/*输入密码提醒显示或隐藏*/
+#wordHide1,
+#wordHide2{
+	display: none;
+}

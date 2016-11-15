@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>软信商家免费注册</title>
+		<script src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/register.js" ></script>
+		<link href="css/login.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/register.css" />
+	</head>
+	<body>
+		<body onLoad="createCode();">
+		<!--header开始-->
+		<div class="bj1">
+	        <div class="bj1box">
+	        <ul class="bj1nav">
+                <li style="padding-right: 0;"><a href="javascript:void();">卖家中心 |</a>
+                    <ul>
+      	                <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void();">开发平台 |</a>
+                    <ul>
+      	                <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void();">软信下载 |</a>
+                    <ul>
+      	                <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void();">软信商城 |</a>
+                    <ul>
+      	                <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void();">软信官网 |</a>
+      	            <ul>
+      	                <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <span class="Llogo">
+	            <span class="Llogoimg">
+	            	<img src="img/logo.png" alt="logo图标" align="center" width="40px" height="40px">
+	            	<span>软&nbsp信</span>
+	           </span>
+	        </span>
+            <span class="LlogoW">商家后台</span>
+            </div>
+        </div>
+        <!--header结束-->
+        <!--content开始-->
+        <div class="register">
+        	<div class="register-con">
+        		<div class="register-Main">
+        			<form id="register-form" method=""action="#">	
+        				<div class="register-a">
+        					<div class="reg-a-a">
+        						<p>软信商家注册</p>
+        						<hr />
+        					</div>
+        					<!--注册信息开始-->
+        					<div class="reg-b-b clearfix">
+        						<p>填写信息</p>
+                      		    <ul>
+                      			    <li>
+                      				    <label for="userName" >昵称<span style="color: red;">*</span>&nbsp;&nbsp;</label>
+                      				    <input type="text" name="userName" value="昵称" maxlength="6" onfocus="javascript:if(this.value=='昵称')this.value='';"/>
+                      				    <img src="img/yes.png" align="center" width="30px" height="30px">
+                      				    <img src="img/no.png" align="center" width="20px" height="25px">
+                      				    
+                      			    </li>
+                      			    <li>
+                      				    <label for="password">密码<span style="color: red;">*</span>&nbsp;&nbsp;</label>
+                      				    <input type="password" id="wordHide1" name="wordHide1"/>
+                      				    <input type="text" id="wordShow1" name="wordShow1" value="密码" maxlength="12" onfocus="javascript:if(this.value=='密码')this.value='';" />
+                      				    <img src="img/yes.png" align="center" width="30px" height="30px">
+                      				    <img src="img/no.png" align="center" width="20px" height="25px">
+                      				    <h1 id="p-tip"></h1>
+                      			    </li>
+                      			    <li style="padding-left: 23px;">
+                      				    <label for="password">确认密码<span style="color: red;">*</span>&nbsp;&nbsp;</label>
+                      				    <input type="password" id="wordHide2" name="wordHide2"/>
+                      				    <input type="text" id="wordShow2" name="wordShow2" value="确认密码" maxlength="12" onfocus="javascript:if(this.value=='确认密码')this.value='';" />
+                      				    <img src="img/yes.png" align="center" width="30px" height="30px">
+                      				    <img src="img/no.png" align="center" width="20px" height="25px">
+                      				    <h1 id="p-tip"></h1>
+                      			    </li>
+                      			    <li class="phone" style="height:30px;margin-left:16px;">
+                      			    	<input type="checkbox" id="phoneBtn" style="width:18px; height:18px;vertical-align: middle;">
+                      			    	&nbsp;&nbsp;<span>绑定手机号</span>
+                      			    </li>
+                      			    <li id="phoneNum" style="margin-left:52px;">
+                      			    	<input id="mobile" type="text" style="width: 150px;" name="phone" value="输入手机号码" maxlength="11" onfocus="javascript:if(this.value=='输入手机号码')this.value='';" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" onafterpaste="this.value=this.value.replace(/[^0-9]/g,'')"/>
+                      			    	<span>&nbsp;<a id="pCodebtn" href="javascript:void();"  style="font-size:8px;">发送验证码</a></span>
+                      			    	<span>&nbsp;<a href="javascript:void();" style="font-size:8px; color: red;display: none;">已发送</a></span>
+                      			    	<h1 id="m-tip"></h1>
+                      			    </li>
+                      			    <li id="phoneCode" style="margin-left:52px;">
+                      			    	<input type="text" id="input1"  style="width:90px;" name="code" value="输入验证码" maxlength="4" onfocus="javascript:if(this.value=='输入验证码')this.value='';" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" onafterpaste="this.value=this.value.replace(/[^0-9]/g,'')"/>
+                      			    	&nbsp;<a href="javascript:void();" style="font-size:8px;">没有收到验证码？</a>
+                      			    </li>
+                      			    <li style="height:30px;margin-left:16px;">
+                      			    	<input type="checkbox" style="width:18px; height:18px;vertical-align: middle;">
+                      			        &nbsp;&nbsp;同意 <a href="javascript:void();">《软信用户协议和互联网公约》</a>
+                      			    </li>
+                      			    <li style="height:55px;">
+                      				    <div class="reg-x-a">
+		                          	        <input type="button" name="注册" value="注&nbsp;&nbsp;册" id="" onClick="validate();" />
+		                                    <div class="reg-x"></div>
+		                                </div>
+		                           </li>
+                      			</ul>
+                      		</div>
+                      		<!--注册信息结束-->
+                      		<div class="reg-b-c">
+                      		    <p>已有账号？&nbsp;&nbsp;<a href="login.html">直接登陆</a></p>
+                      	    </div>
+        				</div>
+        			</form>
+        		</div>
+        	</div>
+        </div>
+        <!--content结束-->
+        <!--footer开始-->
+        <div class="bj4 clearfix">
+            <p style="color:#999;">
+  	            <span>
+  		            <a href="javascript:void();">申请入驻</a>
+  		            &nbsp;&nbsp;
+  		            <a href="javascript:void();">申请合作</a>
+  		            &nbsp;&nbsp;
+  		            <a href="javascript:void();">开发平台</a>
+  		            &nbsp;&nbsp;
+  		            <a href="javascript:void();">关于软信</a>
+  	            </span>
+  	                                  粤ICP路1507617号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@2016&nbsp;&nbsp;软信&nbsp;&nbsp;版权所有&nbsp; 
+             </p>
+        </div>
+        <!--footer结束-->
+        <script>
+        //第一次输入密码
+        	wordCheck("#wordHide1","#wordShow1");
+        //再次确定密码
+        	wordCheck("#wordHide2","#wordShow2");
+        </script>
+	</body>
+</html>
