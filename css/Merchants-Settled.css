@@ -29,8 +29,9 @@ input[type=password]{
 }
 /*右边卖家入驻*/
 .content .you {
+	width: 100%;
 	float: left;
-	margin: 10px 30px;
+	margin: 10px 0;
 	font-size: 16px;
 }
 .you .y-title{
@@ -48,9 +49,9 @@ input[type=password]{
 .you #personal,
 .you #organize,
 .you #submitting{
-	margin: 10px 0;
+	/*margin: 10px 0;*/
 	padding:20px 10px;
-	border: 1px solid #999;
+	/*border: 1px solid #999;*/
 }
 .settled .settled-one{
 	width: 100%;
@@ -278,7 +279,11 @@ input[type=password]{
 	top: 0;
 	left:65px;
 }
-
+/*.per-Title ul li:last-child{
+	position: relative;
+	top: 0;
+	left:-65px;
+}*/
 .per-box{
     padding: 0 10px;
 }
@@ -306,9 +311,9 @@ input[type=password]{
 }
 .sketchMain{
 	position: absolute;
-	top:40px;
-	left: 200px;
-	z-index: 1000;
+	top:-100px;
+	left:100px;
+	z-index: 10000;
 	width: 450px;
 	padding: 10px;
 	background: #FEFEFE;
@@ -467,6 +472,10 @@ input[type=password]{
 	margin: 20px auto;
 	border-radius: 5px;
 	background: #F9F9F9;
+}
+.aptitude .add-apt{
+	width: 500px;
+	margin:0 auto;
 }
 .aptitude .apt-box .apt-left{
 	float: left;

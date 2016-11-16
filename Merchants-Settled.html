@@ -13,7 +13,7 @@
 		<!--header开始-->
 		<div class="bj1">
 	        <div class="bj1box">
-	            <!--<p>软信商家账号<a style="margin-left: 10px;"></a><a href="javascript:void();">退出</a><a style="margin-left: 20px;"></a><a href="#">消息</a></p>-->
+	            <p>软信商家账号<a style="margin-left: 10px;"></a><a href="javascript:void();">退出</a><a style="margin-left: 20px;"></a><a href="#">消息</a></p>
                 <ul class="bj1nav">
                     <li style="padding-right: 0;"><a href="#">卖家中心 |</a>
                         <ul>
@@ -82,7 +82,7 @@
         			    <span class="letterBlue">商家入驻帮助</span>
         		    </span>
         	    </div>
-        	    <div class="settled">
+        	    <div class="settled" id="settled">
         	    	<div class="settled-one">
                         <div class="one-explain">
                         	<p class="oneGuide bigSize weight">欢迎您加入软信</p>
@@ -116,7 +116,7 @@
         	    	    				</p>
         	    	    			</div>
         	    	    			<div class="cAloneBtn">
-        	    	    				<a href="" class="AloneBtn weight">
+        	    	    				<a href="javascript:void();" id="cAloneBtn" class="AloneBtn weight">
         	    	    					个人商家入驻
         	    	    				</a>
         	    	    			</div>
@@ -140,7 +140,7 @@
         	    	    				</p>
         	    	    			</div>
         	    	    			<div class="cOrBtn">
-        	    	    				<a class="OrBtn weight">
+        	    	    				<a href="javascript:void();" id="cOrBtn" class="OrBtn weight">
         	    	    					组织商家入驻
         	    	    				</a>
         	    	    			</div>
@@ -151,7 +151,7 @@
         	    </div>
         	    <!--settled结束-->
         	    <!--个人商家申请开始-->
-        	    <div id="personal">
+        	    <div id="personal" style="display: none;">
         	    	<div class="per-Main">
         	    		<div class="per-p">
         	    			<p>个人商家认证</p>
@@ -205,16 +205,16 @@
         	    		    	        <p>
         	    		    	    	   <span class="coRed">*</span>申请项目：
         	    		    	    	    <label>
-        	    		    	    		    <input type="checkbox">玩乐
+        	    		    	    		    <input type="radio" name="申请">玩乐
         	    		    	    	    </label>
         	    		    	    	    <label>
-        	    		    	    		    <input type="checkbox">商品
+        	    		    	    		    <input type="radio" name="申请">商品
         	    		    	    	    </label>
         	    		    	    	    <label>
-        	    		    	    		    <input type="checkbox">服务
+        	    		    	    		    <input type="radio" name="申请">服务
         	    		    	    	    </label>
         	    		    	    	    <label>
-        	    		    	    		    <input type="checkbox">投稿
+        	    		    	    		    <input type="radio" name="申请">投稿
         	    		    	    	    </label>
         	    		    	        </p>
         	    		    	        <p>
@@ -410,22 +410,22 @@
         	    		    	    </div>
         	    		    	    <!--认证费用-->
         	    		    	    <div class="cost hide clearfix" id="cost">
-        	    		    	    	<p><span class="coRed">*</span>申请人：<label><input id="proposerBtn" type="checkbox">本人</label></p>
-        	    		    	    	<div id="proposer" style="display: none;">
+        	    		    	    	<p><span class="coRed">*</span>申请人：<label><input type="checkbox">本人</label></p>
+        	    		    	    	<div id="proposer">
         	    		    	    		<p><span class="coRed">*</span>软信号：<input type="text"/></p>
         	    		    	    	    <p><span class="coRed">*</span>手机号：<input type="text"/></p>
         	    		    	    	    <p><span class="coRed">*</span><span class="credright">职位</span>：<input type="text"/></p>
         	    		    	    	</div>
         	    		    	    	<p><span class="coRed">*</span>认证费用：<span class="coRed">200元</span><span style="padding-left:20px;margin-left: 35px;font-size: 14px; background: url(img/stress.png)left center no-repeat;background-size: 20px 20px;">由第三方认证公司完成并收取费用</span></p>
-        	    		    	    	<p><span class="coRed">*</span>支付方式：<label><input type="checkbox">钱包余额</label><label><input type="checkbox">支付宝</label><label><input type="checkbox">微信支付</label><label><input type="checkbox">银联</label></p>
+        	    		    	    	<p><span class="coRed">*</span>支付方式：<label><input type="radio" name="支付方式">钱包余额</label><label><input type="radio" name="支付方式">支付宝</label><label><input type="radio" name="支付方式">微信支付</label><label><input type="radio" name="支付方式">银联</label></p>
         	    		    	    	<p><span class="coRed">*</span>支付密码：<input type="password" >
         	    		    	    	   <img src="img/yes.png" align="center" width="25" height="25" style="display: none;">
         	    		    	    	   <img src="img/no.png" align="center" width="20" height="20" style="display: none;">
         	    		    	    	   <span style="font-size: 14px;"><img src="img/Why.png" align="center" style="width: 20px; height: 20px; padding-left: 20px;">忘记密码</span>
         	    		    	    	</p>
         	    		    	    	<p><span class="coRed">*</span>支付状态：<span class="coRed">支付成功</span></p>
-        	    		    	    	<p><span class="coRed">*</span>商家信息：<label><input id="in-storeBtn" type="checkbox">实体店</label></p>
-        	    		    	    	<div id="in-store" style="display: none;">
+        	    		    	    	<p><span class="coRed">*</span>商家信息：<label><input id="instoreBtn" type="checkbox">实体店</label></p>
+        	    		    	    	<div id="instore" style="display: none;">
         	    		    	    		<div class="sellteP">
         	    		    	    			<span class="coRed">*</span>实体店址：<span class="dropdown" >  <!-- 模拟 select 的标记， -->
 			                                        <input class="editor" type="text" value="省" onfocus="javascript:if(this.value=='省')this.value='';"/> <!-- 显示当前值的输入框 -->
@@ -485,9 +485,9 @@
 		                                    </p>
         	    		    	    		<p><span class="coRed">*</span>联系电话：<input type="text"/></p>
         	    		    	    		<p><span class="coRed">*</span>营业时间段：<input type="text"/></p>
-        	    		    	    		<p><span class="coRed">*</span>上门自取：<label><input type="checkbox">支持</label><label><input type="checkbox">不支持</label></p>
-        	    		    	    		<p><span class="coRed">*</span>周边服务：<label><input type="checkbox">支持</label><label><input type="checkbox">不支持</label></p>
-        	    		    	    		<p><span class="coRed">*</span>周边配送：<label><input type="checkbox">配送公司</label><label><input type="checkbox">店铺自送</label><label><input type="checkbox">聘请兼职</label></p>
+        	    		    	    		<p><span class="coRed">*</span>上门自取：<label><input type="radio" name="上 门自取">支持</label><label><input type="radio" name="上 门自取">不支持</label></p>
+        	    		    	    		<p><span class="coRed">*</span>周边服务：<label><input type="radio" name="周边服务">支持</label><label><input type="radio" name="周边服务">不支持</label></p>
+        	    		    	    		<p><span class="coRed">*</span>周边配送：<label><input type="radio" name="周边配送">配送公司</label><label><input type="radio" name="周边配送">店铺自送</label><label><input type="radio" name="周边配送">聘请兼职</label></p>
         	    		    	    	</div>
         	    		    	    	<div class="boxbtn">
         	    		    	    		<input type="button" class="nextBtn"  id="Formsure" value="确定" />
@@ -501,23 +501,23 @@
         	    </div>
         	    </div>
         	    <!--组织商家申请开始-->
-        	    <div id="organize">
+        	    <div id="organize" style="display: none;">
         	    	<div class="org-Main">
         	    		<div class="per-p">
         	    			<p>组织商家认证</p>
         	    		</div>
         	    		<div class="per-Title">
         	    		    <ul>
-        	    				<li class="Tactive" id="Title1">
+        	    				<li class="Tactive" id="aTitle1">
         	    					1、申请项目
         	    				</li>
-        	    				<li id="Title2">
+        	    				<li id="aTitle2">
         	    					2、必备资料
         	    				</li>
-        	    				<li id="Title3">
+        	    				<li id="aTitle3">
         	    					3、资质信息
         	    				</li>
-        	    				<li id="Title4">
+        	    				<li id="aTitle4">
         	    					4、认证费用
         	    				</li>
         	    			</ul>
@@ -551,20 +551,20 @@
         	    		    <div class="per-Datum">
         	    		    	<form>
         	    		    		<!--申请项目-->
-        	    		    		<div class="Datum clearfix" id="Datum-a">
+        	    		    		<div class="Datum clearfix" id="aDatum">
         	    		    	        <p>
         	    		    	    	   <span class="coRed">*</span>申请项目：
         	    		    	    	    <label>
-        	    		    	    		    <input type="checkbox">玩乐
+        	    		    	    		    <input type="radio" name="申请项目">玩乐
         	    		    	    	    </label>
         	    		    	    	    <label>
-        	    		    	    		    <input type="checkbox">商品
+        	    		    	    		    <input type="radio" name="申请项目">商品
         	    		    	    	    </label>
         	    		    	    	    <label>
-        	    		    	    		    <input type="checkbox">服务
+        	    		    	    		    <input type="radio" name="申请项目">服务
         	    		    	    	    </label>
         	    		    	    	    <label>
-        	    		    	    		    <input type="checkbox">投稿
+        	    		    	    		    <input type="radio" name="申请项目">投稿
         	    		    	    	    </label>
         	    		    	        </p>
         	    		    	        <p>
@@ -634,40 +634,40 @@
 		                                <p>
 		                                	<span class="coRed">*</span>商家类型：
 		                                	<label>
-        	    		    	    		    <input type="checkbox">个体户
+        	    		    	    		    <input type="radio" name="商家类型">个体户
         	    		    	    	    </label>
         	    		    	    	    <label>
-        	    		    	    		    <input type="checkbox">批发商
+        	    		    	    		    <input type="radio" name="商家类型">批发商
         	    		    	    	    </label>
         	    		    	    	    <label>
-        	    		    	    		    <input type="checkbox">生产商
+        	    		    	    		    <input type="radio" name="商家类型">生产商
         	    		    	    	    </label>
         	    		    	    	    <label>
-        	    		    	    		    <input type="checkbox">品牌方
+        	    		    	    		    <input type="radio" name="商家类型">品牌方
         	    		    	    	    </label>
         	    		    	    	    <label>
-        	    		    	    		    <input type="checkbox">原料商
+        	    		    	    		    <input type="radio" name="商家类型">原料商
         	    		    	    	    </label>
         	    		    	    	    <label>
-        	    		    	    		    <input type="checkbox">中介
+        	    		    	    		    <input type="radio" name="商家类型">中介
         	    		    	    	    </label>
 		                                </p>
 		                                <p>
 		                                	<span class="coRed">*</span>店铺类型：
 		                                	<label>
-        	    		    	    		    <input type="checkbox">官方店
+        	    		    	    		    <input type="radio" name="店铺类型">官方店
         	    		    	    	    </label>
         	    		    	    	    <label>
-        	    		    	    		    <input type="checkbox">授权店
+        	    		    	    		    <input type="radio" name="店铺类型">授权店
         	    		    	    	    </label>
         	    		    	    	</p>
         	    		    	    	<div class="sellteP">
 		                                	<span class="coRed">*</span>实体店铺：
 		                                	<label>
-        	    		    	    		    <input type="checkbox">无
+        	    		    	    		    <input type="radio" name="实体店铺">无
         	    		    	    	    </label>
         	    		    	    	    <label>
-        	    		    	    		    <input type="checkbox">有
+        	    		    	    		    <input type="radio" name="实体店铺">有
         	    		    	    	    </label>
         	    		    	        	<span class="dropdown padleft5px" >  <!-- 模拟 select 的标记， -->
 			                                    <input class="editor" type="text" value="官方直营店" onfocus="javascript:if(this.value=='官方直营店')this.value='';"/> <!-- 显示当前值的输入框 -->
@@ -694,10 +694,10 @@
         	    		    	    	<p>
 		                                	<span class="coRed">*</span>私有仓库：
 		                                	<label>
-        	    		    	    		    <input type="checkbox">无
+        	    		    	    		    <input type="radio" name="私有仓库">无
         	    		    	    	    </label>
         	    		    	    	    <label>
-        	    		    	    		    <input type="checkbox">有
+        	    		    	    		    <input type="radio" name="私有仓库">有
         	    		    	    	    </label>
         	    		    	    	    <label>
         	    		    	    		    数量：<input type="number" style="width: 50px;margin: 0 5px;">个
@@ -706,13 +706,13 @@
         	    		    	    	<p>
 		                                	<span class="coRed">*</span>自有商标：
 		                                	<label>
-        	    		    	    		    <input type="checkbox">无
+        	    		    	    		    <input type="radio" name="自有商标">无
         	    		    	    	    </label>
         	    		    	    	    <label>
-        	    		    	    		    <input type="checkbox">TM商标
+        	    		    	    		    <input type="radio" name="自有商标">TM商标
         	    		    	    	    </label>
         	    		    	    	    <label>
-        	    		    	    		    <input type="checkbox">R商标
+        	    		    	    		    <input type="radio" name="自有商标">R商标
         	    		    	    	    </label>
         	    		    	    	</p>
         	    		    	    	<p>
@@ -722,20 +722,20 @@
         	    		    	    		<input type="text">
         	    		    	    	</p>
         	    		    	        <div class="boxbtn">
-        	    		    	    		<input type="button" class="nextBtn"  id="nexttwo" value="下一步" />
+        	    		    	    		<input type="button" class="nextBtn"  id="anexttwo" value="下一步" />
         	    		    	    	</div>
         	    		    	    </div>
         	    		    	    <!--必备资料-->
-        	    		    	    <div class="credentials clearfix" id="">
+        	    		    	    <div class="credentials hide clearfix" id="acredentials">
         	    		    	    	<p id="cachet">软信提醒：请确保照片清晰+加盖公章</p>
         	    		    	    	<p class="big-Crede">营业执照</p>
         	    		    	    	<div class="sellteP">
         	    		    	    		<span class="coRed">*</span>证件类型：
 		                                    <label>
-        	    		    	    		    <input type="checkbox">营业执照（3证合1）
+        	    		    	    		    <input id="licloseBtn" type="radio" name="证件类型">营业执照（3证合1）
         	    		    	    	    </label>
         	    		    	    	    <label>
-        	    		    	    		    <input id="licenceBtn" type="checkbox">营业执照（旧版）
+        	    		    	    		    <input id="licenceBtn" type="radio" name="证件类型">营业执照（旧版）
         	    		    	    	    </label>
         	    		    	    	</div>
         	    		    	    	<p id="IDexplain" class="Form-sketch">查看组织商家营业执照说明,请<a href="javascript:void();" class="Form-a" id="paperBtn">&nbsp点击这里</a></p>
@@ -1633,14 +1633,18 @@
         	    		    	    	</div>
         	    		    	    	<!--下一步-->
         	    		    	    	<div class="boxbtn clearfix">
-        	    		    	    		<input type="button" class="nextBtn"  id="nextthree" value="下一步" />
-        	    		    	    		<input type="button" class="nextBtn"  id="lastone" value="上一步" />
+        	    		    	    		<input type="button" class="nextBtn"  id="anextthree" value="下一步" />
+        	    		    	    		<input type="button" class="nextBtn"  id="alastone" value="上一步" />
         	    		    	    	</div>
         	    		    	    </div>
         	    		    	    <!--资质信息-->
-        	    		    	    <div class="aptitude clearfix" id="">
+        	    		    	    <div class="aptitude hide clearfix" id="aaptitude">
         	    		    	    	<p class="big-Crede">资质信息</p>
-        	    		    	    	<div class="apt-box">
+        	    		    	    	<div class="add-apt" align="right">
+        	    		    	    		<a id="aptboxBtn" href="javascript:void();"><img src="img/addGreen.png" align="center"></a>增加
+        	    		    	    	</div>
+        	    		    	    	<div class="aptboxAll">
+        	    		    	    	<div class="apt-box clearfix">
         	    		    	    		<div class="apt-left">
         	    		    	    			<div class="sellteP">
         	    		    	    				<span class="coRed">*</span>资质名称：<span class="dropdown" >  <!-- 模拟 select 的标记， -->
@@ -1729,28 +1733,29 @@
         	    		    	    	</div>
         	    		    	    	<!--下一步-->
         	    		    	    	<div class="boxbtn clearfix">
-        	    		    	    		<input type="button" class="nextBtn"  id="nextthree" value="下一步" />
-        	    		    	    		<input type="button" class="nextBtn"  id="lastone" value="上一步" />
+        	    		    	    		<input type="button" class="nextBtn"  id="anextfour" value="下一步" />
+        	    		    	    		<input type="button" class="nextBtn"  id="alasttwo" value="上一步" />
+        	    		    	    	</div>
         	    		    	    	</div>
         	    		    	    </div>
         	    		    	    <!--认证费用-->
-        	    		    	    <div class="cost clearfix" id="">
-        	    		    	    	<p><span class="coRed">*</span>申请人：<label><input id="proposerBtn" type="checkbox">本人</label></p>
-        	    		    	    	<div id="proposer">
+        	    		    	    <div class="cost hide clearfix" id="acost">
+        	    		    	    	<p><span class="coRed">*</span>申请人：<label><input type="checkbox">本人</label></p>
+        	    		    	    	<div id="aproposer">
         	    		    	    		<p><span class="coRed">*</span>软信号：<input type="text"/></p>
         	    		    	    	    <p><span class="coRed">*</span>手机号：<input type="text"/></p>
         	    		    	    	    <p><span class="coRed">*</span><span class="credright">职位</span>：<input type="text"/></p>
         	    		    	    	</div>
         	    		    	    	<p><span class="coRed">*</span>认证费用：<span class="coRed">200元</span><span style="padding-left:20px;margin-left: 35px;font-size: 14px; background: url(img/stress.png)left center no-repeat;background-size: 20px 20px;">由第三方认证公司完成并收取费用</span></p>
-        	    		    	    	<p><span class="coRed">*</span>支付方式：<label><input type="checkbox">钱包余额</label><label><input type="checkbox">支付宝</label><label><input type="checkbox">微信支付</label><label><input type="checkbox">银联</label></p>
+        	    		    	    	<p><span class="coRed">*</span>支付方式：<label><input type="radio" name="支付">钱包余额</label><label><input type="radio" name="支付">支付宝</label><label><input type="radio" name="支付">微信支付</label><label><input type="radio" name="支付">银联</label></p>
         	    		    	    	<p><span class="coRed">*</span>支付密码：<input type="password" >
         	    		    	    	   <img src="img/yes.png" align="center" width="25" height="25" style="display: none;">
         	    		    	    	   <img src="img/no.png" align="center" width="20" height="20" style="display: none;">
         	    		    	    	   <span style="font-size: 14px;"><img src="img/Why.png" align="center" style="width: 20px; height: 20px; padding-left: 20px;">忘记密码</span>
         	    		    	    	</p>
         	    		    	    	<p><span class="coRed">*</span>支付状态：<span class="coRed">支付成功</span></p>
-        	    		    	    	<p><span class="coRed">*</span>商家信息：<label><input id="in-storeBtn" type="checkbox">实体店</label></p>
-        	    		    	    	<div id="in-store">
+        	    		    	    	<p><span class="coRed">*</span>商家信息：<label><input id="ainstoreBtn" type="checkbox">实体店</label></p>
+        	    		    	    	<div id="ainstore" style="display: none;">
         	    		    	    		<div class="sellteP">
         	    		    	    			<span class="coRed">*</span>实体店址：<span class="dropdown" >  <!-- 模拟 select 的标记， -->
 			                                        <input class="editor" type="text" value="省" onfocus="javascript:if(this.value=='省')this.value='';"/> <!-- 显示当前值的输入框 -->
@@ -1810,13 +1815,13 @@
 		                                    </p>
         	    		    	    		<p><span class="coRed">*</span>联系电话：<input type="text"/></p>
         	    		    	    		<p><span class="coRed">*</span>营业时间段：<input type="text"/></p>
-        	    		    	    		<p><span class="coRed">*</span>上门自取：<label><input type="checkbox">支持</label><label><input type="checkbox">不支持</label></p>
-        	    		    	    		<p><span class="coRed">*</span>周边服务：<label><input type="checkbox">支持</label><label><input type="checkbox">不支持</label></p>
-        	    		    	    		<p><span class="coRed">*</span>周边配送：<label><input type="checkbox">配送公司</label><label><input type="checkbox">店铺自送</label><label><input type="checkbox">聘请兼职</label></p>
+        	    		    	    		<p><span class="coRed">*</span>上门自取：<label><input type="radio" name="上门">支持</label><label><input type="radio" name="上门">不支持</label></p>
+        	    		    	    		<p><span class="coRed">*</span>周边服务：<label><input type="radio" name="周边">支持</label><label><input type="radio" name="周边">不支持</label></p>
+        	    		    	    		<p><span class="coRed">*</span>周边配送：<label><input type="radio" name="配送">配送公司</label><label><input type="radio" name="配送">店铺自送</label><label><input type="radio" name="配送">聘请兼职</label></p>
         	    		    	    	</div>
         	    		    	    	<div class="boxbtn">
-        	    		    	    		<input type="button" class="nextBtn"  id="Formsure" value="确定" />
-        	    		    	    		<input type="button" class="nextBtn"  id="lastthree" value="上一步" />
+        	    		    	    		<input type="button" class="nextBtn"  id="aFormsure" value="确定" />
+        	    		    	    		<input type="button" class="nextBtn"  id="alastthree" value="上一步" />
         	    		    	    	</div>
         	    		    	    </div>
         	    		    	</form>
@@ -1825,7 +1830,7 @@
         	    	</div>
         	    </div>
         	    <!--资料提交完成-->
-        	    <div id="submitting">
+        	    <div id="submitting" style="display: none;">
         	    	<div class="per-Title">
         	    		<ul>
         	    			<li class="Tactive" id="Title1">
@@ -1860,8 +1865,10 @@
             <!--you结束-->
         </div>
         <!--content结束-->
+        <!--遮盖层-->
+        <div class="maskingLayer"></div>
         <!--footer开始-->
-        <div class="bj4 clearfix">
+        <div class="bj4 clearfix" id="bj4">
             <p style="color:#999;">
   	        <span>
   		        <a href="#">申请入驻</a>
@@ -1875,5 +1882,41 @@
   	                  粤ICP路1507617号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@2016&nbsp;&nbsp;软信&nbsp;&nbsp;版权所有&nbsp; 
             </p>
         </div>
+        <script>
+        //个人商家
+            //申请项目下一步
+            anextCheck("#nexttwo","#Title1","#Title2","#Datum","#credentials");
+            //证件信息下一步
+            nextCheck("#nextthree","#Title3","#Title2","#aptitude","#credentials");
+            //证件信息上一步
+            nextCheck("#lastone","#Title1","#Title2","#Datum","#credentials");
+            //资质信息下一步
+            nextCheck("#nextfour","#Title4","#Title3","#cost","#aptitude");
+            //资质信息上一步
+            nextCheck("#lasttwo","#Title2","#Title3","#credentials","#aptitude");
+            //认证费用上一步
+            nextCheck("#lastthree","#Title3","#Title4","#aptitude","#cost");
+            //认证费用申请人
+        	allPeople("#proposerBtn","#proposer");
+        	//认证费用实体店
+        	allPeople("#instoreBtn","#instore");
+        //组织商家
+            //申请项目下一步
+            anextCheck("#anexttwo","#aTitle1","#aTitle2","#aDatum","#acredentials");
+            //证件信息下一步
+            nextCheck("#anextthree","#aTitle3","#aTitle2","#aaptitude","#acredentials");
+            //证件信息上一步
+            nextCheck("#alastone","#aTitle1","#aTitle2","#aDatum","#acredentials");
+            //资质信息下一步
+            nextCheck("#anextfour","#aTitle4","#aTitle3","#acost","#aaptitude");
+            //资质信息上一步
+            nextCheck("#alasttwo","#aTitle2","#aTitle3","#acredentials","#aaptitude");
+            //认证费用上一步
+            nextCheck("#alastthree","#aTitle3","#aTitle4","#aaptitude","#acost");
+            //申请人
+            allPeople("#aproposerBtn","#aproposer");
+            //实体店
+            allPeople("#ainstoreBtn","#ainstore");
+        </script>
 	</body>
 </html>

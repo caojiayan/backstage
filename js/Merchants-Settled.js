@@ -64,88 +64,81 @@ function fileSelect() {
 //项目简述   
 $(function(){
 	$("#Form-a").click(function(){
+		var bh = $("body").height();
+        var bw = $("body").width();
+        $(".maskingLayer").css({
+            height:bh,
+            width:bw,
+        });
 		$("#sketchMain").toggle();
+		$(".maskingLayer").toggle();
 	});
 	$("#Form-close").click(function(){
+		var bh = $("body").height();
+        var bw = $("body").width();
+        $(".maskingLayer").css({
+            height:bh,
+            width:bw,
+        });
 		$("#sketchMain").hide();
+		$(".maskingLayer").hide();
 	});
 });
 //填写资料选项卡
-$(function(){
-	//下一步
-	$("#nexttwo").on('click',function(){
-		$("#Title1").removeClass("Tactive");
-		$("#Title2").addClass("Tactive");
-		$("#Datum").removeClass("active").addClass("hide");
-		$("#credentials").removeClass("hide").addClass("active");
+function nextCheck(nextthree,Title3,Title2,aptitude,credentials){
+	$(nextthree).on('click',function(){
+		$(Title3).addClass("Tactive");
+		$(Title2).removeClass("Tactive");
+		$(aptitude).addClass("active").removeClass("hide");
+		$(credentials).addClass("hide").removeClass("active");
 	});
-	$("#nextthree").on('click',function(){
-		$("#Title3").addClass("Tactive");
-		$("#Title2").removeClass("Tactive");
-		$("#aptitude").addClass("active").removeClass("hide");
-		$("#credentials").addClass("hide").removeClass("active");
+}
+//申请项目下一步
+function anextCheck(nexttwo,Title1,Title2,Datum,credentials){
+	$(nexttwo).on('click',function(){
+		$(Title1).removeClass("Tactive");
+		$(Title2).addClass("Tactive");
+		$(Datum).removeClass("active").addClass("hide");
+		$(credentials).removeClass("hide").addClass("active");
 	});
-	$("#nextfour").on('click',function(){
-		$("#Title4").addClass("Tactive");
-		$("#Title3").removeClass("Tactive");
-		$("#cost").addClass("active").removeClass("hide");
-		$("#aptitude").addClass("hide").removeClass("active");
-	});
-	//上一步
-	$("#lastone").on('click',function(){
-		$("#Title1").addClass("Tactive");
-		$("#Title2").removeClass("Tactive");
-		$("#Datum").addClass("active").removeClass("hide");
-		$("#credentials").addClass("hide").removeClass("active");
-	});
-	$("#lasttwo").on('click',function(){
-		$("#Title2").addClass("Tactive");
-		$("#Title3").removeClass("Tactive");
-		$("#credentials").addClass("active").removeClass("hide");
-		$("#aptitude").addClass("hide").removeClass("active");
-	});
-	$("#lastthree").on('click',function(){
-		$("#Title3").addClass("Tactive");
-		$("#Title4").removeClass("Tactive");
-		$("#aptitude").addClass("active").removeClass("hide");
-		$("#cost").addClass("hide").removeClass("active");
-	});
-});
-
+}
 //认证费用
-$(function(){
-	//申请人
-    var _input = $("#proposerBtn");
+function allPeople(proposerBtn,proposer){
+	//申请人与实体店
+    var _input = $(proposerBtn);
     _input.click(function(){
         var _check = $(this).attr("checked") ;
         if(_check=="checked"){
-            $("#proposer").show();
+            $(proposer).show();
         }
     else{
-            $("#proposer").hide();
+            $(proposer).hide();
         }
     });
-	//实体店
-    var ainput = $("#in-storeBtn");
-    ainput.click(function(){
-        var acheck = $(this).attr("checked") ;
-        if(acheck=="checked"){
-            $("#in-store").show();
-        }
-    else{
-            $("#in-store").hide();
-        }
-    });
-});
+}
 
 //组织商家认证
 //项目简述   
 $(function(){
 	$("#Form-b").click(function(){
+		var bh = $("body").height();
+        var bw = $("body").width();
+        $(".maskingLayer").css({
+            height:bh,
+            width:bw,
+        });
 		$("#sketchMain-b").toggle();
+		$(".maskingLayer").toggle();
 	});
 	$("#Form-close-b").click(function(){
+		var bh = $("body").height();
+        var bw = $("body").width();
+        $(".maskingLayer").css({
+            height:bh,
+            width:bw,
+        });
 		$("#sketchMain-b").hide();
+		$(".maskingLayer").hide();
 	});
 });
 //营业执照说明
@@ -159,17 +152,56 @@ $(function(){
 });
 //旧版营业执照则显示组织代码跟税务登记
 $(function(){
+	//点击旧版营业执照的时候，则显示
 	var binput = $("#licenceBtn");
     binput.click(function(){
         var bcheck = $(this).attr("checked") ;
         if(bcheck=="checked"){
             $("#group-code").show();
             $("#Tax").show();
+        }else{
+            $("#group-code").hide();
+            $("#Tax").hide();
         }
-    else{
+    });
+    //点击三合一的营业执照的时候，则隐藏
+    var binput = $("#licloseBtn");
+    binput.click(function(){
+        var bcheck = $(this).attr("checked") ;
+        if(bcheck=="checked"){
             $("#group-code").hide();
             $("#Tax").hide();
         }
     });
 });
+//组织商家增加资质
+//$(function(){
+//	$("#aptboxBtn").click(function(){
+//		var html = $(".apt-box").html();
+//		$(".aptboxAll").append(html)
+//	});
+//});
 
+//
+$(function(){
+	$("#cAloneBtn").click(function(){
+		$("#personal").show();
+		$("#settled").hide();
+	});
+	$("#cOrBtn").click(function(){
+		$("#organize").show();
+		$("#settled").hide();
+	});
+	$("#Formsure").click(function(){
+		alert("资料提交成功！");
+		$("#submitting").show();
+		$("#personal").hide();
+	});
+	$("#aFormsure").click(function(){
+		alert("资料提交成功！");
+		$("#submitting").show();
+		$("#organize").hide();
+	});
+});
+
+//高度
