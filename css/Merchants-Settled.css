@@ -1,13 +1,16 @@
 /*所有下拉框的样式*/
 .dropdown {
-	width: 175px !important;
+	width: 180px !important;
 	height: 30px !important;
-	padding: 0 5px;
+	padding-left: 5px;
 	margin: 0;
 	border: 1px solid #A0A0A0;
 }
 .dropdown ul{
 	left: -1px;
+}
+.dropdown .trigger{
+	margin-left:0 !important;
 }
 .sellteP{
 	padding:10px 0;
@@ -19,6 +22,7 @@
 input[type=text],
 input[type=number],
 input[type=password]{
+	width: 175px !important;
 	height: 30px;
     border: 1px solid #A0A0A0;
     color: #999;
@@ -49,9 +53,7 @@ input[type=password]{
 .you #personal,
 .you #organize,
 .you #submitting{
-	/*margin: 10px 0;*/
 	padding:20px 10px;
-	/*border: 1px solid #999;*/
 }
 .settled .settled-one{
 	width: 100%;
@@ -87,6 +89,9 @@ input[type=password]{
 }
 .settled-one .one-flow ul li{
 	display: inline-block;
+	 /*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
 	padding:10px 64px;
 	border-right: 1px solid #ccc;
 	background: url(../img/all.png) 20px center no-repeat;
@@ -117,7 +122,8 @@ input[type=password]{
 	filter:alpha(opacity=80);  
     -moz-opacity:0.8;  
     -khtml-opacity: 0.8;  
-    opacity: 0.8;  
+    opacity: 0.8; 
+    background: -ms-linear-gradient(#FCE9DA 0%,#ffc299 100%); /*针对IE9/10*/
 	background-image: -moz-linear-gradient(top , #FCE9DA, #ffc299);
 	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, from(#FCE9DA), to(#ffc299));
 	background-image: -o-linear-gradient(top , #FCE9DA, #ffc299);
@@ -136,6 +142,7 @@ input[type=password]{
     -moz-opacity:0.8;  
     -khtml-opacity: 0.8;  
     opacity: 0.8;  
+    background: -ms-linear-gradient(#eef9fe 0%,#d1ecff 100%); /*针对IE9/10*/
 	background-image: -moz-linear-gradient(top , #eef9fe, #d1ecff);
 	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, from(#eef9fe), to(#d1ecff));
 	background-image: -o-linear-gradient(top , #eef9fe, #d1ecff);
@@ -195,13 +202,17 @@ input[type=password]{
     -moz-opacity:0.75;  
     -khtml-opacity: 0.75;  
     opacity: 0.75; 
+    background: #F60\9; /*针对IE中渐变不成功的情况下*/
+    background: -ms-linear-gradient(#FCE9DA 0%,#F60 100%); /*针对IE9/10*/
+    -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FCE9DA',endColorstr='#F60',grandientType=0);/*针对IE8*/
     background-image: -moz-linear-gradient(top , #FCE9DA, #F60);
 	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, from(#FCE9DA), to(#F60));
 	background-image: -o-linear-gradient(top , #FCE9DA, #F60);
-	filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#FCE9DA,endcolorstr=#F60,gradientType=0);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FCE9DA',endColorstr='#F60',gradientType=0);
 }
 .AloneBtn:hover,
 .AloneBtn:active{
+	border:1px solid #F60;
 	box-shadow: 0 2px 5px #F60, 0 0 1px #F60, 0 0 1px #F60; 
 	-moz-box-shadow: 0 2px 5px #F60, 0 0 1px #F60, 0 0 1px #F60;  
 	-webkit-box-shadow: 0 2px 5px #F60, 0 0 1px #F60, 0 0 1px #F60; 
@@ -218,6 +229,8 @@ input[type=password]{
     -moz-opacity:0.75;  
     -khtml-opacity: 0.75;  
     opacity: 0.75; 
+    background: #093\9; /*针对IE中渐变不成功的情况下*/
+    background: -ms-linear-gradient(#eef9fe 0%,#093 100%); /*针对IE9/10*/
     background-image: -moz-linear-gradient(top , #eef9fe, #093);
 	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, from(#eef9fe), to(#093));
 	background-image: -o-linear-gradient(top , #eef9fe, #093);
@@ -225,6 +238,7 @@ input[type=password]{
 }
 .OrBtn:hover,
 .OrBtn:active{
+	border:1px solid #093;
 	box-shadow: 0 2px 5px #093, 0 0 1px #093, 0 0 1px #093; 
 	-moz-box-shadow:0 2px 5px #093, 0 0 1px #093, 0 0 1px #093;  
 	-webkit-box-shadow:0 2px 5px #093, 0 0 1px #093, 0 0 1px #093; 
@@ -256,6 +270,9 @@ input[type=password]{
 }
 .per-Title ul li{
 	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
 	width:250px;
 	height: 40px;
 	line-height: 40px;
@@ -279,11 +296,7 @@ input[type=password]{
 	top: 0;
 	left:65px;
 }
-/*.per-Title ul li:last-child{
-	position: relative;
-	top: 0;
-	left:-65px;
-}*/
+
 .per-box{
     padding: 0 10px;
 }
@@ -355,6 +368,9 @@ input[type=password]{
 }
 .IDcade .IDcadeUl li{
 	display: inline-block;
+	 /*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
 	width:200px;
 	padding: 10px 0;
 	text-align: center;

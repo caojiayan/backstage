@@ -203,7 +203,6 @@
 /*纸箱部分*/
 .cartontable{
 	width: 1030px;
-	border-radius: 10px;
 	margin: 10px 0;
 	text-align: center;
 }
@@ -226,8 +225,7 @@
 	padding-right: 10px;
 }
 .cartonOperate{
-	padding: 0 25px;
-	margin-bottom: 50px;
+	padding: 0 25px 50px 25px;
 }
 .CartonblueBtn{
 	background: #009843;
@@ -322,17 +320,7 @@
 .nShop4two{
 	display: none;
 }
-
-/*遮盖层*/
-.maskingLayer{
-	display:none;  
-    width:100%;  
-    height:100%;  
-    background:#000;  
-    position:absolute;  
-    top:0;  
-    left:0;  
-    z-index:9999;  
-    opacity:0.5;                        /*背景的透明度:(Firefox适用；）*/  
-    filter:alpha(opacity =50);          /*背景的透明度:(IE适用)；  
+/*在IE下*/
+.detailtable{
+	border-left: 1px\9 solid\9 #A0A0A0\9;
 }

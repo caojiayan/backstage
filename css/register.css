@@ -159,3 +159,7 @@
 #wordHide2{
 	display: none;
 }
+/*发送验证码字体*/
+#pCodebtn{
+	-webkit-text-size-adjust: none;
+}

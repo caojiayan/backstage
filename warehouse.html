@@ -908,5 +908,37 @@
         </div>
         <!--footer结束-->
         <!--实体仓库结束-->
+        <script>
+        	$(function(){
+	lrFixFooter(".bj4");	//调用方法
+	function lrFixFooter(obj){
+		var footer = $(obj),doc = $(document);
+		function fixFooter(){
+			if(doc.height()-4 <= $(window).height()){
+				footer.css({
+					width:"100%",
+					position:"absolute",
+					left:0,
+					bottom:0	
+				});
+				
+			}else{
+				footer.css({
+					position:"static"
+				});
+			}
+		}
+		fixFooter();
+		$(window).on('resize.footer', function(){
+			fixFooter();
+		});
+		$(window).on('scroll.footer',function(){
+			fixFooter();
+		});	
+			
+	}
+	
+});
+        </script>
 	</body>
 </html>
