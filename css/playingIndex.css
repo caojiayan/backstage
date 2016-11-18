@@ -1,0 +1,469 @@
+
+.con2,
+.con3,
+.con4,
+.con5,
+.con6,
+.con7,
+.con8,
+.con9{
+   padding: 5px 0;
+   border-bottom: 1px solid #009843;
+}
+.con2 fieldset,
+.con3 fieldset,
+.con4 fieldset,
+.con5 fieldset,
+.con6 fieldset,
+.con7 fieldset,
+.con8 fieldset,
+.con9 fieldset{
+	margin-left: 11px;
+	padding-left: 25px;
+}
+
+.con2_nav{
+	float: left;
+	padding-top: 10px;
+	padding-left: 42px;
+}
+.con2_nav ul{
+	background: #EEEEEE;
+	padding:0 5px 0 15px;
+	-moz-border-radius:5px; /* Firefox */
+    -webkit-border-radius:5px; /* Safari 和 Chrome */
+    border-radius:5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+}
+
+.con2_nav ul li{
+	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
+	padding:5px 10px 5px 0;
+	margin-right: 10px;
+	background-size: 10px 10px;
+}
+/*con1开始*/
+.con1{
+	border-bottom: 1px solid #009843;
+}
+.con1_nav{
+	height: 55px;
+	line-height: 55px;
+	padding-left: 18px;
+}
+.con1_nav p{
+	padding-left: 30px;
+	background:url(../img/open.png) no-repeat left center;
+}
+.con1_nav p span{
+	margin-left: 160px;
+	color: #999;
+	font-size: 20px;
+	font-weight: bold;
+}
+.con1_msg{
+	height: 30px;
+	line-height: 30px;
+	padding-left:18px;
+	background: #EEEEEE;
+	
+}
+.con1_msg p{
+	padding-left: 60px;
+	background: url(../img/horn.png) no-repeat left center ;
+}
+.c1zero,
+.c1one,
+.c1two,
+.c1three,
+.c1four,
+.c1five,
+.c1six,
+.c1seven{
+	margin: 10px 16px;
+	padding-left: 25px;
+}
+.c1zero{
+	background: url(../img/keylitter.png) left center no-repeat;
+}
+.c1one{
+	background: url(../img/select.png) left center no-repeat;
+}
+.c1conSpan{
+	margin-left: 50px;
+}
+.c1two{
+	background: url(../img/keylitter.png) left center no-repeat;
+}
+.c1twoSpan{
+	padding-left: 25px;
+	background: url(../img/keylitter.png) no-repeat center left;
+	margin-left: 50px;
+}
+.c1AppProcess{
+	margin: 0 31px;
+	background: #EEEEEE;
+	border-radius: 10px;
+	position: relative;
+	height: 70px;
+}
+.c1AppProcess span{
+	margin:0 10px;
+	position: relative;
+	top: 25px;
+}
+.c13Ul1 li,
+.c13Ul2 li{
+	display: inline-block;
+	margin: 0 70px;
+}
+.c13Ul1{
+	margin-left: 50px;
+}
+.c13Ul2{
+	width: 750px;
+	background: #999;
+	height: 2px;
+	margin-left: 100px;
+}
+.c13Ul2 li{
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background: #999999;
+}
+.c13Ul2 li:first-child{
+	position: absolute;
+	top:38px;
+	left:150px;
+}
+.c13Ul2 li:nth-of-type(2){
+	position: absolute;
+	top:38px;
+	left:360px;
+}
+.c13Ul2 li:nth-of-type(3){
+	position: absolute;
+	top:38px;
+	left:570px;
+}
+.c13Ul2 li:nth-of-type(4){
+	position: absolute;
+	top:38px;
+	left:780px;
+}
+.c1six span{
+	float: left;
+}
+.c16Box{
+	margin: 0 20px;
+	float: left;
+	background: #EEEEEE;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+.c1seven table tr td{
+	text-align: center;
+}
+/*下拉框的值追加到cs3left后面*/
+.csPlayingleft{
+	margin-left: 25px;
+	padding: 0 10px 0 0;
+	color: #fc6700;
+}
+
+/*con2开始*/
+.c2one,
+.c2one p,
+.c2two,
+.c2three,
+.c2four{
+	padding: 5px 0;
+}
+.c2oneSpan{
+	padding-right: 16px;
+}
+.c2one label{
+	padding-right: 50px;
+}
+.c2two .c2twoLabel{
+	padding-right: 66px;
+}
+.c2two label:nth-of-type(2){
+	padding-right: 18px;
+}
+.c23Boxone,
+.c23Boxtwo{
+	padding: 5px 0 5px 40px;
+}
+.c23Boxone li,
+.c23Boxtwo li{
+	display: inline-block;
+}
+.c23Boxtwo li{
+	padding: 0 10px;
+}
+.c23Boxone li{
+	padding: 0 20px;
+}
+.c23Boxtwo li:last-child{
+	padding-left: 200px;
+}
+.c23Boxtwoli{
+	margin-left: 16px;
+}
+.specn,
+.c4Ul,
+.spectip{
+	float: left;
+}
+/*con4*/
+.c4Ul{
+	margin-bottom: 5px;
+}
+.c4Ul:first-child{
+	padding-left: 20px;
+	background:url(../img/key2.png)no-repeat left center;
+}
+.c4Ul li,
+.c4Ul-li li{
+	padding-left: 25px;
+	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
+}
+
+/*con3开始*/
+.c3one,
+.c3two,
+.c3three,
+.c3four{
+	padding: 5px 0;
+}
+
+.c3Appimg{
+	padding: 10px 30px 0 85px;
+}
+.c3one input{
+	padding-right: 10px;
+}
+.c3two{
+	margin-bottom: 5px;
+}
+
+.c3right{
+	margin-left: 140px;
+}
+
+.con3 .c3Apptex{
+	width: 520px;
+	height:100px;
+	padding: 0 5px;
+	margin: 10px 0 0 90px;
+}
+/*con4开始*/
+.c4one,
+.c4two,
+.c4three{
+	padding: 5px 0;
+}
+.c4left{
+	position: relative;
+	top: -90px;
+	left: 0;
+}
+.c4three .normalFace{
+	padding: 0 50px 0 10px;
+}
+/*点击上传图片*/
+#fileToUpload{
+	display: none ;
+}
+/*con5开始*/
+.con5{
+	position: relative;
+}
+.c5one,
+.c5two,
+.c5three,
+.c5four,
+.c5five,
+.c5six{
+	padding: 5px 0;
+}{
+	padding: 5px 0;
+}
+.cx1{
+	height: 35px;
+	line-height: 35px;
+	padding-left: 30px;
+	background: url(../img/money.png) left center no-repeat;
+}
+.cx1 form {
+	float: left;
+}
+.cx1 form p{
+	float: left;
+	padding-right: 20px;
+}
+
+.cx1 form label{
+	padding-right: 15px;
+}
+
+.cx2{
+	width: 950px;
+	padding: 10px 10px 10px 15px;
+	margin: 0 auto;
+	background: #EEEEEE;
+	border-radius: 10px;
+	display: none;
+}
+.cx2 form fieldset{
+	padding-bottom: 10px;
+}
+.cx2 form fieldset:last-child{
+	padding-bottom: 0;
+}
+.cx2Lspan{
+	padding-right: 25px;
+}
+.cx2Rspan{
+	margin-left: 25px;
+}
+
+.cx2Lspan input{
+	width: 70px;
+	margin-left: 25px;
+}
+.cx2Rspan input{
+	width: 35px;
+}
+.cx2Fieinput input[type=text]{
+	width: 65px;
+}
+
+
+.cx3 fieldset h4{
+	font-size: 16px;
+	padding-top: 10px;
+}
+
+.cx3 .cx3_in{
+	border-bottom: 1px solid #EEEEEE;
+	padding-top:10px;
+}
+.cx3Inspan{
+	margin-right: 25px;
+	padding-left:0 !important;
+}
+.cx3 .cx3_in span{
+	padding-left:20%;
+}
+
+.cx3 .cx3_in:nth-of-type(6) input,
+.cx3 .cx3_do input{
+	width: 30px;
+}
+.cx3 .cx3_in:nth-of-type(3),
+.cx3 .cx3_in:nth-of-type(6){
+	padding-left: 42px;
+}
+
+.cx3 .cx3_in:nth-of-type(3) span{
+	padding-right: 20px;
+}
+
+.cx3 .cx3_on{
+	padding-top :10px;
+}
+.cx3 .cx3_do{
+	padding-top:10px;
+}
+.c5Appleft{
+	padding-left: 120px !important;
+}
+/*con6开始*/
+.con6{
+    position: relative;
+}
+
+.c6one,
+.c6two,
+.c6three,
+.c6four{
+	padding: 5px 0;
+}
+
+.c6one ul{
+	margin-left: 96px;
+}
+.c6one ul li{
+	display: inline-block;
+	padding: 5px 0;
+}
+.c6Span{
+	position: absolute;
+	top: 10px;
+	left: 36px;
+}
+.c6Price{
+	padding-right: 5px;
+}
+/*con7开始*/
+.c7one,
+.c7two,
+.c7three{
+	padding: 5px 0;
+}
+.c7three .cright,
+.c7three img ,
+.c7 .c7left{
+	float: left;
+}
+
+.c7three img{
+	padding-right: 110px;
+}
+.c7right{
+	padding-left: 110px;
+}
+/*con8开始*/
+.c8one,
+.c8two,
+.c8three,
+.c8four,
+.cPlayingend{
+	padding: 5px 0;
+}
+
+.cPlayingend p{
+	margin-left: 105px;
+}
+.cPlayingend {
+	margin: 20px 150px;
+}
+
+.cPlayingend li{
+	padding: 8px 40px;
+	margin-right: 50px;
+	border-radius: 5px;
+	background: #c9c9c9;
+	display: inline-block;
+}
+.cPlayingend li a{
+	color: #FFFFFF;
+	font-weight: 900;
+	font-size: 20px;
+}
+.cPlayingend li:nth-of-type(2){
+	background: #999;
+	margin:0 60px;
+}
+.cPlayingend li:nth-of-type(3){
+	background: #009946;
+	margin-left:60px;
+}

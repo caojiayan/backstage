@@ -1,0 +1,28 @@
+/*con2中源文件上传*/
+.c2BusImgwrite{
+	background: #EEEEEE;
+	padding:5px 10px ;
+	margin: 10px 36px 10px 0;
+	border-radius: 5px;
+}
+.c2BusImgwrite li{
+	display: inline-block;
+	padding: 0 20px;
+}
+.c3BusImgtex{
+	width: 988px;
+	height: 100px;
+	margin: 10px 36px 10px 0;
+	padding: 5px 10px;
+}
+
+/*con3*/
+.c3BusImgpic{
+	margin: 30px 90px 0 90px ;
+}
+.c3BusImgpic li{
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	padding-right: 40px;
+}

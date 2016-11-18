@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>软信玩乐-音乐</title>
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js" ></script>
+		<script type="text/javascript" src="js/genericJs.js" ></script>
+		<script type="text/javascript" src="js/playingIndex.js" ></script>
+		<script type="text/javascript" src="laydate/laydate.js" ></script>   <!--时间日历-->
+		<link rel="stylesheet" href="css/genericCss.css" />
+		<link rel="stylesheet" href="css/playingIndex.css" />
+		<link rel="stylesheet" href="css/Music.css" />
+	</head>
+	<body>
+		<!--header开始-->
+		<div class="bj1">
+	        <div class="bj1box">
+	            <p>软信商家账号<a style="margin-left: 10px;"></a><a href="javascript:void();">退出</a><a style="margin-left: 20px;"></a><a href="javascript:void();">消息</a></p>
+            <ul class="bj1nav">
+                <li style="padding-right: 0;"><a href="javascript:void();">卖家中心 |</a>
+                    <ul>
+      	                <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void();">开发平台 |</a>
+                    <ul>
+      	                <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void();">软信下载 |</a>
+                    <ul>
+      	                <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void();">软信商城 |</a>
+                    <ul>
+      	                <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void();">软信官网 |</a>
+      	            <ul>
+      	                <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                        <li><a href="javascript:void();">卖家中心</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <div class="bj2">
+            <p>商家经营规则更新通知</a><span>详情</span></a></p>
+        </div>
+        <div class="bj3">
+            <ul>
+                <li><a href="javascript:void();">首页</a></li>
+                <li><a href="javascript:void();">实体</a></li>
+                <li><a href="javascript:void();">人员</a></li>
+                <li><a href="javascript:void();">订单</a></li>
+                <li><a href="javascript:void();">数据</a></li>
+                <li><a href="javascript:void();">钱包</a></li>
+            </ul>
+        </div>
+        <!--header结束-->
+        <!--content开始-->
+         <div class="content">
+        	<!--con1-->
+	        <div class="con1 clearfix">
+		        <div class="con1_nav">
+			        <p>展开左侧<span>新增 - 音乐 </span></p>
+		        </div>
+		        <div class="con1_msg">
+			    <p>软信商家发布“全新实物类商品”的有关规定和说明</p>
+		        </div>
+		        <form>
+		        	<fieldset class="c1one">
+		        		<span class="cright">是否原创</span>
+		        		<label><input name="是否原创" type="radio" value="" />是</label>
+		        		<label><input name="是否原创" type="radio" value="" />否</label>
+		        		<span class="c3right">制作方式</span>
+		        		<label><input name="制作方式" type="radio" value="" />团队</label>
+		        		<label><input name="制作方式" type="radio" value="" />个人</label>
+		        	</fieldset>
+		        	<fieldset class="c1two">
+		        		<span class="cright">主题歌</span>
+		        		<label><input name="主题歌" type="radio" value="" />片头</label>
+		        		<label><input name="主题歌" type="radio" value="" />片尾</label>
+		        		<span class="cright"></span>
+		        		<span>主题指定</span>
+		        		<img src="img/select.png" align="center">
+		        		<input type="text" value="如：中国好声音" onfocus="javascript:if(this.value=='如：中国好声音')this.value='';"/>
+		        		<img src="img/addlitter.png" align="center">
+		        		若无匹配直接输入并点”新增“按钮即可新增”影视作品“
+		        	</fieldset>
+		        	<fieldset class="c1three">
+		        		<span class="cright">专辑/系列</span>
+		        		<label><input name="专辑/系列" type="radio" value="" />是</label>
+		        		<label><input name="专辑/系列" type="radio" value="" />否</label>
+		        		<span class="cright"></span>
+		        		<span>专辑/系列</span>
+		        		<img src="img/select.png" align="center">
+		        		<input type="text" value="如：民歌系列" onfocus="javascript:if(this.value=='如：民歌系列')this.value='';"/>
+		        		<img src="img/addlitter.png" align="center">
+		        		若无匹配直接输入并点”新增“按钮即可新增”专辑/系列“
+		        	</fieldset>
+		        </form>
+		    </div>
+		    <!--con1结束-->
+		    <!--con2开始-->
+		    <div class="con2">
+		    	<form>
+		    		<fieldset class="c2one">
+		    			<span class="cright letterRed">音乐文件</span>
+		    			<a href="javascript:void();"><img src="img/upload.png" align="center" onclick="fileSelect();"></a>
+	    				<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+		    			<span>点我上传</span>
+		    			<span class="c3right">歌名</span>
+		    			<img src="img/select.png" align="center">
+		    			<input type="text" value="" onfocus="javascript:if(this.value=='')this.value='';"/>
+		    			<input type="checkbox" >
+		    			<span class="cright">同文件名</span> 
+		    			支持：mp3/aac/wma等所有音乐文件格式
+		    			<br />
+		    			<ul class="cPlayingnavLi">
+		 		            <li class="c2navli1">文件名：茉莉花.ape</li>
+		 		            <li class="c2navli2">大小：15.6M</li>
+		 		            <li class="c2navli3">原音/伴音分离：是（可支持”K歌“）</li>
+		 	            </ul>
+		    		</fieldset>
+		    		<fieldset class="c2two">
+		    			演唱者
+		    			<img src="img/select.png" align="center">
+		    			<input type="text" value="" onfocus="javascript:if(this.value=='')this.value='';"/>
+		    			<input type="checkbox" >
+		    			<span class="cright">本人</span>
+		    			原唱者
+		    			<img src="img/select.png" align="center">
+		    			<input type="text" value="" onfocus="javascript:if(this.value=='')this.value='';"/>
+		    			<input type="checkbox" >本人
+		    		</fieldset>
+		    		<fieldset class="c2three">
+		    			<span class="letterSpace">做词</span>
+		    			<img src="img/select.png" align="center">
+		    			<input type="text" value="" onfocus="javascript:if(this.value=='')this.value='';"/>
+		    			<input type="checkbox" >
+		    			<span class="cright">本人</span>
+		    			<span class="letterSpace">作曲</span>
+		    			<img src="img/select.png" align="center">
+		    			<input type="text" value="" onfocus="javascript:if(this.value=='')this.value='';"/>
+		    			<input type="checkbox" >本人
+		    		</fieldset>
+		    	</form>
+		    </div>
+		    <!--con2结束-->
+		    <!--con3开始-->
+		    <div class="con3">
+		    	<form>
+		    		<fieldset class="c3one">
+		    			<span class="cright letterRed">歌词上传</span>
+		    			<a href="javascript:void();"><img src="img/upload.png" align="center" onclick="fileSelect();"></a>
+	    				<input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>
+		    			<span class="cright">点我上传</span>
+		    			支持：LRC、ID3（LRC）、TXT、TAG、SRT、UTF、KSC、SMI、ASS、SSA、SNC、QLY、KRC等多种歌曲
+		    			<ul class="cPlayingnavLi">
+		 		            <li class="c2navli1">文件名：茉莉花.irc</li>
+		 		            <li class="c2navli2">大小：10.2k</li>
+		 		            <li class="c2navli3">支持逐字变色：否（演唱进度）</li>
+		 	            </ul>
+		    		</fieldset>
+		    		<fieldset class="c3two">
+		    			<span class="cright">歌词作者</span>
+		    			<input type="text" value="" onfocus="javascript:if(this.value=='')this.value='';"/>
+		    			<input type="checkbox" >
+		    			<span>本人</span>
+		    			<span class="c3right">软信号</span>
+		    			<input type="text" value="" onfocus="javascript:if(this.value=='')this.value='';"/>
+		    			<input type="checkbox" >本人
+		    		</fieldset>
+		    		<fieldset class="c3three">
+		    			<span class="cright letterRed">分类标签</span>
+		    			若无匹配可直接输入后”新增“标签
+		    			<br />
+		    			<!--分类标签-->
+		    			<div class="c3MusicLyric">
+		    				<span class="cright">曲风流派</span>
+		    				<div class="dropdown" style="z-index: 10003;">  <!-- 模拟 select 的标记， -->
+			                    <input class="editor" type="text" value="民谣" onfocus="javascript:if(this.value=='民谣')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                    <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                    <ul>   <!-- 列表菜单 -->
+				                    <li class="search" style="border: 1px solid #EEEEEE;">
+					                    <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                    </li>   <!-- 过滤输入的列表， -->
+				                    <li data-value=民谣>民谣</li>
+				                    <li data-value=112>112</li>
+				                    <li data-value=223>223</li>
+				                    <li data-value=335>335</li>
+				                    <li data-value=224>224</li>
+				                    <li data-value=336>336</li>
+				                    <li data-value=447>447</li>
+				                    <li data-value=448>448</li>
+				                    <li data-value=559>559</li>
+			                    </ul>
+		                    </div>
+		                    <input type="button" value="新增">
+		                    <span class="c3right"></span>
+		                    <span class="cright">语言</span>
+		    				<div class="dropdown" style="z-index: 10003;">  <!-- 模拟 select 的标记， -->
+			                    <input class="editor" type="text" value="华语" onfocus="javascript:if(this.value=='华语')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                    <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                    <ul>   <!-- 列表菜单 -->
+				                    <li class="search" style="border: 1px solid #EEEEEE;">
+					                    <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                    </li>   <!-- 过滤输入的列表， -->
+				                    <li data-value=华语>华语</li>
+				                    <li data-value=112>112</li>
+				                    <li data-value=223>223</li>
+				                    <li data-value=335>335</li>
+				                    <li data-value=224>224</li>
+				                    <li data-value=336>336</li>
+				                    <li data-value=447>447</li>
+				                    <li data-value=448>448</li>
+				                    <li data-value=559>559</li>
+			                    </ul>
+		                    </div>
+		                    <input type="button" value="新增">
+		    			</div>
+		    			<div class="c3MusicLyric">
+		    				<span class="cright" style="padding-left: 32px;">场景</span>
+		    				<div class="dropdown" style="z-index: 10002;">  <!-- 模拟 select 的标记， -->
+			                    <input class="editor" type="text" value="旅行" onfocus="javascript:if(this.value=='旅行')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                    <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                    <ul>   <!-- 列表菜单 -->
+				                    <li class="search" style="border: 1px solid #EEEEEE;">
+					                    <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                    </li>   <!-- 过滤输入的列表， -->
+				                    <li data-value=旅行>旅行</li>
+				                    <li data-value=112>112</li>
+				                    <li data-value=223>223</li>
+				                    <li data-value=335>335</li>
+				                    <li data-value=224>224</li>
+				                    <li data-value=336>336</li>
+				                    <li data-value=447>447</li>
+				                    <li data-value=448>448</li>
+				                    <li data-value=559>559</li>
+			                    </ul>
+		                    </div>
+		                    <input type="button" value="新增">
+		                    <span class="c3right"></span>
+		                    <span class="cright">心情</span>
+		    				<div class="dropdown" style="z-index: 10002;">  <!-- 模拟 select 的标记， -->
+			                    <input class="editor" type="text" value="愉悦" onfocus="javascript:if(this.value=='愉悦')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                    <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                    <ul>   <!-- 列表菜单 -->
+				                    <li class="search" style="border: 1px solid #EEEEEE;">
+					                    <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                    </li>   <!-- 过滤输入的列表， -->
+				                    <li data-value=愉悦>愉悦</li>
+				                    <li data-value=112>112</li>
+				                    <li data-value=223>223</li>
+				                    <li data-value=335>335</li>
+				                    <li data-value=224>224</li>
+				                    <li data-value=336>336</li>
+				                    <li data-value=447>447</li>
+				                    <li data-value=448>448</li>
+				                    <li data-value=559>559</li>
+			                    </ul>
+		                    </div>
+		                    <input type="button" value="新增">
+		    			</div>
+		    			<div class="c3MusicLyric">
+		    				<span class="cright" style="padding-left: 32px;">国家</span>
+		    				<div class="dropdown" style="z-index: 10001;">  <!-- 模拟 select 的标记， -->
+			                    <input class="editor" type="text" value="中国" onfocus="javascript:if(this.value=='中国')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                    <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                    <ul>   <!-- 列表菜单 -->
+				                    <li class="search" style="border: 1px solid #EEEEEE;">
+					                    <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                    </li>   <!-- 过滤输入的列表， -->
+				                    <li data-value=中国>中国</li>
+				                    <li data-value=112>112</li>
+				                    <li data-value=223>223</li>
+				                    <li data-value=335>335</li>
+				                    <li data-value=224>224</li>
+				                    <li data-value=336>336</li>
+				                    <li data-value=447>447</li>
+				                    <li data-value=448>448</li>
+				                    <li data-value=559>559</li>
+			                    </ul>
+		                    </div>
+		                    <input type="button" value="新增">
+		                    <span class="c3right"></span>
+		                    <span class="cright">形式</span>
+		    				<div class="dropdown" style="z-index: 10001;">  <!-- 模拟 select 的标记， -->
+			                    <input class="editor" type="text" value="歌曲" onfocus="javascript:if(this.value=='歌曲')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                    <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                    <ul>   <!-- 列表菜单 -->
+				                    <li class="search" style="border: 1px solid #EEEEEE;">
+					                    <input type="text" value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                    </li>   <!-- 过滤输入的列表， -->
+				                    <li data-value=歌曲>歌曲</li>
+				                    <li data-value=112>112</li>
+				                    <li data-value=223>223</li>
+				                    <li data-value=335>335</li>
+				                    <li data-value=224>224</li>
+				                    <li data-value=336>336</li>
+				                    <li data-value=447>447</li>
+				                    <li data-value=448>448</li>
+				                    <li data-value=559>559</li>
+			                    </ul>
+		                    </div>
+		                    <input type="button" value="新增">
+		                    可选：歌曲/纯乐器/大自然
+		    			</div>
+		    			<!--分类标签结束-->
+		    		</fieldset>
+		    	</form>
+		    </div>
+		    <!--con3结束-->
+		    <!--con4开始-->
+		    <div class="con4">
+		    	<form>
+		    		<fieldset class="c4one">
+		    			<span class="cright">音乐图片</span>
+		    	                           至少2张（封面图+音乐图：各1张），1500*1000px,支持：jpg等图片格式
+		    	        <ul class="c4Musicpic">
+		    				<li>
+		    					<a href="javascript:void();"><img src="img/pictureH.png" align="center" onclick="fileSelect();"></a>
+	    					    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>  
+		    				</li>
+		    				<li>
+		    					<a href="javascript:void();"><img src="img/pictureH.png" align="center" onclick="fileSelect();"></a>
+	    					    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>  
+		    				</li>
+		    				<li>
+		    					<a href="javascript:void();"><img src="img/pictureH.png" align="center" onclick="fileSelect();"></a>
+	    					    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>  
+		    				</li>
+		    				<li>
+		    					<a href="javascript:void();"><img src="img/pictureH.png" align="center" onclick="fileSelect();"></a>
+	    					    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>  
+		    				</li>
+		    				<li>
+		    					<a href="javascript:void();"><img src="img/pictureH.png" align="center" onclick="fileSelect();"></a>
+	    					    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelect();"/>  
+		    				</li>
+		    			</ul>
+		    			<ul class="c4Musicpic">
+		    				<li>封面图</li>
+		    				<li>音乐图1</li>
+		    				<li>音乐图2</li>
+		    				<li>音乐图3</li>
+		    				<li>音乐图4</li>
+		    			</ul>
+		    		</fieldset>
+		    	</form>
+		    </div>
+		    <!--con4结束-->
+		    <!--con5开始-->
+		    <div class="con5">
+		    	<div class="cx1">
+			        <form action="" method="">
+				        <p>交易类型</p>
+				        <label><input name="交易类型" type="radio" value="cx1one" id="cx1one" onclick="aCheck1()" />零售</label> 
+                        <label><input name="交易类型" type="radio" value="cx1two" id="cx1two" onclick="bCheck2()" />批发 </label> 
+                        <label><input name="交易类型" type="radio" value="cx1three" id="cx1three" onclick="cCheck3()"/>租赁</label> 
+                        <label><input name="交易类型" type="radio" value="cx1four" id="cx1four" onclick="dCheck4()"/>招商</label>
+                        <label><input name="交易类型" type="radio" value="cx1five" id="cx1five" onclick="eCheck5()" />代管</label> 
+                        <label><input name="交易类型" type="radio" value="cx1six" id="cx1six" onclick="fCheck6()"/>预售 </label> 
+                        <label><input name="交易类型" type="radio" value="cx1seven" id="cx1seven" onclick="gCheck7()"/>拍卖</label> 
+                        <label><input name="交易类型" type="radio" value="cx1eight" id="cx1eight" onclick="hCheck8()" />团购</label>
+			        </form>
+		        </div>
+		        <!--con5交易类型-->
+		        <!--拍卖-->
+		        <div class="cx2" id="cx17">
+			        <form action="" method="">
+				        <fieldset>
+					                预约时间
+					        <input id="Time1" placeholder="请输入预约开始时间" class="laydate-icon" onClick="laydate({elem: '#Time1', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+					        至 
+					        <input id="Time2" placeholder="请输入预约结束时间" class="laydate-icon" onClick="laydate({elem: '#Time2', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+					                      预约：最长15天
+				        </fieldset>
+				        <fieldset>
+					                      拍卖时间
+					        <input id="Time3" placeholder="请输入拍卖开始时间" class="laydate-icon" onClick="laydate({elem: '#Time3', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+					        至 
+					        <input id="Time4" placeholder="请输入拍卖结束时间" class="laydate-icon" onClick="laydate({elem: '#Time4', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+					                      拍卖：最长30分钟
+				        </fieldset>
+				        <fieldset>
+					                     拍卖地点
+					        <label><input name="网络拍卖" type="radio" value="" />网络拍卖</label> 
+                            <label><input name="线下拍卖" type="radio" value="" />线下拍卖</label>
+                                                                           调价幅度：<input type="text"  value="100" onfocus="javascript:if(this.value=='100')this.value='';"/> 元/次
+				        </fieldset>
+				        <fieldset>
+					                      详细地址
+					            <span class="dropdown padleft5px" >  <!-- 模拟 select 的标记， -->
+			                        <input class="editor" type="text" value="广东省" onfocus="javascript:if(this.value=='广东省')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=广东省>广东省</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=223>223</li>
+				                        <li data-value=335>335</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span>
+                                <span class="dropdown padleft5px" >  <!-- 模拟 select 的标记， -->
+			                        <input class="editor" type="text" value="广州市" onfocus="javascript:if(this.value=='广州市')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=广州市>广州市</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=223>223</li>
+				                        <li data-value=335>335</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span>
+                                <span class="dropdown padleft5px" >  <!-- 模拟 select 的标记， -->
+			                        <input class="editor" type="text" value="白云区" onfocus="javascript:if(this.value=='白云区')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=白云区>白云区</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=223>223</li>
+				                        <li data-value=335>335</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span>
+					        <input type="text"  value="**建筑**层**房" onfocus="javascript:if(this.value=='**建筑**层**房')this.value='';"/>
+					                      地图未标注<span>*</span><img src="img/map.png" alt="地图标注">
+				        </fieldset>
+			        </form>
+		        </div>
+		        <!--零售-->
+		        <div class="cx2" id="cx11" style="display: block;">
+			        <form>
+				        <fieldset>
+					        <span class="cx2Lspan">周期购</span>
+					        <label><input name="周期购" type="radio" value="" />不支持</label> 
+                            <label><input name="周期购" type="radio" value="" />支持</label>
+                            <span class="cx2Rspan">支持周期</span>
+                            <input type="checkbox" >隔N天/次
+                            <input type="checkbox" >每周固定周几
+                            <input type="checkbox" >每月固定日期
+				        </fieldset>
+				        <fieldset>
+					        <span class="cx2Lspan letterSpace">定制</span>
+					        <label><input name="定制" type="radio" value="" />不支持</label> 
+                            <label><input name="定制" type="radio" value="" />支持</label>
+                            <span class="cx2Rspan">定制方式</span>
+                            <input type="checkbox" >按图片
+                            <input type="checkbox" >按样板
+                            <input type="checkbox" >设计稿
+				        </fieldset>
+				        <fieldset>
+					        <span class="cx2Lspan">数量至少
+					        	<input type="text" value="1000" onfocus="javascript:if(this.value=='10000')this.value='';"/>包
+					        </span>
+					        <span class="cx2Rspan">定金占比
+						        <input type="text" value="35" onfocus="javascript:if(this.value=='35')this.value='';"/>%
+					        </span>
+					                      若验收失败
+					        <label><input name="定制" type="radio" value="" />全额退款</label> 
+                            <label><input name="定制" type="radio" value="" />条件退款</label>
+                            <label><input name="定制" type="radio" value="" />不退款</label>
+				        </fieldset>
+			        </form>
+		        </div>
+		        <!--批发-->
+	            <div class="cx2" id="cx12" >
+			        <form>
+				        <fieldset>
+					        <span class="cx2Lspan">周期购</span>
+					        <label><input name="周期购" type="radio" value="" />不支持</label> 
+                            <label><input name="周期购" type="radio" value="" />支持</label>
+                            <span class="cx2Rspan">支持周期</span>
+                            <input type="checkbox" >隔N天/次
+                            <input type="checkbox" >每周固定周几
+                            <input type="checkbox" >每月固定日期
+				        </fieldset>
+				        <fieldset>
+					        <span class="cx2Lspan letterSpace">定制</span>
+					        <label><input name="定制" type="radio" value="" />不支持</label> 
+                            <label><input name="定制" type="radio" value="" />支持</label>
+                            <span class="cx2Rspan">定制方式</span>
+                            <input type="checkbox" >按图片
+                            <input type="checkbox" >按样板
+                            <input type="checkbox" >设计稿
+				        </fieldset>
+				        <fieldset>
+					        <span class="cx2Lspan">数量至少
+					        	<input type="text" value="1000" onfocus="javascript:if(this.value=='10000')this.value='';"/>包
+					        </span>
+					        <span class="cx2Rspan">定金占比
+						        <input type="text" value="35" onfocus="javascript:if(this.value=='35')this.value='';"/>%
+					        </span>
+					                      若验收失败
+					        <label><input name="定制" type="radio" value="" />全额退款</label> 
+                            <label><input name="定制" type="radio" value="" />条件退款</label>
+                            <label><input name="定制" type="radio" value="" />不退款</label>
+				        </fieldset>
+				        <fieldset class="cx2Fieinput">
+					        <span class="cx2Lspan letterSpace">混批</span>
+					        <label><input name="混批" type="radio" value="" />不支持</label> 
+                            <label><input name="混批" type="radio" value="" />支持</label>
+                            <span class="cx2Rspan">混批条件</span>
+                            1笔订单
+                            <input type="text" value="单价" onfocus="javascript:if(this.value=='单价')this.value='';"/>
+                            <input type="text" value="数量" onfocus="javascript:if(this.value=='总数量')this.value='';"/>
+                                                                           达到
+                            <input type="text" value="输入总金额" onfocus="javascript:if(this.value=='输入总金额')this.value='';"/>元
+				        </fieldset>
+				        <fieldset class="cx2Fieinput">
+					        <span class="cx2Lspan" style="padding-right: 9px;">免费拿样</span>
+					        <label><input name="免费拿样" type="radio" value="" />不支持</label> 
+                            <label><input name="免费拿样" type="radio" value="" />支持</label>
+                            <span class="cx2Rspan">返钱条件</span> 1笔订单
+                            <input type="text" value="35" onfocus="javascript:if(this.value=='35')this.value='';"/>天内单笔订单达
+                            <input type="text" value="2900" onfocus="javascript:if(this.value=='2900')this.value='';"/>元抵扣拿样费用
+				        </fieldset>
+			        </form>
+		        </div>
+		        <!--租赁-->
+		        <div class="cx2" id="cx13" >
+			        <form>
+			            <fieldset>
+					        <span class="cx2Lspan">租赁时长</span>
+					        <select name="租赁时长" >
+                                <option value="">小时</option>
+                                <option value="">天</option>
+                                <option value="">月</option>
+                                <option value="">年</option>
+                            </select>
+					        <span class="cx2Rspan">最小起租
+						        <input type="text" value="2" onfocus="javascript:if(this.value=='2')this.value='';"/>小时
+					        </span>
+				        </fieldset>
+				        <fieldset class="cx2Fieinput">
+					        <span class="cx2Lspan letterSpace">诚信金</span>
+					        <label>
+						        <input name="诚信金" type="radio" value="" />
+					                                 按比例<input type="text" value="15" onfocus="javascript:if(this.value=='15')this.value='';"/>%
+					        </label> 
+                            <label>
+                    	        <input name="诚信金" type="radio" value="" />
+                    	                      固定金额<input type="text" value="2" onfocus="javascript:if(this.value=='2')this.value='';"/>%
+                    	        <select name="固定金额" >
+                                    <option value="">万元</option>
+                                    <option value="">百元</option>
+                                    <option value="">十元</option>
+                                    <option value="">元</option>
+                                </select>
+                            </label>
+                            <label>
+                    	        <input name="购买数量" type="radio" value="" />无
+                            </label>
+				        </fieldset>
+			        </form>
+		        </div>
+		        <!--招商-->
+		        <div class="cx2" id="cx14" >
+			        <form>
+				        <fieldset class="cx2Fieinput">
+					        <span class="cx2Lspan">诚信金</span>
+					        <label>
+						        <input name="诚信金" type="radio" value="" />
+					                                 按比例<input type="text" value="15" onfocus="javascript:if(this.value=='15')this.value='';"/>%
+					        </label> 
+                            <label>
+                    	        <input name="诚信金" type="radio" value="" />
+                    	                      固定金额<input type="text" value="2" onfocus="javascript:if(this.value=='2')this.value='';"/>%
+                    	        <select name="固定金额" >
+                                    <option value="">万元</option>
+                                    <option value="">百元</option>
+                                    <option value="">十元</option>
+                                    <option value="">元</option>
+                                </select>
+                            </label>
+                            <label>
+                    	        <input name="购买数量" type="radio" value="" />无
+                            </label>
+				        </fieldset>
+			        </form>
+		        </div>
+		        <!--代卖-->
+		        <div class="cx2" id="cx15">
+			        <form>
+				        <fieldset class="cx2Fieinput">
+					        <span class="cx2Lspan">代卖佣金占比</span>
+					        <input type="text" value="15" onfocus="javascript:if(this.value=='15')this.value='';"/>%
+				        </fieldset>
+			        </form>
+		        </div>
+		        <!--预售-->
+		        <div class="cx2" id="cx16" >
+			        <form>
+				        <fieldset class="cx2Fieinput">
+					        <span class="cx2Lspan">佣金占比</span>
+					        <input type="text" value="25" onfocus="javascript:if(this.value=='25')this.value='';"/>%
+				        </fieldset>
+				        <fieldset class="cx2Fieinput">
+					        <span class="cx2Lspan">发货日期</span>
+					        <input id="Time5" placeholder="请输入发货日期" class="laydate-icon" onClick="laydate({elem: '#Time5', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+					        <span class="cx2Rspan">撤单日期</span>
+					        <input id="Time6" placeholder="请输入撤单日期" class="laydate-icon" onClick="laydate({elem: '#Time6', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+				        </fieldset>
+				        <fieldset class="cx2Fieinput">
+					        <span class="cx2Lspan">余款期限</span>
+					        <input id="Time7" placeholder="请输入余款期限" class="laydate-icon" onClick="laydate({elem: '#Time7', istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+					        <span class="cx2Rspan">未收到余款，则</span>
+					        <label><input name="未收到余款" type="radio" value="" />撤销订单
+					        <label><input name="未收到余款" type="radio" value="" />转为到付
+				        </fieldset>
+			        </form>
+		        </div>
+		        <!--团购-->
+		        <div class="cx2" id="cx18" >
+			        <form>
+				        <fieldset class="cx2Fieinput">
+					        <span class="cx2Lspan">起团人数
+						        <input type="text" value="100" onfocus="javascript:if(this.value=='100')this.value='';"/>人
+					        </span>
+				        </fieldset>
+			        </form>
+		        </div>
+		        <!--cont2交易类型结束-->
+		        <div class="cx3">
+			        <form action="" method="">
+			            <fieldset>
+			                <h4>付款方式</h4>
+			                <div class="cx3_in">
+				                <img src="img/cxno.png" />
+				                <input type="checkbox" >全付<span>(全付，先金额付款再发货，不支持预售交易类型）</span>
+			                </div>
+			                <div class="cx3_in">
+				                <img src="img/cxno.png" />
+				                <input type="checkbox" >到付<span>(到付，下单后商家发货，客户验收合格后全额支付货款）</span>
+			                </div>
+			                <div class="cx3_in">服务费 
+				                <label><input name="服务费" type="radio" value="" />商家出</label> 
+                                <label><input name="服务费" type="radio" value="" />客户出 </label>
+			                </div>
+                            <div class="cx3_in">
+            	                <img src="img/cxno.png" />
+            	                <input type="checkbox" >面付<span>(面付，面对面交易，常用于同城、附近的交易支付）</span>
+                            </div>
+			                <div class="cx3_in">
+				                <img src="img/cxno.png" />
+				                <input type="checkbox" >分段<span>(分段，即先付定金，验收合格后再付尾款）</span>
+			                </div>
+			                <div class="cx3_in">订金占比
+				                <input type="text"  value="35" onfocus="javascript:if(this.value=='35')this.value='';"/>%  
+				                <span class="c5Appleft">若验收失败</span>
+			                    <label><input name="若验收失败" type="radio" value="" />全额退款</label> 
+                                <label><input name="若验收失败" type="radio" value="" />协商解决</label>
+			                </div>
+                            <div class="cx3_on">
+                                <span class="cright">支持货币</span>
+                                <input type="checkbox" >人民币
+                                <input type="checkbox" >软信币
+                                <input type="checkbox" >美元
+                                <input type="checkbox" >其他
+                                <span class="dropdown padleft5px" style="z-index: 10000;">  <!-- 模拟 select 的标记， -->
+			                        <input class="editor" type="text" value="欧元" onfocus="javascript:if(this.value=='欧元')this.value='';"/> <!-- 显示当前值的输入框 -->
+			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
+			                        <ul>   <!-- 列表菜单 -->
+				                        <li class="search" style="border: 1px solid #EEEEEE;">
+					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
+				                        </li>   <!-- 过滤输入的列表， -->
+				                        <li data-value=欧元>欧元</li>
+				                        <li data-value=112>112</li>
+				                        <li data-value=223>223</li>
+				                        <li data-value=335>335</li>
+				                        <li data-value=224>224</li>
+				                        <li data-value=336>336</li>
+				                        <li data-value=447>447</li>
+				                        <li data-value=448>448</li>
+				                        <li data-value=559>559</li>
+			                        </ul>
+		                        </span>
+			                </div>
+			                <div class="cx3_do">
+				                <span>软信币抵扣比例</span>
+				                <input type="text"  value="9" onfocus="javascript:if(this.value=='9')this.value='';"/>% <span class="c5Appleft">提示：最大支持99%，超过50%则销售不计搜索排名，建议设置20%左右（转化率会提升明显）</span>
+			                </di>
+			            </fieldset>
+			        </form>
+		        </div>
+		    </div>
+		    <!--con5结束-->
+		    <!--con6开始-->
+		    <div class="con6">
+		    	<form>
+		    		<fieldset class="c6one">
+		    			<span class="cright letterRed">收费模式</span>
+		    		</fieldset>
+		    		<fieldset class="c6two">
+		    			<span class="cright" style="margin-right: 10px;">源文件</span>
+		    			<label><input name="源文件" type="radio" value="" />免费</label>
+		    			<label><input name="源文件" type="radio" value="" />收费</label>
+		    			<span class="cright">
+		    				<input type="checkbox" >
+		    				我同意加入<a href="javascript:void();"><span class="letterBlue">《音乐库计划》</span></a>
+		    			</span>
+		    			提示：入库共享并按播放量收费
+		    		</fieldset>
+		    		<fieldset class="c6three">
+		    			<span class="cright" style="margin-right: 10px;">价格￥</span>
+		    			<label><input name="价格￥" type="radio" value="" />1分/次</label>
+		    			<label><input name="价格￥" type="radio" value="" />
+		    			自定：<input class="numWidth" type="text" value="9" onfocus="javascript:if(this.value=='9')this.value='';"/>分
+		    			</label>
+		    			<span class="c3right">价格范围：1~99元</span>
+		    		</fieldset>
+		    		<ul class="cPlayingend">
+	    				<li><a href="javascript:void();">存为草稿</a></li>
+	    				<li><a href="javascript:void();">放入仓库</a></li>
+	    				<li><a href="javascript:void();">上架销售</a></li>
+	    			</ul>
+		    	</form>
+		    </div>
+		    <!--con6结束-->
+		</div>
+		<!--content结束-->
+		<!--footer开始-->
+        <div class="bj4 clearfix">
+            <p style="color:#999;">
+  	            <span>
+  		            <a href="javascript:void();">申请入驻</a>
+  		            &nbsp;&nbsp;
+  		            <a href="javascript:void();">申请合作</a>
+  		            &nbsp;&nbsp;
+  		            <a href="javascript:void();">开发平台</a>
+  		            &nbsp;&nbsp;
+  		            <a href="javascript:void();">关于软信</a>
+  	            </span>
+  	                                  粤ICP路1507617号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@2016&nbsp;&nbsp;软信&nbsp;&nbsp;版权所有&nbsp; 
+            </p>
+        </div>
+        <!--footer结束-->
+	</body>
+</html>

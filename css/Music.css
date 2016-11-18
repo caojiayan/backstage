@@ -1,0 +1,39 @@
+/*音乐文件/歌词文件*/
+.cPlayingnavLi{
+	float: left;
+	padding-top: 10px;
+	padding-left: 42px;
+}
+.cPlayingnavLi{
+	background: #EEEEEE;
+	width: 988px;
+	margin: 10px 36px 10px 0;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+.cPlayingnavLi li{
+	display: inline-block;
+	padding-right: 10px;
+	margin-right: 10px;
+	background-size: 10px 10px;
+}
+.c2one{
+	background: url(../img/music2.png) no-repeat left top;
+}
+.c3one{
+	background: url(../img/music1.png) no-repeat left top;
+}
+.c3MusicLyric{
+	margin:10px 0;
+}
+/**/
+.c4Musicpic{
+	margin: 20px 90px 0 90px ;
+}
+.c4Musicpic li{
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	padding-right: 30px;
+}
