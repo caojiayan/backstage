@@ -1,0 +1,346 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*con1*/
+.con1,
+.cont2,
+.cont3,
+.cont4,
+.cont1Choice{
+	border-bottom: 1px solid #009843;
+}
+.cont2,
+.cont3{
+	padding: 10px 5px 5px 45px;
+}
+.c1mTable{
+	padding: 5px 0;
+	margin: 0 20px;
+	width: 1030px;
+}
+.c1mTable tr td{
+	padding: 5px 0;
+}
+.con1_main span{
+	float: left;
+}
+.c1mChanger{
+	width: 150px;
+	height: 30px;
+	padding-left: 25px;
+}
+.c1mChanger ul{
+	width:150px;
+	height: 25px;
+}
+.c1mChanger ul li{
+	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
+	text-align: center;
+	line-height: 25px;
+	float: left; 
+	list-style: none;
+	padding: 0 5px;
+	
+}
+.c1mChanger ul li:first-child{
+	border: 1px solid #009843;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-right: none;
+}
+.c1mChanger ul li:last-child{
+	border: 1px solid #009843;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background: #009843;
+}
+.c1mChanger ul li:last-child a{
+	color: #FFF !important;
+}
+.c1mTableul{
+	background: #EEEEEE;
+	border-radius: 5px;
+}
+.c1mTableul li{
+	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
+	padding:0 5px;
+}
+/*类别选择左边距*/
+.c1mTleft{
+	padding-left: 25px;
+}
+
+/*展现侧重*/
+.cont1Choice{
+	padding:10px 45px;
+}
+.cont1Choice fieldset:first-child{
+	margin-bottom: 10px;
+}
+.Choiceright{
+	margin-left: 50px;
+}
+.con1_mUl{
+	padding-left: 25px;
+	padding:5px 0 5px 25px;
+}
+.con1_mUl li{
+	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
+	width: 33%;
+	text-align: left;
+}
+.con1_mUl .c1mTableul li{
+	width: auto;
+	padding: 0 5px;
+}
+
+/*cont2*/
+.cont2Table {
+	margin: 10px 0 5px 0;
+}
+.cont2Table tr:first-child{
+	background: #EEEEEE;
+}
+.cont2Table td{
+	text-align: center;
+	padding: 3px 0;
+}
+/*cont3*/
+.cont3{
+	position: relative;
+}
+.cont3Ul{
+	margin: 5px 0;
+}
+.cont3Ul:first-child{
+	margin-top: 10px;
+}
+.cont3Ul input[type=date]{
+	width: 110px;
+}
+.cont3Ul li{
+	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
+	width: 47%;
+}
+.cont3Box{
+	margin: 5px 0 5px 20px;
+	padding:10px 0 10px 10px;
+	background: #EEEEEE;
+	border-radius:5px;
+}
+.cont3Box ul li{
+	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
+	padding: 5px;
+}
+.cont3Space{
+	margin-top: 5px;
+}
+.cont3Ultwo{
+	margin: 10px 0 5px 25px;
+}
+.cont3Ultwo ul li{
+	padding: 5px 10px;
+	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
+}
+
+/*cont4*/
+.con8{
+	border-bottom:none;
+}
+
+/*交易类型*/
+.cx3Box{
+	padding-left: 30px;
+}
+/*c4设置单位*/
+/*con4*/
+
+.cv1one .c4Ul:nth-of-type(2){
+	padding-left: 50px;
+	margin:5px 0;
+}
+.cv1one .c4Ul:last-child{
+	padding-left: 35px;
+	margin:5px 0;
+}
+.c4Ul:first-child{
+	margin-left: ;
+	padding-left: 20px;
+	background:url(../img/key2.png)no-repeat left center;
+}
+.c4Ul li{
+	padding-left: 25px;
+	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
+}
+.c4Ul li:first-child{
+	padding-left: 0;
+}
+/*设置单位*/
+.con4 .cv1{
+	margin:5px 0 5px 29px;
+}
+/*服务规格*/
+.con4 .cv1one{
+	margin-left: 25px;
+}
+.li50px{
+	width:35px;
+}
+.li120px{
+	width: 120px;
+}
+
+/*cv3总库存*/
+.con4 .cv3{
+	margin:10px 0 10px 29px;
+	padding-left: 16px;
+}
+/*cv4换算设置*/
+.con4 .cv4{
+	margin:10px 0 0 29px;
+	padding-left: 16px;
+}
+/*cont5包装配置*/
+.cont5{border-bottom: 1px solid #009843;
+	  padding:10px 5px 5px 25px ;
+}
+.cont5 fieldset{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.ct5two,
+.ct5three{
+	padding-left: 20px;
+}
+.ct5one .ct5oneBox{
+	margin-left: 60px;
+}
+.ct5oneBox .ct51s{
+	padding: 0 6px;
+	border-radius: 10px;
+	background: #999;
+	color: #FFFFFF;
+}
+.ct5oneBox p{
+	padding: 5px 0;
+}
+
+/*商品SKU*/
+#table-container{
+	width:1079px;
+	height:auto;
+	overflow: auto;
+	border: 1px solid #DDD;
+	border-right: 0;
+	font-size: 14px;
+	margin:10px 0;
+}
+
+#table-container table{
+	width: 100%;
+	border-width: 0;
+	border-collapse: collapse;
+}
+
+#table-container table td{
+	height: 36px !important;
+	padding: 0;
+	border-bottom: 1px solid #DDD;
+	background: #FFF;
+}
+#table-container .table-top td:last-child{
+	border-right: 0px solid #DDD;
+}
+#table-container .table-right td:last-child{
+	border-right: 0px solid #DDD;
+}
+#table-container .table-right tr:last-child td{
+	border-bottom: 0px solid #DDD;
+}
+#table-container .table-left tr:last-child td{
+	border-bottom: 0px solid #DDD;
+}
+#table-container td div{
+	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
+	margin:3px 5px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	text-align: left;
+	line-height:20px; /*24*/
+}
+#table-container .table-lt{
+	position: fixed;
+	z-index:3;
+}
+#table-container .table-top{
+	position:fixed;  /*fixed*/
+	overflow:hidden;
+	z-index:3;
+}
+#table-container .table-left{
+	position: fixed;
+	overflow:hidden;
+	z-index:2;
+}
+#table-container .table-right{
+	position: relative;
+	z-index:1;
+}
+#table-container .table-mask{
+	position: relative;
+}
+.table-maskTr td{
+    background: #EEEEEE !important;
+}
+.table_lUl li{
+    display: inline-block;
+    /*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
+    padding:0 5px;
+}
+#table-container img{
+	vertical-align:middle; /*图片垂直居中*/
+	/*去除IE6/7中图片边框*/
+	border: 0;
+}
+#table-container td input{
+	border:1px solid #999;
+	border-radius: 5px;
+	height: 16px;
+	padding: 0 2px;
+}
+.W20H24img{
+	width: 20px !important;
+	/*去除IE6/7中图片边框*/
+	border: 0;
+}
+.tableRt td{
+	background: #EEEEEE !important;
+}

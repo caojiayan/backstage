@@ -1,0 +1,964 @@
+
+/*con1开始*/
+.con1_nav{
+	height: 55px;
+	line-height: 55px;
+	padding-left: 18px;
+}
+.con1_nav p{
+	padding-left: 30px;
+	background:url(../img/open.png) no-repeat left center;
+}
+.con1_nav p span{
+	margin-left: 160px;
+	color: #999;
+	font-size: 20px;
+	font-weight: bold;
+}
+.con1_msg{
+	height: 30px;
+	line-height: 30px;
+	padding-left:18px;
+	background: #EEEEEE;
+	
+}
+.con1_msg p{
+	padding-left: 60px;
+	background: url(../img/horn.png) no-repeat left center ;
+}
+
+.con1Category{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #009843;
+}
+
+.con1Ca1,
+.con1Ca2{
+	padding:5px 0 5px 16px;	
+}
+
+.con1Ca3{
+	padding:0 0 0 16px;
+}
+.con1Ca1,
+.con1Ca2,
+.con1Ca3{
+	height: 30px;
+}
+.con1Ca1{
+	padding-top: 10px;
+}
+/*con1中类别选择新增*/
+.c1Proinput1,
+.c1Proinput2 {
+	width:35px;
+	float: left;
+}
+.cs3 input[type="button"],
+.c1Proinput1,
+.c1Proinput2 {
+	border-bottom-width: 0;	
+}
+
+.cs1{
+	padding:0 10px 0 30px;
+	background:url(../img/select.png) no-repeat left center;
+}
+
+.cs2{
+	padding: 0 8px;
+}
+.con1Ca1 form fieldset{
+	float: left;
+}
+.con1Ca1 form fieldset legend{
+	float: left;
+} 
+.con1Ca1 form fieldset div {
+	float: left;
+}
+
+.con1Ca1 fieldset:nth-of-type(2){
+	margin-left: 50px;
+}
+
+.cs3{
+	padding-left: 30px;
+	background:url(../img/keylitter.png) no-repeat left center;
+}
+.cs3 span,
+.cs3left,
+.cs3right{
+	float: left;
+}
+
+.cs3right:nth-of-type(1){
+	margin-left: 50px;
+}
+
+.cs3left{
+	margin-right: 40px;
+	padding: 0 10px 0 0;
+	color: #fc6700;
+}
+.cs3right span{
+	padding-left: 25px;
+	background: url(../img/keylitter.png) left center no-repeat;
+}
+
+/*con2部分开始*/
+.con2{
+	padding:10px 16px ;
+	border-bottom: 1px solid #009946;
+}
+.con2 .cs0{
+	padding-left: 30px;
+	float: left;
+}
+
+.con2 fieldset:nth-of-type(2){
+	float: left;
+	margin-top: 10px;
+}
+
+.con2 form fieldset:nth-of-type(2) p{
+	float: left;
+	padding-left: 30px;
+}
+.con2_nav{
+	float: left;
+	padding-top: 10px;
+	padding-left: 42px;
+}
+.con2_nav ul{
+	background: #EEEEEE;
+	padding:0 5px 0 15px;
+	-moz-border-radius:5px; /* Firefox */
+    -webkit-border-radius:5px; /* Safari 和 Chrome */
+    border-radius:5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+}
+
+.con2_nav ul li{
+	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
+	padding:5px 10px 5px 0;
+	margin-right: 10px;
+	background-size: 10px 10px;
+}
+/*con3部分开始*/
+.con3{
+	border-bottom: 1px solid #009843;
+	padding:5px 5px 10px 16px ;
+	position: relative;
+}
+
+.cx1{
+	height: 35px;
+	line-height: 35px;
+	padding-left: 30px;
+	background: url(../img/money.png) left center no-repeat;
+}
+.cx1 form {
+	float: left;
+}
+.cx1 form p{
+	float: left;
+	padding-right: 20px;
+}
+
+.cx1 form label{
+	padding-right: 15px;
+}
+
+.cx2{
+	padding: 10px 0 10px 15px;
+	margin-left: 30px;
+	background: #EEEEEE;
+	-moz-border-radius:5px; /* Firefox */
+    -webkit-border-radius:5px; /* Safari 和 Chrome */
+    border-radius:5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+	display: none;
+}
+
+.cx2 form fieldset{
+	padding-bottom: 10px;
+}
+.cx2 form fieldset:last-child{
+	padding-bottom: 0;
+}
+.cx2Lspan{
+	padding-right: 25px;
+}
+.cx2Rspan{
+	margin-left: 25px;
+}
+
+.cx2Lspan input{
+	width: 70px;
+	margin-left: 25px;
+}
+.cx2Rspan input{
+	width: 35px;
+}
+.cx2Fieinput input[type=text]{
+	width: 65px;
+}
+
+
+.cx3 fieldset h4{
+	font-size: 16px;
+	padding-top: 10px;
+}
+
+.cx3 .cx3_in{
+	border-bottom: 1px solid #EEEEEE;
+	padding-top:10px;
+}
+.cx3Inspan{
+	margin-right: 25px;
+	padding-left:0 !important;
+}
+.cx3 .cx3_in span{
+	padding-left:20%;
+}
+
+.cx3 .cx3_in:nth-of-type(6) input,
+.cx3 .cx3_do input{
+	width: 30px;
+}
+.cx3 .cx3_in:nth-of-type(3),
+.cx3 .cx3_in:nth-of-type(6){
+	padding-left: 42px;
+}
+
+.cx3 .cx3_in:nth-of-type(3) span{
+	padding-right: 20px;
+}
+
+.cx3 .cx3_on{
+	padding-top :10px;
+}
+.cx3 .cx3_do{
+	padding-top:10px;
+}
+.c5Appleft{
+	padding-left: 125px !important;
+}
+.letterSpace{
+	padding-left: 16px;
+}
+.cright{
+	padding-right: 25px;
+}
+
+/*con4开始*/
+
+.con4{
+	border-bottom: 1px solid #009843;
+	padding:10px 5px 10px 0 ;
+}
+.con4 .cv1{
+	padding-left: 16px;
+}
+
+.con4 .cv1 fieldset:first-child{
+	padding:0 0 10px 25px;
+}
+.cvTable tbody tr td{
+	padding: 5px 30px;
+}
+.cvTaimg1{
+	background: url(../img/key2.png) left center no-repeat;
+}
+.cvTaimg2{
+	background: url(../img/keylitter.png) 18px center no-repeat;
+}
+/*服务规格*/
+#spec1{
+	padding:0 0 5px 25px;
+	background: url(../img/key2.png) left top no-repeat;
+}
+#spec2,
+#spec3{
+	padding:0 0 5px 25px;
+}
+.specn,
+.c4Ul,
+.spectip{
+	float: left;
+}
+/*con4*/
+.c4Ul{
+	margin-bottom: 5px;
+}
+.c4Ul:first-child{
+	padding-left: 20px;
+	background:url(../img/key2.png)no-repeat left center;
+}
+.c4Ul li,
+.c4Ul-li li{
+	padding-left: 25px;
+	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
+}
+
+
+.spectip{
+	padding-left: 20px;	
+}
+.specn{
+	height: 35px;
+}
+
+/*商品SKU列表*/
+.cv2{
+	padding-bottom: 100px;
+}
+
+.cv2Ul1{
+	width: 100%;
+	padding-left: 5px;
+	margin-top: 5px;
+	background: #EEEEEE;
+	font-size: 14px;
+	border-top: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+}
+
+.cv2Ul1 img{
+	vertical-align: middle;
+	/*去除IE6/7中图片边框*/
+	border: 0;
+}
+
+.cv2Ul1 li{
+	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
+	width:18%;
+	text-align: center;
+}
+
+.cv2Ul1 li:first-child{
+	width: 55px !important;
+}
+
+.cv2Ul1 li input[type="text"]{
+	width: 30px;
+	border-bottom:none;
+	-moz-border-radius:5px; /* Firefox */
+    -webkit-border-radius:5px; /* Safari 和 Chrome */
+    border-radius:5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+}
+
+.cv2Ul1 li:nth-of-type(2),
+.cv2Ul2 li:nth-of-type(2){
+	padding-left: 0;
+}
+
+.cv2Ul2{
+	font-size: 14px;
+	padding: 2px 5px;
+	border-bottom: 1px solid #EEEEEE;
+	vertical-align:middle;
+}
+
+.cv2Ul2 li{
+	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
+	width: 18%;
+	text-align: center;
+}
+.cv2Ul1 li input[type="checkbox"],
+.cv2Ul2 li input[type="checkbox"]{
+	vertical-align:middle;
+	width: 20px;
+	height: 16px;
+}
+.cv2Ul2 li:first-child{
+	width: 55px !important;
+}
+
+.cv2Ul2 li:last-child{
+	padding-right: 0;
+}
+
+
+
+/*con5开始*/
+.con5{
+	border-bottom: 1px solid #009843;
+	padding:10px 5px 10px 16px ;
+}
+.c51{
+	background: url(../img/flower.png) center left no-repeat;
+}
+.con5 form fieldset{
+	padding: 5px 0;
+	padding-left: 30px;
+}
+
+.con5 form fieldset input[type="text"]{
+	width: 50px;
+}
+.con5 form fieldset label:nth-of-type(2){
+	padding-left: 12px;
+}
+
+.c5one{
+	background: #EEEEEE;
+	-moz-border-radius:5px; /* Firefox */
+    -webkit-border-radius:5px; /* Safari 和 Chrome */
+    border-radius:5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+}
+.c5one fieldset:nth-of-type(2) input[value="no"]{
+	margin-left: 45px;
+}
+.c5one .c5span{
+	margin-left: 150px;
+}
+
+.con5 input[type="checkbox"]{
+	margin-left: 5px;
+}
+
+/*con6开始*/
+.con6{
+	border-bottom: 1px solid #009843;
+	padding:10px 5px 10px 16px ;
+	position: relative;
+}
+.con6 fieldset{
+	padding: 5px 0;
+}
+
+.c61one{ 
+	float: left;
+	width: 28%;
+}
+.c61one input{
+	width: 30px;
+}
+.con6 p{
+	padding: 5px 0 5px 25px;
+	background: url(../img/aa.png) left center no-repeat;
+}
+
+.con6 form fieldset span{
+	margin: 0 0px 0 25px;
+}
+.c6trademark{
+	margin-top: 10px;
+	margin-left: 22px;
+	padding: 0 0 5px 26px;
+	-moz-border-radius:5px; /* Firefox */
+    -webkit-border-radius:5px; /* Safari 和 Chrome */
+    border-radius:5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+	background: #EEEEEE;
+}
+.con6 .c6trademark li{
+	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
+	padding: 0 20px;
+}
+.con6 .c6trademark li:first-child{
+	padding-left: 0;
+	padding-top: 10px;
+}
+.con6 table{
+	margin: 10px 0 10px 20px;
+}
+.con6 table td{
+	text-align: center;
+	padding: 5px 0;
+}
+
+.con6 table tr:first-child{
+	background: #EEEEEE;
+}
+
+.c6FieBOx input{
+	width: 50px;
+}
+.c61 .cright{
+	float: left;
+	/*margin-top: 5px;*/
+}
+/*con6新增按钮*/
+.c61 input[type='image']{
+	border-bottom-width: 0px;
+	width: 18px;
+	height: 18px;
+}
+.c61 input[type='button']{
+	border-bottom-width: 0px;
+}
+/*con6服务资源新增*/
+.c6popup,
+.c7Popup{
+	width: 1068px;
+	margin: 0 auto ;
+	margin-left: 5px;
+	padding-bottom: 20px;
+	border: 1px solid #EEEEEE;
+	border-radius: 10px;-moz-border-radius:10px; /* Firefox */
+    -webkit-border-radius:10px; /* Safari 和 Chrome */
+    border-radius:10px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */background: #FFFFFF;
+	display:none; /* 默认对话框隐藏 */
+	position: absolute; 
+	z-index: 10000;
+}
+.c6popup{
+	top:-470px;
+	left: 0;
+}
+.c6popup ul li,
+.c7Popup ul li{
+	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
+}
+.c6ptitle,
+.c7ptitle{
+	background: #EEEEEE;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding:5px 10px;
+	font-weight: bold;
+}
+
+
+.c6ptitle li:first-child,
+.c7ptitle li:first-child{
+	float: left;
+	
+}
+
+.c6ptitle li:last-child,
+.c7ptitle li:last-child{
+	float: right;
+	text-align: center;
+}	
+
+.c6ptitle li:nth-of-type(2),
+.c7ptitle li:nth-of-type(2){
+	padding-left:42%;
+}
+.c6pone ul{
+	margin: 15px;
+	padding:5px;
+	border: 1px solid #999;
+	-moz-border-radius:5px; /* Firefox */
+    -webkit-border-radius:5px; /* Safari 和 Chrome */
+    border-radius:5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+}
+.c6pone ul li{
+	height: 30px;
+}
+.c6pone ul li:first-child span{
+	padding-left: 10px !important;
+}
+.c6pone li:last-child button{
+	background: #009946;
+}
+.c6pone li:first-child,
+.c6pone li:nth-of-type(2){
+	width: 44%;	
+}
+.c6pone li:last-child{
+	float: right;
+}
+.c7pone ul,
+.c6ptwo ul{
+	margin: 5px 16px;
+}
+.c6ptwo ul li{
+	width: 32%;
+}
+.c6ptwo ul li:nth-of-type(2){
+	width: 35%;
+}
+.c6pthree,
+.c6pfour{
+	margin: 10px 16px;
+}
+.c6pthree img{
+	margin-left: 10px;
+	/*去除IE6/7中图片边框*/
+	border: 0;
+}
+.c6five,
+.c6six,
+.c6seven{
+	padding-bottom: 10px;
+	padding-left: 16px;
+}
+.c6five .c6f1{
+	border: 1px solid #999;
+	margin: 5px 16px;
+	padding: 5px 0 5px 20px;
+	-moz-border-radius:10px; /* Firefox */
+    -webkit-border-radius:10px; /* Safari 和 Chrome */
+    border-radius:10px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+}
+.c6five .c6f1 li{
+	width: 19%;
+}
+
+
+/*con6服务资源新增结束*/
+
+/*con7开始*/
+
+.con7{
+	border-bottom: 1px solid #009843;
+	padding:10px 5px 5px 16px ;
+	position: relative;
+}
+.con7 fieldset{
+	padding: 5px 0 5px 25px;
+}
+.con7 fieldset:nth-of-type(6){
+	background: url(../img/move.png) no-repeat left top;
+}
+.c7one li,
+.c7two li,
+.c7three li,
+.c7four li,
+.c7six li,
+.c7seven li,
+.c7Prothree li,
+.c7Profour li{
+	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
+}
+.c7oneProli{
+	padding-right: 20px;
+}
+.c7two li:first-child input{
+	width: 50px;
+}
+.c7two li:first-child span{
+	padding-right: 10px;
+}
+
+.c7one li,
+.c7two li{
+	width: 30%;
+}
+.c7two li:first-child{
+	padding: 0;
+}
+.c7two li:last-child{
+	padding-right: 0;
+}
+.c7Prothree{
+	padding: 2px 0;
+}
+.c7Prothree li {
+	padding: 0 15px;
+}
+.c7Prothree li:first-child{
+	padding: 0 ;
+}
+
+.c7Prothree li:nth-of-type(6){
+	padding: 0 50px;
+}
+
+.c7Profour{
+	width: 550px;
+	height: 2px;
+	background: #EEEEEE;
+	position: relative;
+	left: 75px;
+}
+
+.c7Profour ul{
+	position: absolute;
+}
+.c7Profour ul li {
+	width: 3px;
+	height: 3px;
+	background:#999999;
+	-moz-border-radius:1.5px; /* Firefox */
+    -webkit-border-radius:1.5px; /* Safari 和 Chrome */
+    border-radius:1.5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+	float: left;
+	margin: 0 32px;
+}
+
+.c7Profour ul li:first-child{
+	margin-left: 22px;
+}
+.c7Profour li:nth-of-type(5){
+	margin: 0 86px 0 64px;
+}
+.c7Profour li:nth-of-type(7){
+	margin:0 0 0 47px ;
+}
+
+.c7five{
+	width: 970px;
+	height: 60px;
+	margin-left:53px ;
+	-moz-border-radius:5px; /* Firefox */
+    -webkit-border-radius:5px; /* Safari 和 Chrome */
+    border-radius:5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+	padding: 5px;
+	border: 1px solid #A0A0A0;
+	font-family: "microsoft yahei";
+	color: #878787;
+}
+
+.c7six,
+.c7seven{
+	background: #EEEEEE;
+	margin-left: 53px;
+	padding: 5px;
+	margin: 10px 0;
+	-moz-border-radius:5px; /* Firefox */
+    -webkit-border-radius:5px; /* Safari 和 Chrome */
+    border-radius:5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+}
+
+.c7six ul{
+	margin-top: 10px;
+}
+
+.c7six li{
+	margin-left: 20px;
+}
+.c7six li:first-child label input:last-child{
+	margin-left: 10px;
+}
+
+.c7six li:last-child input{
+	margin-left: 5px;
+}
+
+.c7seven{
+	margin:10px 0;
+}
+.c7seven li{
+	padding: 5px 0;
+	margin: 0 35px 0 20px;
+	padding-right: 10px;
+    background-size: 10px 10px;
+}
+
+.c7seven li span{
+	font-weight: 600;
+	padding-right: 5px;
+}
+/*商家补充属性中新增属性按钮*/
+.c7but{
+	background: #009946;
+	padding: 3px 10px;
+	-moz-border-radius:10px; /* Firefox */
+    -webkit-border-radius:10px; /* Safari 和 Chrome */
+    border-radius:10px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+	color: #FFFFFF;
+}
+/*新增商品属性部分*/
+.c7Popup{
+	top: 360px;
+	left: 0;
+	padding-bottom: 10px;
+}
+.c7pone{
+	margin-left: 20px;
+}
+.c7ptwo ul{
+	margin:10px 20px;
+}
+.c7pone ul li{
+	width: 450px;
+	padding: 5px 0;
+}
+
+
+/*con8开始*/
+.con8{
+	border-bottom: 1px solid #009843;
+	padding:10px 5px 5px 16px ;
+}
+.c8one,
+.c8three,
+.c8left{
+	padding-left: 30px;
+}
+.con8 fieldset{
+	padding: 5px 0;
+}
+.c8one{
+	background:url(../img/map2.png) left center no-repeat;
+}
+.c8one li{
+	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
+}
+.c8one li:nth-of-type(2) span{
+	color: dodgerblue;
+	padding: 0 10px;
+}
+
+.c8two{
+	margin: 10px 0 0 73px;
+	height: auto;
+	background: #EEEEEE;
+	padding: 5px 25px;
+	-moz-border-radius:5px; /* Firefox */
+    -webkit-border-radius:5px; /* Safari 和 Chrome */
+    border-radius:5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+}
+.c8two li,
+.c8three li{
+	padding: 5px 0;
+}
+.c8three{
+	background: url(../img/tax.png) no-repeat left top;
+}
+
+.c8three li:nth-of-type(2) input{
+	width: 30px;
+}
+.c8left{
+	width: 80px;
+	float: left;
+}
+.c8right{
+	width: 870px;
+	float: right;
+	padding-left: 30px;
+	margin-left: 50px;
+	background: url(../img/up.png) left top no-repeat;
+	background-size: 20px 20px;
+}
+
+.c8right ul li{
+	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
+	line-height: 22px;
+}
+.con8 .c8left:nth-of-type(1){
+	background:url(../img/picture.png) left no-repeat;
+}
+.c8photo{
+	margin-top: 10px;
+}
+.c8photo a{
+	margin-right: 30px;
+}
+
+
+/*点击上传图片*/
+#fileToUpload{
+	display: none ;
+}
+
+/*con9开始*/
+.con9{
+	padding:10px 5px 5px 16px ;
+}
+.con9 ul li{
+	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
+}
+.c9one,
+.c9two,
+.c9three{
+	margin: 5px 0 10px 20px;
+}
+
+.c9one li:first-child{
+	margin-right: 30px;
+}
+
+.c9two{
+	width: 880px;
+	border: 1px solid #999;
+	-moz-border-radius:10px; /* Firefox */
+    -webkit-border-radius:10px; /* Safari 和 Chrome */
+    border-radius:10px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+	padding:5px 0px 5px 70px;
+}
+.c9two li{
+	width: 13%;
+}
+.c9two li:last-child{
+	padding-left: 40px;
+}
+.c9three {
+	margin-left: 150px;
+}
+
+.c9three li{
+	padding: 8px 40px;
+	margin-right: 50px;
+	-moz-border-radius:5px; /* Firefox */
+    -webkit-border-radius:5px; /* Safari 和 Chrome */
+    border-radius:5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+	background: #c9c9c9;
+}
+.c9three li a{
+	color: #FFFFFF;
+	font-weight: 900;
+	font-size: 20px;
+}
+.c9three li:nth-of-type(2){
+	background: #999;
+	margin:0 60px;
+}
+.c9three li:nth-of-type(3){
+	background: #009946;
+	margin-left:60px;
+}
+
+/*服务设置中多选框选择、全选按钮*/
+.checkAllinp{
+	vertical-align:middle;
+/*	去除IE6/7中图片边框*/
+	overflow: visible;/*只有设置这个属性IE下padding才能生效*/
+    width:20px;   /*现代浏览器下识别*/
+    height: 20px;
+    *width: 1;    /*IE7和IE6识别，设置值为1,*/
+}
+/*交易类型中清除IE10-IE7出现的边框*/
+#cx11 input[type="checkbox"], 
+#cx11 input[type="radio"],
+#cx12 input[type="checkbox"], 
+#cx12 input[type="radio"],
+#cx13 input[type="checkbox"], 
+#cx13 input[type="radio"],
+#cx14 input[type="checkbox"], 
+#cx14 input[type="radio"],
+#cx15 input[type="checkbox"], 
+#cx15 input[type="radio"],
+#cx16 input[type="checkbox"], 
+#cx16 input[type="radio"],
+#cx18 input[type="checkbox"], 
+#cx18 input[type="radio"]{
+    background: transparent;
+    border: 0;
+}
+
+

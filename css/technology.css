@@ -1,0 +1,204 @@
+
+
+
+/*服务设置部分开始*/
+.c6Techpop table{
+	margin: 10px 0 20px 20px;
+	padding-left: 10px;
+	width: 1020px;
+}
+.c6Techpop table tr td:first-child{
+	padding-left: 10px;
+}
+.c6Techpop table tr td{
+	text-align: left;
+	padding: 5px 0;
+}
+/*新增属性*/
+.c6popupNew{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background: #FFFFFF !important;
+}
+.c6popupNew tr td:first-child{
+	display: block;
+	padding-left: 20px;
+}
+/*con6中服务设置中默认隐藏*/
+.c6Techtwo,
+.c6Techthree,
+.c6Techfour{
+	display: none;
+}
+
+/*con7*/
+.c7inpwidtech{
+	width: 60px;
+}
+
+.c7Ultech li{
+	width: 30%;
+	display: inline-block;
+	/*兼容IE67中display：inline-block属性*/
+	*zoom:1;
+	*display:inline;
+}
+
+/*遮盖层*/
+.maskingLayer{
+	display:none;  
+    width:100%;  
+    height:100%;  
+    background:#000;  
+    position:absolute;  
+    top:0;  
+    left:0;  
+    z-index:9999;  
+    opacity:0.5;                        /*背景的透明度:(Firefox适用；）*/  
+    filter:alpha(opacity =50);          /*背景的透明度:(IE适用)； */  
+}
+
+.c6pType,
+.c6pTable{
+	margin:10px 0 0 20px !important;
+	padding-left: 10px !important;
+}
+/*145/200限字样式*/
+.c6pBSkeNum{
+	color: #FFFFFF;
+	background: #009843;
+	border-radius: 10px;
+	padding:2px 5px;
+	margin-left: 35px;
+	font-size: 13px;
+}
+/**/
+.c6pTable{
+	width:1030px;
+}
+.c6pTable tr td{
+	text-align: left;
+	padding-left: 10px;
+}
+/*补充属性按钮*/
+.c6pTabbtn button{
+	float:right;
+	margin-right:18px ;
+}
+.c6pBoxone{
+	margin:5px 15px 10px 15px;
+	padding-bottom: 10px;
+	border: 1px solid #999;
+	border-radius: 10px;
+}
+.c6pBoxtext{
+	width:920px;
+	height: 100px;
+	margin-left:70px;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	background: #EEEEEE;	
+}
+.c6pBoxright{
+	background: #FC6700;
+	padding: 2px 5px;
+	margin-right: 15px;
+	color: #FFFFFF;
+	border-radius: 3px;
+	float:right;
+}
+
+.c6pBoxtwo ul{
+	margin:10px 15px 20px 15px;
+	padding: 5px;
+	border: 1px solid #999;
+	border-radius: 5px;
+}
+/*新增服务项目*/
+.c6pBoxtThree2{
+    border: 1px solid #7D7D7D;	
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px 15px;
+}
+.c6pBoxtThree2 table{
+	width: 980px;
+}
+.c6pBoxtThree2 tr td{
+	text-align: left;
+	padding: 5px 0;
+}
+/*已审属性*/
+.c6pRoperty{
+	background: #FFFFFF;
+	width:1010px;
+	margin-left: 0 !important;
+}
+.c6pRoperty tr td{
+	text-align: left;
+	padding-left: 10px;
+}
+/*项目盒子*/
+.c6PitemBox{
+	border: 1px solid #CCc;
+	margin: 10px 20px;
+}
+.c6pName,
+.c6pTime,
+.c6pBoxSketch,
+.c6pRoperty{
+	margin: 10px 0;
+	padding-left: 10px !important;
+}
+
+/*con6中服务项目新增中的项目类型*/
+.c6pBoxSketch{
+	height: 170px;
+}
+.c6pType{
+	margin:10px 0 0 20px;
+}
+.c6pBoxone{
+	margin:5px 15px 10px 15px;
+	padding-bottom: 10px;
+	border: 1px solid #999;
+	border-radius: 10px;
+}
+.c6pBoxtext{
+	width:900px;
+	height: 100px;
+	margin-left:70px;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	background: #EEEEEE;	
+}
+.c6pBoxright{ 
+	background: #FC6700;
+	padding: 2px 5px;
+	margin-right: 15px;
+	color: #FFFFFF;
+	border-radius: 3px;
+	float:right;
+}
+
+.c6pBoxtwo ul{
+	margin:10px 15px 20px 15px;
+	padding: 5px;
+	border: 1px solid #999;
+	border-radius: 5px;
+}
+/*新增加的属性*/
+.c6pBoxtThree2{
+    border: 1px solid #7D7D7D;	
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px 15px;
+}
+.c6pBoxtThree2 table{
+	width: 980px;
+}
+.c6pBoxtThree2 tr td{
+	text-align: left;
+	padding: 5px 0;
+}
+/*服务设置部分结束*/

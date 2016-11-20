@@ -52,12 +52,33 @@ $(function(){
     });
     //对动态添加的元素添加事件-修改内容的盒子被打开
     $("#c3three").on("click","#c3Videoedit4",function(){
+    	var box=$(".c3VideoBoxall");
+    	var img=$("#c3Videoedit4 img");
         console.log("修改内容的盒子被打开");
-        $(".c3VideoBoxall").show();
+        box.show();
+        if(box.show()){
+    	    img.attr("src","img/writeRed.png");
+        }
     });
+    $("#c3Vclose").click(function(){
+    	var box=$(".c3VideoBoxall");
+    	var img=$("#c3Videoedit4 img");
+		box.hide();
+		//当修改图标变成灰色
+		if(box.hide()){
+    	    img.attr("src","img/writeW.png");
+        }
+	});
+	$("#c3Vsure").click(function(){
+		var box=$(".c3VideoBoxall");
+    	var img=$("#c3Videoedit4 img");
+		box.hide();
+		//修改图标变成灰色
+		if(box.hide()){
+    	    img.attr("src","img/writeW.png");
+        }
+	});
 }); 
-
-
 //视频编辑新增 c3Videoedit
 function writeCheck(Vdit){
 	var box=$(".c3VideoBoxall");
