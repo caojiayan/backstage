@@ -194,9 +194,9 @@
 	*zoom:1;
 	*display:inline;
 }
-.c4Ul li:first-child{
+/*.c4Ul li:first-child{
 	padding-left: 0;
-}
+}*/
 /*设置单位*/
 .con4 .cv1{
 	margin:5px 0 5px 29px;
@@ -343,4 +343,8 @@
 }
 .tableRt td{
 	background: #EEEEEE !important;
+}
+/*商品规格*/
+#specAll{
+	margin-left: 20px;
 }

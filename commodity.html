@@ -833,70 +833,64 @@
 			                </ul>
 		                </span>                                
 			        </fieldset>
-			        <fieldset class="cv1one">
-			        	<ul class="c4Ul">
-			        		<li>商品规格</li>
-			        		<li>
-			        			<input type="text" value="请输入商品的规格" onfocus="javascript:if(this.value=='请输入商品的规格')this.value='';"/>
-			        	        <button type='submit'>新增</button>
-			        		</li>
-			        		<li>口味
-			        		    <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        		<li>净重
-			        		    <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        	</ul>
-			        	<ul class="c4Ul">
-			        		<li>口味</li>
-			        		<li>
-			        			<input type="text" value="请输入“口味”" onfocus="javascript:if(this.value=='请输入“口味”')this.value='';"/>
-			        	        <button type='submit'>新增</button>
-			        		</li>
-			        		<li>原味
-			        		   <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        		<li>奶香味
-			        			<a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        		<li>五香味
-			        			<a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        		<li>椒盐味
-			        			<a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        		<li>烧烤味
-			        			<a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        		<li>粽子味
-			        			<a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        	</ul>
-			        	<ul class="c4Ul">
-			        		<li>重量<span class="letterBlue"> g</span></li>
-			        		<li>
-			        			<input type="text" value="请输入“净重”" onfocus="javascript:if(this.value=='请输入“净重”')this.value='';"/>
-			        	        <button type='submit'>新增</button>
-			        		</li>
-			        		<li>200
-			        			<a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        		<li>350
-			        			<a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        		<li>450
-			        			<a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        		<li>500
-			        			<a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        		<li>150
-			        			<a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        		<li>280
-			        			<a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        	</ul>
+			        <fieldset id="specAll">
+			        	<div id="spec1" class="clearfix">
+			        		<span class="specn">
+			        			<span class="cright">商品规格</span>
+			        			<input type="text" class="specName1" value="请输入规格名称" onfocus="javascript:if(this.value=='请输入规格名称')this.value='';"/>
+			        	        <input type="button" id="specbtn1" value="新增">
+			                    <span class="Error1" style="font-size: 14px;"></span>
+			        		</span>
+			        		<ul class="c4Ul" id="specList1">
+			        			<li>口味
+			        		        <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
+			        		    </li>
+			        		    <li>净重
+			        			    <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
+			        		    </li>
+			        		</ul>
+			        		<span class="spectip">
+			        			提示：请用最直观简洁的规格说明收费标准
+			        		</span>
+			        	</div>
+			        	<div id="spec2" class="clearfix">
+			        		<span class="specn">
+			        			<span class="cright">口味</span>
+			        			<input type="text" class="specName2" value="请输入内容" onfocus="javascript:if(this.value=='请输入内容')this.value='';"/>
+			        	        <input type="button" id="specbtn2" value="新增">
+			                    <span class="Error2" style="font-size: 14px;"></span>
+			        		</span>
+			        		<ul class="c4Ul" id="specList2">
+			        			<li>原味
+			        		        <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
+			        		    </li>
+			        		    <li>奶香味
+			        			    <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
+			        		    </li>
+			        		    <li>五香味
+			        			    <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
+			        		    </li>
+			        		</ul>
+			        	</div>
+			        	<div id="spec3" class="clearfix">
+			        		<span class="specn">
+			        			<span class="cright">净重<span class="letterBlue">g</span></span>
+			        			<input type="text" class="specName3" value="请输入内容" onfocus="javascript:if(this.value=='请输入内容')this.value='';"/>
+			        	        <input type="button" id="specbtn3" value="新增">
+			                    <span class="Error3" style="font-size: 14px;"></span>
+			        		</span>
+			        		<ul class="c4Ul" id="specList3">
+			        			<li>200
+			        		        <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
+			        		    </li>
+			        		    <li>300
+			        			    <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
+			        		    </li>
+			        		    <li>400
+			        			    <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
+			        		    </li>
+			        		</ul>
+			        	</div>
 			        </fieldset>
 			        <!--商品SKU开始-->
 			        <div id="table-container">
@@ -2257,6 +2251,11 @@
         	Check('#servebtn5','serveName5','#serveList5');
 //      附赠内容新增
         	Check('#servebtn','serveName','#serveList');
+//      服务规格新增        	
+        	specCheck('#specbtn1','specName1','#specList1','Error1','#specAll');
+        	specCheck('#specbtn2','specName2','#specList2','Error2');
+        	specCheck('#specbtn3','specName3','#specList3','Error3');
+        	specCheck('#specbtn5','specName5','#specList5','Error5');
         </script>
 	</body>
 </html>

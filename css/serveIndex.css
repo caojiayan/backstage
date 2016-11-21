@@ -276,13 +276,11 @@
 	background: url(../img/keylitter.png) 18px center no-repeat;
 }
 /*服务规格*/
-#spec1{
+#specAll div{
 	padding:0 0 5px 25px;
-	background: url(../img/key2.png) left top no-repeat;
 }
-#spec2,
-#spec3{
-	padding:0 0 5px 25px;
+#spec1{
+	background: url(../img/key2.png) left top no-repeat;
 }
 .specn,
 .c4Ul,

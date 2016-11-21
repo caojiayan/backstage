@@ -644,47 +644,55 @@
 	                                                       客户购买1个服务=
 				            <input type="text" value="10" size="5" onfocus="javascript:if(this.value=='10')this.value='';"/>公里
 			        </fieldset>
-			        <fieldset>
-			        	<ul class="c4Ul">
-			        		<li>服务规格</li>
-			        		<li>
-			        			<input type="text" value="请输入规格名称" onfocus="javascript:if(this.value=='请输入规格名称')this.value='';"/>
-			        	        <button type='submit'>新增</button>
-			        		</li>
-			        		<li>地域
-			        		    <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        		<li>物品
-			        			<a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        		<li>提示：请用最直观简洁的规格说明收费标准</li>
-			        	</ul>
-			        	<ul class="c4Ul">
-			        		<li>地域</li>
-			        		<li>
-			        			<input type="text" value="请输入地域" onfocus="javascript:if(this.value=='请输入地域"')this.value='';"/>
-			        	        <button type='submit'>新增</button>
-			        		</li>
-			        		<li>广州内
-			        		   <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        		<li>非广州
-			        			<a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        	</ul>
-			        	<ul class="c4Ul">
-			        		<li>物品</li>
-			        		<li>
-			        			<input type="text" value="请输入物品" onfocus="javascript:if(this.value=='请输入物品')this.value='';"/>
-			        	        <button type='submit'>新增</button>
-			        		</li>
-			        		<li>重设备
-			        			<a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        		<li>常规货物
-			        			<a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        	</ul>
+			        <fieldset id="specAll">
+			        	<div id="spec1" class="clearfix">
+			        		<span class="specn">
+			        			<span class="cright">服务规格</span>
+			        			<input type="text" class="specName1" value="请输入规格名称" onfocus="javascript:if(this.value=='请输入规格名称')this.value='';"/>
+			        	        <input type="button" id="specbtn1" value="新增">
+			                    <span class="Error1" style="font-size: 14px;"></span>
+			        		</span>
+			        		<ul class="c4Ul" id="specList1">
+			        			<li>地域
+			        		        <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
+			        		    </li>
+			        		    <li>物品
+			        			    <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
+			        		    </li>
+			        		</ul>
+			        		<span class="spectip">
+			        			提示：请用最直观简洁的规格说明收费标准
+			        		</span>
+			        	</div>
+			        	<div id="spec2" class="clearfix">
+			        		<span class="specn">
+			        			<span class="cright">地域</span>
+			        			<input type="text" class="specName2" value="请输入内容" onfocus="javascript:if(this.value=='请输入内容')this.value='';"/>
+			        	        <input type="button" id="specbtn2" value="新增">
+			                    <span class="Error2" style="font-size: 14px;"></span>
+			        		</span>
+			        		<ul class="c4Ul" id="specList2">
+			        			<li>广州内
+			        		        <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
+			        		    </li>非广州
+			        		</ul>
+			        	</div>
+			        	<div id="spec3" class="clearfix">
+			        		<span class="specn">
+			        			<span class="cright">物品</span>
+			        			<input type="text" class="specName3" value="请输入内容" onfocus="javascript:if(this.value=='请输入内容')this.value='';"/>
+			        	        <input type="button" id="specbtn3" value="新增">
+			                    <span class="Error3" style="font-size: 14px;"></span>
+			        		</span>
+			        		<ul class="c4Ul" id="specList3">
+			        			<li>重设备
+			        		        <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
+			        		    </li>
+			        		    <li>常规货物
+			        			    <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
+			        		    </li>
+			        		</ul>
+			        	</div>
 			        </fieldset>
 			    </div>
 			    <div class="cv2">
@@ -2796,8 +2804,11 @@
         $(function(){
             $("#checkall").checkall({chname:"test[]", callback: function(e){}});
         });
-//      服务别称新增
-        	Check('#servebtn4','serveName4','#serveList4');
+//      服务规格新增        	
+        	specCheck('#specbtn1','specName1','#specList1','Error1','#specAll');
+        	specCheck('#specbtn2','specName2','#specList2','Error2');
+        	specCheck('#specbtn3','specName3','#specList3','Error3');
+        	specCheck('#specbtn5','specName5','#specList5','Error5');
         </script>
 	</body>
 </html>

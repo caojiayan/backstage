@@ -44,20 +44,6 @@
 	*display:inline;
 }
 
-/*遮盖层*/
-.maskingLayer{
-	display:none;  
-    width:100%;  
-    height:100%;  
-    background:#000;  
-    position:absolute;  
-    top:0;  
-    left:0;  
-    z-index:9999;  
-    opacity:0.5;                        /*背景的透明度:(Firefox适用；）*/  
-    filter:alpha(opacity =50);          /*背景的透明度:(IE适用)； */  
-}
-
 .c6pType,
 .c6pTable{
 	margin:10px 0 0 20px !important;

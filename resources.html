@@ -644,77 +644,83 @@
 	                                                       客户购买1个服务=
 				            <input type="text" value="1" size="5" onfocus="javascript:if(this.value=='1')this.value='';"/>座
 			        </fieldset>
-			        <fieldset>
-			        	<ul class="c4Ul">
-			        		<li>服务规格</li>
-			        		<li>
-			        			<input type="text" value="请输入规格名称" onfocus="javascript:if(this.value=='请输入规格名称')this.value='';"/>
-			        	        <button type='submit'>新增</button>
-			        		</li>
-			        		<li>影片
-			        		    <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        		<li>座位
-			        			<a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        		<li>时间
-			        			<a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        		<li>提示：必须有1个规格对接“资源”或“项目”</li>
-			        	</ul>
-			        	<ul class="c4Ul">
-			        		<li>影片</li>
-			        		<li>
-			        			<span class="dropdown padleft5px">  <!-- 模拟 select 的标记， -->
-			                        <input class="editor cs2three" type="text" value="资源或服务项目" onfocus="javascript:if(this.value=='资源或服务项目')this.value='';"/> <!-- 显示当前值的输入框 -->
-			                        <input class="trigger" style="padding:1px 8px;" type="button"/> <!-- 用于显示下拉列表的按钮 -->
-			                        <ul>   <!-- 列表菜单 -->
-				                        <li class="search" style="border: 1px solid #EEEEEE;">
-					                        <input type="text"  value="请输入关键字..." onfocus="javascript:if(this.value=='请输入关键字...')this.value='';"/>
-				                        </li>   <!-- 过滤输入的列表， -->
-				                        <li data-value=资源或服务项目>资源或服务项目</li>
-				                        <li data-value=112>112</li>
-				                        <li data-value=223>223</li>
-				                        <li data-value=335>335</li>
-				                        <li data-value=224>224</li>
-				                        <li data-value=336>336</li>
-				                        <li data-value=447>447</li>
-				                        <li data-value=448>448</li>
-				                        <li data-value=559>559</li>
-			                        </ul>
-		                        </span>
-			        		</li>
-			        		<li>星际迷航3：超越星辰</li>
-			        		<li>大话西游3</li>
-			        		<li>幸运是我</li>
-			        		<li>铁拳</li>
-			        	</ul>
-			        	<ul class="c4Ul">
-			        		<li>座位</li>
-			        		<li>
-			        			<input type="text" value="请输入“座位”" onfocus="javascript:if(this.value=='请输入“座位”')this.value='';"/>
-			        	        <button type='submit'>新增</button>
-			        		</li>
-			        		<li>普通座
-			        		   <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        		<li>情侣座
-			        			<a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        	</ul>
-			        	<ul class="c4Ul">
-			        		<li>时间</li>
-			        		<li>
-			        			<input type="text" value="请输入时间" onfocus="javascript:if(this.value=='请输入时间')this.value='';"/>
-			        	        <button type='submit'>新增</button>
-			        		</li>
-			        		<li>日场
-			        			<a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        		<li>夜场
-			        			<a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
-			        		</li>
-			        	</ul>
+			        <fieldset id="specAll">
+			        	<div id="spec1" class="clearfix">
+			        		<span class="specn">
+			        			<span class="cright">服务规格</span>
+			        			<input type="text" class="specName1" value="请输入规格名称" onfocus="javascript:if(this.value=='请输入规格名称')this.value='';"/>
+			        	        <input type="button" id="specbtn1" value="新增">
+			                    <span class="Error1" style="font-size: 14px;"></span>
+			        		</span>
+			        		<ul class="c4Ul" id="specList1">
+			        			<li>影片
+			        		        <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
+			        		    </li>
+			        		    <li>座位
+			        			    <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
+			        		    </li>
+			        		     <li>时间
+			        			    <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
+			        		    </li>
+			        		</ul>
+			        		<span class="spectip">
+			        			提示：必须有1个规格对接“资源”或“项目”
+			        		</span>
+			        	</div>
+			        	<div id="spec2" class="clearfix">
+			        		<span class="specn">
+			        			<span class="cright">影片</span>
+			        			<input type="text" class="specName2" value="请输入内容" onfocus="javascript:if(this.value=='请输入内容')this.value='';"/>
+			        	        <input type="button" id="specbtn2" value="新增">
+			                    <span class="Error2" style="font-size: 14px;"></span>
+			        		</span>
+			        		<ul class="c4Ul" id="specList2">
+			        			<li>星际迷航3：超越星辰
+			        		        <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
+			        		    </li>
+			        		    <li>大话西游3
+			        			    <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
+			        		    </li>
+			        		    <li>幸运是我
+			        			    <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
+			        		    </li>
+			        		    <li>铁拳
+			        			    <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
+			        		    </li>
+			        		</ul>
+			        	</div>
+			        	<div id="spec3" class="clearfix">
+			        		<span class="specn">
+			        			<span class="cright">座位</span>
+			        			<input type="text" class="specName3" value="请输入内容" onfocus="javascript:if(this.value=='请输入内容')this.value='';"/>
+			        	        <input type="button" id="specbtn3" value="新增">
+			                    <span class="Error3" style="font-size: 14px;"></span>
+			        		</span>
+			        		<ul class="c4Ul" id="specList3">
+			        			<li>普通座
+			        		        <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
+			        		    </li>
+			        		    <li>情侣座
+			        			    <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
+			        		    </li>
+			        		</ul>
+			        	</div>
+			        	<div id="spec4" class="clearfix">
+			        		<span class="specn">
+			        			<span class="cright">时间</span>
+			        			<input type="text" class="specName4" value="请输入内容" onfocus="javascript:if(this.value=='请输入内容')this.value='';"/>
+			        	        <input type="button" id="specbtn4" value="新增">
+			                    <span class="Error4" style="font-size: 14px;"></span>
+			        		</span>
+			        		<ul class="c4Ul" id="specList4">
+			        			<li>日场
+			        		        <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
+			        		    </li>
+			        		    <li>夜场
+			        			    <a href="javascript:void();"><img src="img/delete2.png" alt="删除"></a>
+			        		    </li>
+			        		</ul>
+			        	</div>
 			        </fieldset>
 			    </div>
 			    <div class="cv2">
@@ -2828,6 +2834,12 @@
         })
 //      服务别称新增
         	Check('#servebtn2','serveName2','#serveList2');
+//      服务规格新增        	
+        	specCheck('#specbtn1','specName1','#specList1','Error1','#specAll');
+        	specCheck('#specbtn2','specName2','#specList2','Error2');
+        	specCheck('#specbtn3','specName3','#specList3','Error3');
+        	specCheck('#specbtn4','specName4','#specList4','Error4');
+        	specCheck('#specbtn5','specName5','#specList5','Error5');
         </script>
 	</body>
 </html>
